@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function DonationCard() {
+export default function AddDonation() {
     return (
         <div>
-            Donation Card
+        Add Donation Page
+
         </div>
     )
 }
