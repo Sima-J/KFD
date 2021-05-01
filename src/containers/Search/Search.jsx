@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function DonationCard() {
+export default function Search() {
     return (
         <div>
-            Donation Card
+            Search Page
         </div>
     )
 }
