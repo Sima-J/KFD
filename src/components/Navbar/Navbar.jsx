@@ -4,6 +4,7 @@ export default function Navbar() {
     return (
         <div>
             Navbar
+            KFD
         </div>
     )
 }
