@@ -1,0 +1,19 @@
+@import '../../style/styleBoo';
+
+.navbar {
+    background-color:$primary;
+    font-family: $mainFontFamily;
+
+  }
+  #responsive-navbar-nav {
+    justify-content: flex-end;}
+
+.lin {
+  color:$secondary !important;
+  margin: 0 0.5rem;
+
+  &:hover {
+    font-weight: bold;
+  }
+}
+

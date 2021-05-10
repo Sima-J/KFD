@@ -17,7 +17,9 @@
     "i18n": "^0.13.2",
     "i18next": "^20.2.2",
     "i18next-browser-languagedetector": "^6.1.0",
+    "node-sass": "^5.0.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.8.15",
     "react-router": "^5.2.0",
@@ -69,7 +71,7 @@
     }
   },
   "lint-staged": {
-    "./src/*.{js,jsx,css}": [
+    "./src/*.{js,jsx,css,scss}": [
       "prettier --write",
       "eslint --fix"
     ]

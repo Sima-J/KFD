@@ -1,0 +1,18 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+$primary: #30124E;
+$secondary: #F7F7F9;
+$dark: #0B0A07;
+$warn: #F61067;
+$greenColor: #B3C89D;
+$textWhite: #FFFFFF;
+
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$mainFontFamily: "Roboto", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+$secondaryFontFamily: "Caveat", cursive;
