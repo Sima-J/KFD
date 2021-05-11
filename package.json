@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining": "^7.13.12",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
@@ -17,7 +18,8 @@
     "i18n": "^0.13.2",
     "i18next": "^20.2.2",
     "i18next-browser-languagedetector": "^6.1.0",
-    "node-sass": "^5.0.0",
+    "jquery": "^3.6.0",
+    "node-sass": "^6.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
