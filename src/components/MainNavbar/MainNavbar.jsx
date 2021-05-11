@@ -4,7 +4,6 @@ import {
     Nav,
     
   } from 'react-bootstrap'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {NavLink} from 'react-router-dom'
 import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE, SEARCH_ROUTE } from '../../router'
 import SearchCard from "../SearchForm/SearchCard";
