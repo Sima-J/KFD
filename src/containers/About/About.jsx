@@ -1,9 +1,11 @@
 import React from 'react'
+import AboutUs, {TeamMembers} from '../../components/AboutUs' 
 
 export default function About() {
     return (
         <div>
-            About Page
+            <AboutUs />
+            <TeamMembers />
         </div>
     )
 }

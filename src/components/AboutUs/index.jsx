@@ -1,2 +1,2 @@
 export { default } from './AboutUs'
-export { default as TeamMember } from './TeamMembers'
+export { default as TeamMembers } from './TeamMembers'
