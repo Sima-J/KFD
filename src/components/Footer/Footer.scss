@@ -1,0 +1,78 @@
+@import '../../style/styleBoo';
+
+.main-footer {
+  position: relative;
+  color: white;
+  background-color: $primary;
+  padding-top: 1em;
+  position: relative;
+  width: auto;
+}
+.draw-line1:after {
+  content: "";
+  display: block;
+  background-color: red;
+  height: 2px;
+  width: 45px;
+  margin-top: 5px;
+  color: white;
+}
+
+.draw-line2:after {
+  content: "";
+  display: block;
+  background-color: red;
+  height: 2px;
+  width: 85px;
+  margin-top: 5px;
+  color: white;
+}
+
+.draw-line3:after {
+  content: "";
+  display: block;
+  background-color: red;
+  height: 2px;
+  width: 82px;
+  margin-top: 5px;
+  color: white;
+}
+
+.draw-line4:after {
+  content: "";
+  display: block;
+  background-color: red;
+  height: 2px;
+  width: 75px;
+  margin-top: 5px;
+  color: white;
+}
+
+.text {
+  text-align: center;
+  color: white;
+}
+.logo {
+  align-items: center;
+  text-align: center;
+}
+.SocialProfile {
+  margin-top: 30px;
+}
+.col {
+  padding: 10px;
+  column-width: auto;
+  column-gap: 40px;
+  color: white;
+}
+.cont {
+  background-color: $primary !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.icon {
+    color: $secondary !important;
+}
+.lin {
+  color: white;
+}
