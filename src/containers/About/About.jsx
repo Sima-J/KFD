@@ -1,6 +1,5 @@
 import React from 'react'
-import AboutUs, {TeamMembers} from '../../components/AboutUs' 
-import Sponser from '../../components/AboutUs/Sponser'
+import AboutUs, {TeamMembers , Sponser} from '../../components/AboutUs' 
 
 export default function About() {
     return (

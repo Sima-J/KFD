@@ -1,15 +1,15 @@
 @import '../../style/styleBoo';
 
 .navbar {
-    background-color:$primary;
+    background-color:$secondary;
     font-family: $mainFontFamily;
 
   }
   #responsive-navbar-nav {
     justify-content: flex-end;}
 
-.lin {
-  color:$secondary !important;
+.lins {
+  color:$primary !important;
   margin: 0 0.5rem;
 
   &:hover {
@@ -17,3 +17,7 @@
   }
 }
 
+.SBTN {
+  background-color: $primary !important;
+  border: $primary !important;
+}
