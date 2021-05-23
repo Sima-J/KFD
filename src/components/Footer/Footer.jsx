@@ -1,5 +1,5 @@
 import React from "react";
- import { Nav, Col,Row, Navbar, Image} from 'react-bootstrap'
+ import { Nav, Col,Row, Image} from 'react-bootstrap'
  import {NavLink} from 'react-router-dom'
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
  import logo from '../../assets/logo.svg'
@@ -20,9 +20,9 @@ const Footer = () => {
 
           <Col className = "col" >
 
-          Menu <h6 className="draw-line1"> </h6>
+           <h5 className="draw-line1"> Menu</h5>
 
-            <h7 className="list-unstyled">
+            <h6 className="list-unstyled">
                 <li>
                     <Nav.Link className="lin" 
                         exact as={NavLink} to={HOME_ROUTE}>Home
@@ -47,30 +47,30 @@ const Footer = () => {
                     </Nav.Link>
                 </li>
           
-            </h7>
+            </h6>
 
           </Col>
 
           <Col>
-          Main Types <h6 className="draw-line2"> </h6>
-            <h7 className="list-unstyled">
+           <h5 className="draw-line2"> Main Types</h5>
+            <h6 className="list-unstyled">
                  
                  <li>
-                   <Nav.Link  className="lin"
+                   <Nav.Link  className="lin " 
                      as={NavLink} to={SEARCH_ROUTE}>Donation
                    </Nav.Link>
                  </li>
 
-                 <li>Requested Donations</li>
+                 <li className="ml-3">Requested Donations</li>
 
-            </h7>
+            </h6>
 
           </Col>
                         
           <Col>
 
-          Contact Us <h6 className="draw-line3"> </h6>
-            <h7 className="list-unstyled">
+           <h5 className="draw-line3">Contact Us </h5>
+            <h6 className="list-unstyled">
                 <li>
                     <span > 
                         <a className = 'text' href={`tel:${"+234081-1236-4568"}`}>
@@ -89,13 +89,13 @@ const Footer = () => {
                     </span>
                 </li>
 
-            </h7>
+            </h6>
 
           </Col>
 
           <Col>
-            Follow Us <h6 className="draw-line4" > </h6>
-            <h7 className = "list-unstyled">
+            <h4 className="draw-line4" > Follow Us </h4>
+            <h6 className = "list-unstyled">
                 <li className = "SocialProfile">
                 
                   <a href="https://www.instagram.com/">
@@ -111,23 +111,21 @@ const Footer = () => {
                   </a>
             
                 </li>
-            </h7>
+            </h6>
 
           </Col>
 
       </Row>
 
-      <Row style={{borderTop: '3px solid red'}}>
+      <Row style={{borderTop: '3px solid red' }}>
                  
           <Col>
 
-            <p className="text"> 
-              <Navbar.Brand href="/" className = 'text'>
+            <p className="text-center"> 
 
-                <Image src={logo} alt="logo"/>
+                <Image src={logo} alt="logo"/> 
                 © Copyright 2021 - KFD 
 
-              </Navbar.Brand> 
 
             </p>
 
