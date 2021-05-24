@@ -53,7 +53,7 @@ export default function ContactFrom() {
             <Col  md={12} >
             <div   className="ml-4 mb-4"            >
             <a href={`tel:${"+234081-1236-4568"}`}>
-              <FontAwesomeIcon className="icon"
+              <FontAwesomeIcon className="ic"
                 icon="phone"
                 size="2x"
 
@@ -64,7 +64,7 @@ export default function ContactFrom() {
             </div>
         <div className=" ml-4"        >
             <a href={`mailto:${"contact@KFD.com"}`}>
-              <FontAwesomeIcon className="icon"
+              <FontAwesomeIcon className="ic"
                 icon="envelope"
                 size="2x"
               />{' '}

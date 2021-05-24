@@ -31,8 +31,9 @@ margin-bottom: 2%;
 .Btn{
     width: 100%;
     background-color:$primary !important;
+    border-color: $primary !important;
 }
 
-.icon {
-    color:$primary ;
+.ic {
+    color:$primary !important ;
 }

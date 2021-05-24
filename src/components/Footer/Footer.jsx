@@ -3,11 +3,7 @@ import React from "react";
  import {NavLink} from 'react-router-dom'
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
  import logo from '../../assets/logo.svg'
- // import call from '../../assets/call.png'
- // import email from '../../assets/email.png'
-//  import fb from '../../assets/fb.png'
-//  import instagram from '../../assets/instagram.png'
-//  import twitter from '../../assets/twitter.png'
+ 
 
 import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE,SEARCH_ROUTE} from '../../router'
 import "./Footer.scss";
@@ -103,11 +99,11 @@ const Footer = () => {
                   </a>
 
                   <a href="https://www.facebook.com/">
-                    <FontAwesomeIcon icon={['fab', 'facebook-square']} className="icon hover:text-darkgray fa-2x mx-2"/>
+                    <FontAwesomeIcon icon={['fab', 'facebook-square']} className="iconf hover:text-darkgray fa-2x mx-2"/>
                   </a>
 
                   <a href="https://www.twitter.com/">
-                    <FontAwesomeIcon icon={['fab', 'twitter']} className="icon hover:text-darkgray fa-2x mx-2"/>
+                    <FontAwesomeIcon icon={['fab', 'twitter']} className="iconf hover:text-darkgray fa-2x mx-2"/>
                   </a>
             
                 </li>
