@@ -1,0 +1,42 @@
+@import '../../style/styleBoo';
+
+.box {
+    position: absolute;
+    font-size: 3.5vw;
+    font-weight: bold ;
+    margin-left: 30vw;
+    margin-right: 5vw;
+    margin-top: 5vw;
+    color:white;
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-width: 0.1vw; 
+}
+.profile {
+    margin-top: -15vw;
+    margin-left: 7vw;
+    width: 22vw;
+    height: 22vw;
+    border: 0.5vw solid wheat;
+    border-radius: 40vw;
+    position: absolute;
+}
+
+.name {
+    margin-left: 27.5vw;
+    margin-top: 1vw;
+    margin-right: 35vw;
+    font-size: 4vw;
+    border: 0.2vw solid black ;
+    border-radius: 2vw;
+    background-color: wheat;
+}
+
+.info {
+    margin-left: 24vw;
+    margin-right: 55vw;
+    margin-top: 1vw;
+    font-size: 4vw;
+    border: 0.2vw solid black ;
+    border-radius: 2vw;
+    background-color: wheat;
+}

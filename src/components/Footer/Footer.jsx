@@ -95,7 +95,7 @@ const Footer = () => {
                 <li className = "SocialProfile">
                 
                   <a href="https://www.instagram.com/">
-                    <FontAwesomeIcon icon={['fab', 'instagram']} className="icon hover:text-darkgray fa-2x mx-2"/>
+                    <FontAwesomeIcon icon={['fab', 'instagram']} className="iconf hover:text-darkgray fa-2x mx-2"/>
                   </a>
 
                   <a href="https://www.facebook.com/">
