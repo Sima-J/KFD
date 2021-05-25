@@ -2,7 +2,7 @@ import React from 'react';
 import { Image} from 'react-bootstrap'
 import ProfilePic from '../../assets/ProfilePic.png'
 import Cover from '../../assets/ProfileBackground.png'
-import ProfileCard from './../../components/ProfileCard';
+import ProfileCard from '../../components/ProfileCard';
 
 function Profile() {
     return(
