@@ -1,9 +1,11 @@
 import React from 'react'
+import {Header} from '../../components/HomeCard';
 
 export default function Home() {
     return (
         <div>
-            Home page KFD   
+        <Header/>
         </div>
+       
     )
 }

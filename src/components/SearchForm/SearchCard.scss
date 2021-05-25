@@ -1,12 +1,13 @@
+@import '../../style/styleBoo';
+
 .search-box {
     position: relative;
 }	
-.search-box input {
+.search-box input  {
     padding-right: 35px;
     min-height: 34px;
     border: none;
     background: #faf7fd;
-    border-radius: 5px !important;
 }
 .search-box input:focus {		
     background: #fff;
@@ -22,7 +23,12 @@
     padding: 10px 7px;
     height: 100%;
 }
+.SIcons {
+    color: $primary !important;
+    
+}
 .search-box i {
     color: #a0a5b1;
     font-size: 19px;
 }
+
