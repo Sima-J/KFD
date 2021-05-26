@@ -2,6 +2,7 @@ import React from 'react'
 import {
     Navbar,
     Nav,
+    Button
     
   } from 'react-bootstrap'
 import {NavLink} from 'react-router-dom'
@@ -12,41 +13,41 @@ import './MainNavbar.scss'
 
 export default function MainNavbar() {
     return (
-      <Navbar  expand="md">
+      <Navbar  expand="md" className="shadow-sm">
       <Navbar.Brand href="/">
     <img src={logo} alt="logo" />
     </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-    <Nav.Link className="lin" activeStyle={{
+    <Nav className="mr-auto ">
+    <Nav.Link className="lins" activeStyle={{
       fontWeight: 'bold',
-      borderBottom: '2px solid white',
+     
     }} exact
     as={NavLink} to={HOME_ROUTE}>
     Home
     </Nav.Link>
-    <Nav.Link className="lin" activeStyle={{
+    <Nav.Link className="lins" activeStyle={{
       fontWeight: 'bold',
-      borderBottom: '2px solid white',
+     
     }} as={NavLink} to={CONTACT_ROUTE}>
     Contact
     </Nav.Link>
-    <Nav.Link  className="lin" activeStyle={{
+    <Nav.Link  className="lins" activeStyle={{
       fontWeight: 'bold',
-      borderBottom: '2px solid white',
+     
     }} as={NavLink} to={ABOUT_ROUTE}>
     About
     </Nav.Link>
-    <Nav.Link  className="lin" activeStyle={{
+    <Nav.Link  className="lins" activeStyle={{
       fontWeight: 'bold',
-      borderBottom: '2px solid white',
+     
     }} as={NavLink} to={SEARCH_ROUTE}>
     Donation
     </Nav.Link>
-    <Nav.Link  className="lin" activeStyle={{
+    <Nav.Link  className="lins" activeStyle={{
       fontWeight: 'bold',
-      borderBottom: '2px solid white',
+     
     }}as={NavLink} to={PROFILE_ROUTE}>
     Profile
     </Nav.Link>
@@ -66,8 +67,7 @@ export default function MainNavbar() {
 
    </Nav>
    
-   <button type="button">Sign In</button>
-
+   <Button className='SBTN'>Sign In</Button>
 </Navbar.Collapse>
 						
           

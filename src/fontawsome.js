@@ -6,7 +6,8 @@ import {
   faGlobe,
   faPhone,
   faEnvelope,
+  faPlus,
 } from '@fortawesome/free-solid-svg-icons'
 import {} from '@fortawesome/free-regular-svg-icons'
 
-library.add(fab, faPhone, faEnvelope, faUserCircle, faSearch, faGlobe)
+library.add(fab, faPhone, faEnvelope, faUserCircle, faSearch, faGlobe, faPlus)

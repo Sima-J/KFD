@@ -2,7 +2,7 @@
 
 .main-footer {
   position: relative;
-  color: white;
+  color: $secondary !important;
   background-color: $primary;
   padding-top: 1em;
   position: relative;
@@ -11,46 +11,48 @@
 .draw-line1:after {
   content: "";
   display: block;
-  background-color: red;
+  background-color: $warn;
   height: 2px;
   width: 45px;
   margin-top: 5px;
-  color: white;
+  color: $secondary !important;
 }
 
 .draw-line2:after {
   content: "";
   display: block;
-  background-color: red;
+  background-color: $warn;
   height: 2px;
   width: 85px;
   margin-top: 5px;
-  color: white;
+  color: $secondary !important;;
 }
 
 .draw-line3:after {
   content: "";
   display: block;
-  background-color: red;
+  background-color: $warn;
   height: 2px;
   width: 82px;
   margin-top: 5px;
-  color: white;
+  color: $secondary !important;
 }
 
 .draw-line4:after {
   content: "";
   display: block;
-  background-color: red;
+  background-color: $warn;
   height: 2px;
   width: 75px;
   margin-top: 5px;
-  color: white;
+  color: $secondary !important;
 }
 
 .text {
   text-align: center;
-  color: white;
+  color: $secondary !important;
+  margin: auto;
+  align-items: center;
 }
 .logo {
   align-items: center;
@@ -63,16 +65,17 @@
   padding: 10px;
   column-width: auto;
   column-gap: 40px;
-  color: white;
+  color: $secondary !important;;
 }
 .cont {
   background-color: $primary !important;
   padding-left: 20px;
   padding-right: 20px;
 }
-.icon {
+.iconf {
     color: $secondary !important;
 }
 .lin {
-  color: white;
+  color: $secondary !important;
+  margin: auto;
 }
