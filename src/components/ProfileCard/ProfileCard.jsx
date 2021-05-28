@@ -1,15 +1,8 @@
-
-
-
-
 import React from 'react'
 import {Image, Card} from 'react-bootstrap'
 import Cover from '../../assets/Pcover.png'
 import Prof from '../../assets/Profile.png'
 import './ProfileCard.scss'
-
-
-// import ProfileCard from '../../components/ProfileCard';
 
 export default function ProfileCard() {
     return (
@@ -22,9 +15,7 @@ export default function ProfileCard() {
                 <Image className = "cover" src={Cover} fluid/>
             </div>
         
-            <div>
-                
-
+            <div>              
                 <Card className="cardCol pt-1 " data-aos="zoom-in">
 
                 <div>
