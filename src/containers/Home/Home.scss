@@ -1,0 +1,12 @@
+@import '../../style/styleBoo';
+
+.text{
+    font-family: Mplus 1p;
+    text-align: left;
+    display:flex;
+    align-items:center;
+}
+
+.back{
+    background-color: $primary;
+}

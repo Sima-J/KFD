@@ -1,0 +1,44 @@
+@import '../../style/styleBoo';
+
+.table
+{
+    color: black;
+}
+.col
+{
+    margin-left: 3vw;
+}
+.Dimag
+{
+    box-shadow: 0.3vw 0.3vw 1vw grey;
+    width: 30vw;
+}
+.Pname
+{
+    color: black;
+    font-size: 4vw;
+    font-weight: bold;
+    margin-top: 1.5vw;
+}
+.stakeholder
+{
+    color: black;
+    margin-top: 1.5vw;
+    font-size: 3vw;
+    font-weight:500;
+    background-color: rgb(100, 177, 100);
+}
+.description
+{
+    color: black;
+    margin-top: 1.5vw;
+    font-size: 2vw;
+    font-weight: 400;
+}
+.desc
+{
+    color: black;
+    margin-right: 10vw;
+    text-align: justify;
+    font-size: 1vw;
+}
