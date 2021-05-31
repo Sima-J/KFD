@@ -1,0 +1,33 @@
+@import '../../style/styleBoo';
+
+  table, td, thead, tr, tbody, th {
+   // border: 0.05vw solid grey;
+   box-shadow: 0.1vw 0.1vw 0.3vw gray;
+   width: 50%;
+   padding: 20px;
+   text-align: center;
+   color: black;   
+ }
+
+ th, td {
+   border-bottom: 0.1vw solid grey;
+ }
+ // th = header
+ table 
+ {
+    margin-left: 10vw;
+ }
+
+ tr:hover {background-color: gold;}
+ tr:nth-child() {background-color: #f2f2f2;}
+
+ td.ColColor 
+{ 
+    color: white;
+    background-color:$primary; 
+}
+.PIcon
+{
+   width: 10vw;
+}
+

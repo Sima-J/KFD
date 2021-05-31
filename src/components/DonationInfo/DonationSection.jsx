@@ -1,11 +1,10 @@
 import React from 'react'
-import {
-    Col,
-    Image } from 'react-bootstrap'
+import { Col, Image } from 'react-bootstrap'
 import Donation from '../../assets/donation.png'
 import './DonationSection.scss'
 
-export default function DonationSection() {
+export default function DonationSection() 
+{
     return (
         
                 <Col className = "col">
@@ -27,5 +26,5 @@ export default function DonationSection() {
                     </h1>
                     
                 </Col>
-    )
+            )
 }
