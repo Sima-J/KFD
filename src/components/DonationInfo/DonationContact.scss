@@ -1,0 +1,34 @@
+@import '../../style/styleBoo';
+
+table
+ {
+    margin-left: 5vw;
+    width: 60%;
+    text-align: center;
+    color: black;   
+    // border-color: #673AB7;
+    box-shadow: 0.2vw 0.2vw 0.3vw gray;
+    border-radius: 6vw;
+    -moz-border-radius:6px;
+    // background-color: grey;
+    font-size: 1.1vw;
+    
+ }
+tr
+{
+  height: 2.8vw;
+  border-radius: 10vw;
+  -moz-border-radius:6px;
+} 
+.td
+{
+  height: 4.5vw;
+  color: white;
+  background-color:$primary; 
+  border-radius: 10vw;
+  -moz-border-radius:6px;
+  font-weight: bold;
+  
+}
+td:hover  {background-color: #9575CD;}
+.PIcon    {width: 10vw;}
