@@ -1,12 +1,16 @@
 import React from 'react'
-import {Image, Card} from 'react-bootstrap'
+import {Image, Card, Col, Row} from 'react-bootstrap'
+import { faClock, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { AddButton } from '../AddDonation'
 import Cover from '../../assets/Pcover.png'
 import Prof from '../../assets/Profile.png'
 import './ProfileCard.scss'
 
+
 export default function ProfileCard() {
     return (
-        <div>
+        <div className = "fontcolor" Style = "overflow-x:scroll;" >
             <div>
                 <box className= "box">
                     The main issues to solve are achieving food security,
@@ -28,22 +32,30 @@ export default function ProfileCard() {
                     <br/>
                     <br/>
                 </Card>
-                <div> 
+                <Row > 
+                    <Col> <h1 className = "fontcolor"> My Donations </h1> </Col>
+                    <Col><AddButton/></Col>
                     <br/>
-                    <br/>
-                    <br/>
-                    <h1> Experimental</h1>
-                    {/* this is only to seperate the header from the footer for the time being */}
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <h1>Donations.....</h1>
+                </Row>
+                
+                <div className = "MDonations" >
+                    <div >
+                        &nbsp;&nbsp; &nbsp;&nbsp;
+                        Supply Name
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+                        Quantity
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;                          
+                        <FontAwesomeIcon icon = {faClock} className = "blue"/> &nbsp;
+                        --Weeks-Days-Hours-Min       
+                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                            
+                            <button className = "Delete" type="button">
+                            &nbsp; <FontAwesomeIcon icon={faTrash} /> &nbsp; 
+                                Delete &nbsp;
+                            </button>
+                    </div>  
                 </div>
+                <br/><br/>
             </div>
         </div>
     )
