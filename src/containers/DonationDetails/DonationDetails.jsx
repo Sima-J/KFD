@@ -5,7 +5,7 @@ import DonationSection , {DonationContact } from '../../components/DonationInfo'
 
 export default function DonationDetails() {
     return (
-        <div>
+        <div Style = "overflow-x:scroll;" >
             <Row>
                 <DonationSection/>
                 <DonationContact/>
