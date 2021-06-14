@@ -1,2 +1,2 @@
-export { default } from './HomeCard'
-export { default as Header } from './Header'
+export { default }            from './HomeCard'
+export { default as Header }  from './Header'

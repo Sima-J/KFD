@@ -3,9 +3,9 @@ export default function user(
      isLoggedIn: false,
      user: {},
    },
-   action
- ) {
-   switch (action.type) {
+   action){
+   switch (action.type) 
+   {
      case 'USER_STATUS':
        return { ...state,isLoggedIn:action.payload}
      case 'USER_INFO':
@@ -14,4 +14,3 @@ export default function user(
        return state
    }
  }
- 

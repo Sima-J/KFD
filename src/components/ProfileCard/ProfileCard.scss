@@ -12,7 +12,6 @@
         -webkit-text-stroke-color:black;
         -webkit-text-stroke-width: 0.1vw; 
     }
-
 .profile 
     {
         margin-top: -7vw;
@@ -25,7 +24,6 @@
         color: white;
         box-shadow: 0.4vw 0.4vw 3vw #000000;
     }
-
 .name 
     {
         margin-left: 20vw;
@@ -35,7 +33,6 @@
         background-color: white;
         box-shadow: 0.3vw 0.3vw 0.5vw gray;
     }
-
 .info 
     {
         margin-left: 20vw;
@@ -47,25 +44,23 @@
         color: $primary;
         box-shadow: 0.3vw 0.3vw 0.5vw gray;
     }
-
-    .align1 
+.align1 
     {
         margin-left: 8.5vw;
         font-size: 2vw;
     }
-
-    .align2 
+.align2 
     {
         margin-left: 10vw;
         font-size: 4vw;
     }
-    .fontcolor
+.fontcolor
     {
         -webkit-text-stroke-color:black;
         color: black;
         font-weight: 500;
     }
-    .Delete
+.Delete
     {
         background-color: red;
         color: white;
@@ -75,7 +70,7 @@
         height:3vw;
         border: 0.1vw solid #EDE7F6;
     }
-    .MDonations
+.MDonations
     {
         font-size: 1.8vw;
         border-radius: 1vw;
@@ -87,7 +82,7 @@
         background-color:#EDE7F6;
         text-align: center;
     }
-    .blue
+.blue
     {
         color:$primary;
     }

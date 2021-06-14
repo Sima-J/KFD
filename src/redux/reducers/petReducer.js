@@ -1,14 +1,15 @@
 import * as t from '../types'
 
-export const langReducer = (state = localStorage.getItem('lang'), action) => {
-  switch (action.type) {
+export const langReducer = (state = localStorage.getItem('lang'), action) => 
+{
+  switch (action.type) 
+  {
     case 'SELECTED_LANG':
       return action.payload
     default:
       return state
   }
 }
-
 
 const petReducer = (
    state = {
@@ -20,7 +21,8 @@ const petReducer = (
    },
    action
  ) => {
-   switch (action.type) {
+   switch (action.type) 
+   {
      case t.SET_PETS:
        return { ...state, data: action.payload, filteredPets: action.payload }
      case t.SET_CURRENT_PETS:
@@ -37,8 +39,7 @@ const petReducer = (
          filters: {
            ...state.filters,
            [action.payload.key]: action.payload.value,
-         },
-       }
+         },}
      case t.FILTER_PETS:
        return { ...state, filteredPets: action.payload.filteredPets }
      default:

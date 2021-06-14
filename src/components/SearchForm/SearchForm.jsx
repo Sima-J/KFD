@@ -2,8 +2,7 @@ import React from 'react'
 
 export default function SearchForm() {
     return (
-        <div>
-            Search Form
-        </div>
-    )
-}
+            <div>
+                Search Form
+            </div>
+            )}

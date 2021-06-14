@@ -1,13 +1,15 @@
 import firebase from '../../Firebase'
 
-export function selectedLang(lang) {
+export function selectedLang(lang) 
+{
   return {
     type: 'SELECTED_LANG',
     payload: lang,
   }
 }
 
-export function fetchMyPets(name, sortType, uid) {
+export function fetchMyPets(name, sortType, uid) 
+{
   return async dispatch => {
     if (uid)
       if (name === null) {
@@ -26,7 +28,8 @@ export function fetchMyPets(name, sortType, uid) {
               payload: newPets,
             })
           })
-      } else {
+      }
+      else {
         firebase
           .firestore()
           .collection('pets')
@@ -48,7 +51,8 @@ export function fetchMyPets(name, sortType, uid) {
   }
 }
 
-export function deleteMyPett(id) {
+export function deleteMyPett(id) 
+{
   return dispatch => {
     firebase.firestore().collection('pets').doc(id).delete()
     dispatch({
@@ -57,7 +61,8 @@ export function deleteMyPett(id) {
   }
 }
 
-export function UpdateMyPett(id, adopt) {
+export function UpdateMyPett(id, adopt) 
+{
   return dispatch => {
     firebase.firestore().collection('pets').doc(id).update({
       adopted: adopt,

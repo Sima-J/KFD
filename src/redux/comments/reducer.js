@@ -1,5 +1,7 @@
-export const updateView = (state = [], action) => {
-  switch (action.type) {
+export const updateView = (state = [], action) => 
+{
+  switch (action.type) 
+  {
     case 'UPDATE_VIEW':
       return null
     default:
@@ -7,8 +9,10 @@ export const updateView = (state = [], action) => {
   }
 }
 
-export const deleteCommentsofpet = (state = [], action) => {
-  switch (action.type) {
+export const deleteCommentsofpet = (state = [], action) => 
+{
+  switch (action.type) 
+  {
     case 'DELETE_ALL_PET_COMMENT':
       return null
     default:
