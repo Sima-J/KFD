@@ -15,6 +15,7 @@ import './AddDonation.scss'
   
 export default function AddDonation() {
     return (
+<<<<<<< HEAD
         
 
         <div>
@@ -79,3 +80,9 @@ export default function AddDonation() {
         </div>
     )
 }
+=======
+            <div>
+                Add Donation Page
+            </div>
+            )}
+>>>>>>> 5a59eddac29d59bb27c5fe8d4afb93959cdf916b

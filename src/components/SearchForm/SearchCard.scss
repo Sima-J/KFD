@@ -1,19 +1,21 @@
 @import '../../style/styleBoo';
 
-.search-box {
-    position: relative;
-}	
-.search-box input  {
+.search-box 
+{position: relative;}	
+.search-box input  
+{
     padding-right: 35px;
     min-height: 34px;
     border: none;
     background: #faf7fd;
 }
-.search-box input:focus {		
+.search-box input:focus 
+{		
     background: #fff;
     box-shadow: none;
 }
-.search-box .input-group-addon {
+.search-box .input-group-addon 
+{
     min-width: 35px;
     border: none;
     background: transparent;
@@ -23,12 +25,10 @@
     padding: 10px 7px;
     height: 100%;
 }
-.SIcons {
-    color: $primary !important;
-    
-}
-.search-box i {
+.SIcons 
+{ color: $primary !important;}
+.search-box i 
+{
     color: #a0a5b1;
     font-size: 19px;
 }
-

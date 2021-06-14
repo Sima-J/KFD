@@ -1,6 +1,7 @@
 @import '../../style/styleBoo';
 
-.main-footer {
+.main-footer 
+{
   position: relative;
   color: $secondary !important;
   background-color: $primary;
@@ -8,7 +9,8 @@
   position: relative;
   width: auto;
 }
-.draw-line1:after {
+.draw-line1:after 
+{
   content: "";
   display: block;
   background-color: $warn;
@@ -18,7 +20,8 @@
   color: $secondary !important;
 }
 
-.draw-line2:after {
+.draw-line2:after 
+{
   content: "";
   display: block;
   background-color: $warn;
@@ -28,7 +31,8 @@
   color: $secondary !important;;
 }
 
-.draw-line3:after {
+.draw-line3:after 
+{
   content: "";
   display: block;
   background-color: $warn;
@@ -38,7 +42,8 @@
   color: $secondary !important;
 }
 
-.draw-line4:after {
+.draw-line4:after 
+{
   content: "";
   display: block;
   background-color: $warn;
@@ -48,34 +53,41 @@
   color: $secondary !important;
 }
 
-.text {
+.text 
+{
   text-align: center;
   color: $secondary !important;
   margin: auto;
   align-items: center;
 }
-.logo {
+.logo 
+{
   align-items: center;
   text-align: center;
 }
-.SocialProfile {
+.SocialProfile 
+{
   margin-top: 30px;
 }
-.col {
+.col 
+{
   padding: 10px;
   column-width: auto;
   column-gap: 40px;
   color: $secondary !important;;
 }
-.cont {
+.cont 
+{
   background-color: $primary !important;
   padding-left: 20px;
   padding-right: 20px;
 }
-.iconf {
+.iconf 
+{
     color: $secondary !important;
 }
-.lin {
+.lin 
+{
   color: $secondary !important;
   margin: auto;
 }
