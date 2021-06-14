@@ -8,13 +8,8 @@ import {
 import { useSelector, useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import { NavLink, Redirect } from 'react-router-dom'
-/*
 import i18next from 'i18next'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faBell } from '@fortawesome/free-solid-svg-icons'
 import { selectedLang } from '../../redux/actions/actions'
-const userId = useSelector(state => state.user)
-*/
 
 import Login from '../Modals/Login'
 
@@ -28,12 +23,20 @@ import './MainNavbar.scss'
 import firebase from '../../Firebase'
 
 require('firebase/auth')
+/*
+import { faBars, faBell } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+const userId = useSelector(state => state.user)
+*/
 
 
 
 export default function MainNavbar() {
+  /*
+  const { data } = useSelector(state => state.pets)
+  */
   const globaleLang = useSelector(state => state.langReducer)
-  /* const [NavLanguage, setNavLanguage] = useState(globaleLang) */
+  const [NavLanguage, setNavLanguage] = useState(globaleLang)
   const userState = useSelector(state => state.user.isLoggedIn)
 
   const dispatch = useDispatch()
@@ -69,8 +72,6 @@ export default function MainNavbar() {
       })
       .catch(() => {})
   }
-
-  /*
   const selectedLanguage = lang => {
     i18next.changeLanguage(lang)
   }
@@ -79,9 +80,8 @@ export default function MainNavbar() {
     dispatch(selectedLang(e.target.value))
     selectedLanguage(e.target.value)
     setNavLanguage(e.target.value)
-    const { data } = useSelector(state => state.pets)
-  } */
-
+  } 
+  
   const handelDir = () => {
     if (
       localStorage.getItem('lang') !== 'en' &&
@@ -153,17 +153,24 @@ export default function MainNavbar() {
     }}as={NavLink} to={PROFILE_ROUTE}>
     Profile
     </Nav.Link>
+    
     <Nav.Link 
     as="select"
     className="select-language  mr-4  shadow-none bg-light  border-1 " 
+    onChange={handelOption}
+    value={NavLanguage}
     style={{ outline: 'none' }}
   >
-    <option value="en">
-     English
+    <option className="text-danger fas " value="en">
+    English
     </option>
     <option value="kr">
-       كوردى
+     كوردى
+    </option> 
+    <option value="ar">
+     عربي
     </option>
+
   </Nav.Link>
 
   <SearchCard />
