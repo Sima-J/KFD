@@ -1,39 +1,43 @@
 @import '../../style/styleBoo';
 
-.FICON {
+.FICON 
+{
     align-items: center;
     margin: 5px ;
     font-size: 20px;
 }
-.Title {
+.Title 
+{
     text-align: center;
     margin-top: 6px;
     margin-bottom: 2px;
     color: $primary;
     font-weight: bold;
 }
-.TCol {
+.TCol 
+{
     border-bottom: 2px solid $primary;
-margin-right: 30%;
-margin-left: 30%;
-margin-bottom: 2%;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 2%;
 }
-.Box {
+.Box 
+{
     margin: 10px;
     border: black 2px;
 }
-
-.BoxForm    {
+.BoxForm    
+{
     align-items: center;
     padding: 8px;
 }
-
-.Btn{
+.Btn
+{
     width: 100%;
     background-color:$primary !important;
     border-color: $primary !important;
 }
-
-.ic {
+.ic 
+{
     color:$primary !important ;
 }

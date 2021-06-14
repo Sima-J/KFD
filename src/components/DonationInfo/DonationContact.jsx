@@ -56,6 +56,4 @@ export default function DonationContact()
 
              </Col>
         
-             )
-}
-
+            )}

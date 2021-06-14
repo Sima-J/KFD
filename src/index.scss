@@ -1,11 +1,13 @@
 
 @import './style/styleBoo';
 
-html {
+html 
+{
   font-size: 16px;
 }
 
-body {
+body 
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,19 +19,24 @@ body {
   background-color:$secondary !important;
 }
 
-code {
+code 
+{
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-@include media-breakpoint-down(lg) {
-  html {
+@include media-breakpoint-down(lg) 
+{
+  html 
+  {
     font-size: 12px;
   }
 }
 
-@include media-breakpoint-down(md) {
-  html {
+@include media-breakpoint-down(md) 
+{
+  html 
+  {
     font-size: 10px;
   }
 }

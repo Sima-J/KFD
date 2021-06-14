@@ -1,7 +1,8 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 
-const firebaseConfig = {
+const firebaseConfig = 
+{
   apiKey: 'AIzaSyBgDHh4vqddUxuk7N7B0yjXqkQX_udPNc8',
   authDomain: 'food-donation-3a70b.firebaseapp.com',
   projectId: 'food-donation-3a70b',

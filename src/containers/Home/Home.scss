@@ -1,12 +1,13 @@
 @import '../../style/styleBoo';
 
-.text{
+.text
+{
     font-family: Mplus 1p;
     text-align: left;
     display:flex;
     align-items:center;
 }
-
-.back{
+.back
+{
     background-color: $primary;
 }

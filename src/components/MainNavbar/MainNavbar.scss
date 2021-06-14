@@ -1,23 +1,24 @@
 @import '../../style/styleBoo';
 
-.navbar {
-    background-color:$secondary;
-    font-family: $mainFontFamily;
+.navbar 
+{
+  background-color:$secondary;
+  font-family: $mainFontFamily;
+}
+#responsive-navbar-nav 
+{justify-content: flex-end;}
 
-  }
-  #responsive-navbar-nav {
-    justify-content: flex-end;}
-
-.lins {
+.lins 
+{
   color:$primary !important;
   margin: 0 0.5rem;
-
-  &:hover {
+  &:hover 
+  {
     font-weight: bold;
   }
 }
-
-.SBTN {
+.SBTN 
+{
   background-color: $primary !important;
   border: $primary !important;
 }
