@@ -6,10 +6,21 @@ import {
     Image 
         } from 'react-bootstrap'
 
-import './AboutUs.scss'
-import picc from '../../assets/aboutus.png' 
+        import './AboutUs.scss'
+        import picc from '../../assets/aboutus.png' 
+        
+        export default function AboutUs() {
+/*
+    , { useEffect }
+    import { useTranslation } from 'react-i18next'
+    import Aos from 'aos'
+    const { t } = useTranslation()
+    useEffect(() => {
+    Aos.init({ duration: 2000 })
+    }, [])
 
-export default function AboutUs() {
+*/
+
     return (
                 <div>
                     <Image  
