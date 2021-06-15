@@ -4,7 +4,7 @@ import { Modal, Button } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
 import firebase from '../../Firebase'
-import './Login.css'
+import './Login.scss'
 import Close from '../../assets/login/close.svg'
 import Google from '../../assets/login/google.svg'
 
