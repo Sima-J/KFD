@@ -3,254 +3,141 @@
   "langText": "english",
   "navbar": {
     "home": "Home",
-    "adopt": "Adopt",
-    "addapet": "Add a pet",
     "contact": "Contact Us",
-    "resources": ["Resources", "Tips about cats", "Tips about dogs"],
     "about": "About",
     "logIn": "Log In",
     "signUp": "Sign Up",
     "logOut": "Logout",
-    "mypets": "My Pets"
-  },
-  "add-pet": {
-    "required": "This field is required !!",
-    "email.validation": "You need to write a valid email",
-    "example-number": " Your phone number must be something like this 077xxxxxxxx",
-    "phone-validation": "Your phone number must conatin 11 digits",
-    "age-validation": "Pet age must contain maxumim 2 numbers",
-    "weight-validation": "Pet Weight must contain maximum 3 numbers",
-    "add for adoption": "Add your Pet for Adoption",
-    "make-pets-happy": " Here you can put pets for adoption and make them happy and safe",
-    "pets-info": "Pets Info",
-    "pet-name": "Pet Name",
-    "pet-age": "Pet Age (optional)",
-    "pet-species": "Pet Species",
-    "cat":"Cat",
-    "dog":"Dog",
-    "vaccinationStatus":"Is the pet vaccinated ?",
-    "yes":"Yes",
-    "no":"No",
-    "notKnown":"Not Known",
-    "fertilizationStatus":"Is the pet spayed ?",
-    "dewormingStatus":"Is the pet dewormed ?",
-    "petHealth":"How is the pet health ?",
-    "good":"Good",
-    "bad":"Bad",
-    "treatment":"Needs a speacial treatment",
-    "pet-weight": "Pet Weight  (optional)",
-    "pet-color": "Pet Color",
-    "gender": "Pet gender",
-    "male": "Male",
-    "female": "Female",
-    "pet-story": "Pet story",
-    "upload-photo": "Upload Photo",
-    "contact-info": "Contact Info",
-    "ownerName": "Owner Name",
-    "aboutOwner": "About Owner  (optional)",
-    "email": "Email",
-    "phoneNumber": "Phone Number",
-    "city": "City",
-    "address": "Address",
-    "submit": "Submit",
-    "Baghdad":"Baghdad",
-    "Basra":"Basra",
-    "Najaf":"Najaf",
-    "AlAnbar":"Al Anbar",
-    "Babil":"Babil",
-    "AlMuthanna":"Al Muthanna",
-    "Erbil":"Erbil",
-    "Sulaymaniyah":"Sulaymaniyah",
-    "Maysan":"Maysan",
-    "Karbala":"Karbala",
-    "Wasit":"Wasit",
-    "DhiQar":"Dhi Qar",
-    "Diyala":"Diyala",
-    "Duhok":"Duhok",
-    "Kirkuk":"Kirkuk",
-    "Halabja":"Halabja",
-    "Salahaldin":"Salahaldin",
-    "Mosul":"Mosul",
-    "AlDiwaniya":"Al Diwaniya"
+    "donation": "Donation",
+    "profile": "Profile",
+    "search":"Search"
   },
   "contactus": {
     "title": "Contact Us",
+    "leaveusamessage":"Please Leave Us a Message",
     "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
+    "email": "contact@KFD.com",
+    "phone": "+234081-1236-4568",
     "subject": "Subject",
-    "submit": "Submit",
-    "required": "this field required",
-    "message": "Mesage",
-    "h1text": "If you have any questions, do not hesitate to contact us",
-    "h4text": "Welcome",
-    "h6text": "Paw-five team"
+    "send": "Send",
+    "emailad":"Email Address",
+    "required": "This field required",
+    "message": "Your Message"
   },
   "login": {
     "log-in": " Log in",
-    "google": "Sign in",
-    "facebook": "Sign in"
+    "google": "Sign in"
   },
   "footer": {
-    "explorLinks": "Explore Links",
-    "contactInfo": "Contact Info",
-    "pageDescription": "Paw-five is an online, searchable database of pets who need homes in all provinces of Iraq.",
-    "cites": "Baghdad, Erbil",
-    "phoneNo": "0770028374323",
-    "email": " example@example.com",
-    "workTime": "sun - Tur 9:00 AM - 4:00 PM",
-    "copyright": "2021 Paw-five team"
+    "menu":"Menu",
+    "home":"Home",
+    "profile":"Profile",
+    "contact":"Contact",
+    "about":"About",
+    "main_types":"Main Types",
+    "donation":"Donation",
+    "requesteddonations":"Requested Donations",
+    "contactus":"Contact Us",
+    "followus":"Follow Us",
+    "phonenumber": "+234081-1236-4568",
+    "email": "Contact@KFD.com",
+    "copyright":"© Copyright 2021 - KFD"
   },
-  "homepage": {
+  "aboutus": {
+    "whatwedo":"What We Do",
+    "ourgoal": "Our Goals",
+    "ourgoaldesc":"Our main goal of the system is to act as a bridge of communication between businesses and charity  organization, and allow users to donate food and they can reach out to each other and help out the people who are in need.",
+    "ourmission":"Our Mission",
+    "ourmissiondesc":"Our mission is to help out people in need, we are trying to serve those who are in need with necessary food supplies, through charity organizations.",
+    "ourvalue":"Our value",
+    "ourvaluedesc":"The greatest benefit of a donation is of helping the needy people around. Nowadays there are lots of people who need help in life in all aspects especially various essential things, by helping them to live in a unique way which is means by providing them the most important thing which is food."
+  },
+  "sponser":{
+    "ourpartner":"Our Partners",
+    "ourpartnerdesc":"Working with our partner. A strong network. We have formed alliances"
+  },
+  "teammembers":{
+    "meettheteam":"Meet The Team",
+    "sima":"Sima Jazza",
+    "softwareeng":"Software Engineer",
+    "sana":"Sana Jazaa",
+    "mudhafar":"Mudhafar Dler",
+    "rebaz":"Rebaz Farid",
+    "network":"Network and Security"
+  },
+  "addbutton":{
+    "adddonation":"Add Your Donation",
+    "search":"Search"
+  },
+  "donationcontact":{
+    "callowner":"Call the Owner",
+    "phone":"+964 750 113 0495",
+    "location":"Iraq, Sulaymaniyah, Zerin",
+    "quality":"Quantity: 36",
+    "date":"20/02/2021",
+    "expire":"Supply Expires in 20 Days"
+  },
+  "donationsection":{
+    "milk":"Milk",
+    "supermarket":"Supermarket",
+    "description":"Description",
+    "descmilk":"This is where we put the description of the donation products that are available to be donated or are requested to be given, this gives a breif idea as to what is the product and what is used for its benifits or the manfacturing company"
+  },
+  "filteroption":{
+    "filteredby":"Filtered by:",
+    "status":"Status",
+    "reqdon":"Requested Donations",
+    "donation":"Donations",
+    "quantity":"Quantity",
+    "apply":"Apply",
+    "min":"Min",
+    "max":"Max",
+    "under 25":"",
+    "25-50":"",
+    "50-100":"",
+    "100-200":"",
+    "200-400":"",
+    "over 400":"",
+    "location":"Location",
+    "erbil":"Erbil",
+    "zakho":"Zakho",
+    "silmemani":"Silemani",
+    "shaqlawa":"Shaqlawa",
+    "duhok":"Duhok",
+    "halbja":"Halabja",
+    "kalar":"Kalar",
+    "darbandinkhan":"Darbandikhan",
+    "ranya":"Ranya",
+    "said sadiq":"Said Sadiq",
+    "sharazwr":"Sharazwr",
+    "chamchamal":"Chamchamal"
+  },
+  "header":{
+    "desc":"The Food Donation WebApp is an online platform that works as a bridge to connect restaurants, food-supplier companies and  Supermarkets to organization."
+  },
+  "profilevard":{
+    "desc1":"The main issues to solve are achieving food security, and hunger improving the food nutrition.",
+    "bestsupermarket":"Best Super Market",
+    "phone":"964 750 113 0495",
+    "location":"Iraq, Sulaymaniyah",
+    "mydonations":"My Donations",
+    "suplname":"Supply Name",
+    "quntity":"Quantity",
+    "time":"--Weeks-Days-Hours-Min",
+    "delete":"Delete"
+  },
+  "adddonation":{
+    "addnewdon":"Add New Donation",
+    "title":"Title",
+    "type":"What is food type?",
+    "quantity":"Qunatity",
+    "avalible":"How many days the food will be available?",
+    "desc":"Description",
+    "add":"Add",
+    "cancel":"Cancel"
+  },
+
     "heading": {
-      "tilte": "Adopt a Friend today!",
-      "descrption": "Search out list of dogs, and cats availabe for adoption near you"
-    },
-    "inputs": {
-      "age": "Age",
-      "type": "Type",
-      "city": "City",
-      "find": "Find A pet",
-      "adopt": "Adopt"
-    },
-    "recentpet": "Recent Pets",
-    "seemore": "See More",
-    "welcome": "Welcome to Paw-five",
-    "whoweare": {
-      "whoweare": "Who we are",
-      "title": "Paw-five is an online, searchable database of pets who need homes.",
-      "descripton": "We are trying to help pets to find home and love where they can grow healthy and have a happy life. we are also trying to help people who need the love of pets to get a suitable one for them. "
-    },
-    "adoptnow": "Adopt Now",
-    "somestories": "Some stories",
-    "story1": {
-      "title": "Rescue pets",
-      "story": "Our first goal of this project is to help homeless pets in the streets to find home. so a lot of people helped us by putting the pets in their neighbourhood for adoption so other people can adopt them and give them a suitable home and a good care "
-    },
-    "story2": {
-      "title": "Vets Guide",
-      "story": "Using our platform to help pets make us super happy and that's why we put a map in the website containing the location of the nearest vets in the city of the user and all other information the user needs to know about the vets. you can find it in the contact page."
-    },
-    "story3": {
-      "title": "pet care",
-      "story": "one of the things that we are proud of is our Resources page when people can find helpful information about how to take care of their pets whether it's a dog or a cat. many things you can find their to help you keep your pet healthy and happy "
+      "descrption": "The Food Donation WebApp is an online platform that works as a bridge to connect restaurants, food-supplier companies and Supermarkets to organization."
     }
-  },
-  "Resource": {
-    "Tips for the First 30 Days of cat Adoption": "Tips for the First 30 Days of cat Adoption",
-    "Before You Bring Your Cat Home": "Before You Bring Your Cat Home",
-    "text1": "1- Cats are territorial and coming into a new home leaves them feeling uneasy. There’s all that  unexplored space, and who knows what may lurk there. Do her a favor and provide a small area to  call her own for the first few days or weeks. A bathroom or laundry room works well. Furnish the room with cat amenities, such as food, water and a litter box. You’ll want to spend time with your  cat, so make sure there’s a comfortable place for you to sit as well.  ",
-    "text2": "2- Fill a litter box with one or two inches of litter and place it in her room where she can use it undisturbed. After all, everyone deserves a modicum of privacy when pottying!    ",
-    "text3": "3- Set up a feeding station with food and water bowls. Locate it away from the litter box.   ",
-    "text4": "4- Cats love to get away from it all in small places. If she came home in a cat carrier, you can use that.  You can also make one by cutting a doorway in the end of a cardboard box, or simply buy a covered  cat bed at a pet supply store. Whatever you choose, make sure the space is big enough for the cat to  stand up and turn around in. Make sure she can see the door to the room, so she won’t be startled. ",
-    "First Day": "First Day: ",
-    "text5": "Now you’re ready for your cat’s homecoming. Bring her home in a cat carrier, if possible. She’s seen a lot  of excitement, so take her directly to her new room (make sure the toilet lid is down, if she’s acclimating  in your bathroom). Ideally, you would restrict her exposure to the whole family, but naturally, everyone is  going to want to see her. Remind them of the ground rules you’ve set up.",
-    "text6": "Sit on the floor and let her come to you. Don’t force her. Just let her get acquainted on her own  terms. If she doesn’t approach, leave her alone and try again later. Some cats are particularly  frightened, and she may retreat to her hidey hole and not come out when you’re around at all. She may only come out at night when the house is quiet. Give her time.",
-    "Itmaytakeyourcataweek or two to adjustBe patient": "It may take your cat a week or two to adjust. Be patient.",
-    "FollowingWeeks": "Following Weeks:",
-    "text7": "Within a week of being adopted, take your newly adopted cat for her first wellness visit with a  veterinarian. If you have a record of immunizations from the shelter, take it with you.    ",
-    "text8": "As your cat adjusts, she’ll show signs that she wants to explore outside her safe‐haven. Make sure other pets or family memberswon’tstartle her while she gradually expands her territory. She may be ready to play, so you can furnish some toys. Many catslike feather wands from the pet supply store, but homemade toys are often favored. A wad of a tissue paper to bat around or a paper bag to hide in can be fun.  "
-  },
-  "Resource1": {
-    "Tips for the First 30 Days of cat Adoption": "Tips for the First 30 Days of Dog Adoption",
-    "Before You Bring Your Cat Home": "Before You Bring Your Dog Home",
-    "text1": "1-Determine where your dog will be spending most of his time for the first few weeks or months. Because he will be under a lot of stress with the change of environment (from shelter or foster home to your house), he may forget any housebreaking (if any) he’s learned. Often a kitchen will work best for easy clean-up. ",
-    "text2": "2-Dog-proof the area where your pooch will spend most of his time during the first few months. This may meantaping loose electrical cords to baseboards; storing household chemicals on high shelves; removing plants, rugs, and breakables; setting up the crate, and installing baby gates. ",
-    "text3": "3-Training your dog will start the first moment you have him. Take time to create a vocabulary list everyone willuse when giving your dog directions. This will help prevent confusion and help your dog learn his commandsmore quickly. No matter the age or size of the dog, it is recommended that you begin with positive training classes within the first month after adoption. ",
-    "text4": "4-Bring an ID tag with your phone number on it with you when you pick up your dog so that he has an extra measure of safety for the ride home and the first few uneasy days. If he is microchipped, be sure to registeryour contact information with the chip’s company, if the rescue or shelter did not already do so.",
-    "First Day": "First Day: ",
-    "text5": "We know moving is stressful — and your new dog feels the same way! Give him time to acclimate to your home and family before introducing him to strangers. Limit visitors for the first week. We understand that youwant to show off your new dog and many want to meet your new family member but allow your dog some timeto become comfortable with the family and new home before introducing new people. Make sure children know    how to approach the dog without overwhelming him",
-    "text6": "When you pick up your dog, remember to ask what and when he was fed. Replicate that schedule for at leastthe first few days to avoid gastric distress. If you wish to switch to a different brand, do so over a period ofabout a week by adding one part new food to three parts of the old for several days; then switch to half newfood, half old, and then one part old to three parts new. ",
-    "Itmaytakeyourcataweek or two to adjustBe patient": "It may take your Dog a week or two to adjust. Be patient.",
-    "FollowingWeeks": "Following Weeks:",
-    "text7": "People often say they don’t see their dog’s true personality until several weeks after adoption. Your dog maybe a bit uneasy at first as he gets to know you. Be patient and understanding while also keeping to the schedule you intend to maintain for feeding, walks, etc. This schedule will show your dog what is expected of him as well as what he can expect from you.",
-    "text8": "After discussing it with your veterinarian to ensure your dog has all the necessary vaccines, you may wish to take your dog to group training classes or the dog park. Pay close attention to your dog’s body language to be sure he’s having a good time — and is not fearful or a dog park bully "
-  },
-  "adoption-page": {
-    "filters": {
-      "gender": "Gender",
-      "address": "Address",
-      "age": "Age",
-      "findAPet": "Find A Pet",
-      "male": "Male",
-      "female": "Female",
-      "months": "months"
-    },
-    "details": "Details"
-  },
-  "NotFoundPage": {
-    "error404": "Page Not Found",
-    "returnHome": "Return to Home page"
-  },
-  "mypets": {
-    "welcome": "Welcome",
-    "petname": "Pet Name",
-    "name": "Name",
-    "age": "Age",
-    "city": "City",
-    "adopted": "Adopted",
-    "yes": "Yes",
-    "no": "No",
-    "warningmessage": "Do you want to delete ? "
-  },
-  "Aboutus":{
-    "who we are":"who we are",
-    "text1":"we are paw five team working togther to save Homless animals.",
-    "text2":"paw five is an online platform who works toward saving pets from All over iraq by providing a away in which people who want to adope pets can easily find a pet to adopt from all cities of iraq and kurdistan and people who want to adopt a can add pets to the website to be adopted. ",
-    "text3":"",
-    "story":"story",
-    "text4":" We adopted Brono earlier this year. While looking at dogs, we came across her picture on a paw five site. She was one of the last few dogs left unadopted. When I asked if there was a reason why, the paw five said it is because she is Pit bull mix. We fell in love with her as soon as we met her. She is the sweetest dog and just loves to cuddle and give kisses.",
-    "text5":"  When Bear was still just a puppy, he was hit by a car at a gas station around Erbil. The accident led him to lose both of his eyes, and when his owner saw him at the pet hospital, she just left them there that it was another bad story for him. Luckily,someone through the paw five website put him to be adoptedand after a while she adopted.",
-    "text6":"I went to a party at a friend's house, and she told me she had found a kitten on paw five. She is the tiniest little thing. I texted my parents and after two hours and three phone calls, I was allowed to adopt her. She is the cutest thing and she has made me fall in love with cats. As I write this, she's currently clawing at my pants.",
-     "brono":"brono",
-     "bear":"bear",
-     "milo":"milo",
-     "ourimpact":"our ipmact",
-     "we can save them":"we can save them",
-     "We can have impact":"we can have impact on commuinty",
-     "see our impact":"see our impact",
-     "puppy baths":"puppy baths",
-     "dogs boarded":"dogs boarded",
-     "pups trained":"pups trained",
-     "meals served":"meals served",
-     "3700":"3700",
-     "4500":"4500",
-     "2900":"2900",
-     "12000":"1200"
-
-
-
-
-
-  },
-  "detalis-page": {
-    "comments":"comments",
-    "addComment":"add a comment",
-    "PetDetalis": "Pet Details",
-    "pet-age": "age:",
-    "pet-species": "species:",
-    "pet-weight": "weight:",
-    "pet-color": "color:",
-    "gender": "gender: ",
-    "pet-story": "story:",
-    "health-info":"Health Information",
-    "vaccinationStatus":"Vaccination Status:",
-    "yes":"yes",
-    "no":"No",
-    "notKnown":"not known",
-    "fertilizationStatus":"Feritilization Status:",
-    "dewormingStatus":"Deworming Status:",
-    "petHealth":"Pet Health:",
-    "good":"good",
-    "bad":"bad",
-    "treatment":"Treatment",
-    "contact-info": "Contact Information",
-    "ownerName": "Owenr Name:",
-    "aboutOwner": "About owner:",
-    "email": "Email:",
-    "phoneNumber": "Phone Number:",
-    "city": "city:",
-    "address": "Address:",
-    "petGallery": "Pet Gallery"
-}
 }
