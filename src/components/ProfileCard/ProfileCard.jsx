@@ -10,7 +10,7 @@ import './ProfileCard.scss'
 
 export default function ProfileCard() {
     return (
-            <div className = "fontcolor" Style = "overflow-x:scroll;" >
+            <div className = "fontcolor"  >
                 <div>
                     <box className= "box">
                         The main issues to solve are achieving food security,
@@ -26,29 +26,30 @@ export default function ProfileCard() {
                             <Image src={Prof} fluid className = "profile" />
                         </div>
 
-                            <text className= "name" >   
-                                <h1 className = "align2"> 
-                                    Best Super Market 
-                                </h1> 
-                            </text>   
+                        <text className= "name" >   
+                            <h1 className = "align2"> 
+                                Best Super Market 
+                            </h1> 
+                        </text>   
 
-                            <text className= "info">    
-                                <h1 className = "align1"> 
-                                    +964 750 113 0495      
-                                    <br/> 
-                                    Iraq, Sulaymaniyah      
-                                </h1> 
-                            </text>
+                        <text className= "info">    
+                            <h1 className = "align1"> 
+                                +964 750 113 0495      
+                                <br/> 
+                                Iraq, Sulaymaniyah      
+                            </h1> 
+                        </text>
 
-                            <br/>
-                            <br/>
-                            <br/>
+                        <br/>
+                        <br/>
+                        <br/>
 
                     </Card>
 
-                    <Row > 
+                    <Row style = {{margin: "auto"}}> 
                         <Col> <h1 className = "fontcolor"> My Donations </h1> </Col>
-                        <Col><AddButton/></Col>
+
+                        <Col ><AddButton/></Col>
                         <br/>
                     </Row>
                     
