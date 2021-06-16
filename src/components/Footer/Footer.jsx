@@ -15,7 +15,7 @@ const Footer = () => {
             <footer className = "cont">
               <Row>
                 <Col className = "col" >
-                  <h5 className="underline"> Menu</h5>
+                  <h5 className="underline"> {t('footer.menu')} Menu</h5>
 
                     <h6 className="list-unstyled">
                       <li>

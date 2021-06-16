@@ -21,6 +21,7 @@ export default function DonationContact() {
                             src={PIcon}
                             fluid />
                             <br/>
+                            
                             User Name Here
                         </tr>  
 
@@ -29,6 +30,7 @@ export default function DonationContact() {
                     <tbody>
 
                         <td className = "td">
+                            {t('donationcontact.callowner')}
                             Call the Owner
                             <br/>
                             <FontAwesomeIcon className="icon" icon="phone"/>{'  '}

@@ -5,6 +5,7 @@ export default function HomeCard() {
     const { t } = useTranslation()
     return (
             <div>
+            {t('navbar.home.')}
                 Home
             </div>
             )}

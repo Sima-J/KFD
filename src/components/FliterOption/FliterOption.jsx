@@ -14,7 +14,7 @@ export default function FliterOption() {
         <div className = "margin">
             <Container >
             <Row >
-            <h3 className = "header">Fltered by:</h3>
+            <h3 className = "header"> {t('filteroption.filteredby')} Fltered by:</h3>
             
             </Row>
             <Row className ="color"><div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div></Row>

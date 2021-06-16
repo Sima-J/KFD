@@ -14,7 +14,7 @@ export default function DonationSection() {
                         fluid />
                     <br/>
 
-                    <text className = "Pname">Milk</text>
+                    <text className = "Pname"> {t('donationsection.milk')}Milk</text>
                     <br/>
 
                     <text className = "stakeholder">Supermarket  </text>

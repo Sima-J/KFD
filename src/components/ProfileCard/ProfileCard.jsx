@@ -15,6 +15,7 @@ export default function ProfileCard() {
             <div className = "fontcolor"  >
                 <div>
                     <box className= "box">
+                        {t('profilecard.desc1')}
                         The main issues to solve are achieving food security,
                         end hunger improving the food nutrition.
                     </box>
