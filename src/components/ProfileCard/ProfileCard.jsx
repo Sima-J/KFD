@@ -1,5 +1,6 @@
 import React from 'react'
 import {Image, Card, Col, Row} from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import { faClock, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { AddButton } from '../AddDonation'
@@ -9,6 +10,7 @@ import './ProfileCard.scss'
 
 
 export default function ProfileCard() {
+    const { t } = useTranslation()
     return (
             <div className = "fontcolor"  >
                 <div>

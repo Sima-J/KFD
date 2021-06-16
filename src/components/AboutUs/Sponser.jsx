@@ -5,6 +5,7 @@ import {
     Container,
     Image 
         } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 
 import './Sponser.scss'
 import Korek from '../../assets/Korek.png' 
@@ -13,15 +14,16 @@ import Tishknet from '../../assets/Tishknet.png'
 import Fastlink from '../../assets/Fastlink.png'
 
 export default function Sponser(){
+    const { t } = useTranslation()
     return  (
                 <div>
                     <Container>
                         <Row>
-                            <Col className = "Header"><h1>Our Partners</h1></Col>
+                            <Col ><h1 className = "Header"> {t('sponser.ourpartner')} </h1></Col>
                         </Row>
 
                         <Row>
-                            <Col><h2 className = "style">Working with our partner. A strong network. We have formed alliances</h2></Col>
+                            <Col><h2 className = "style"> {t('sponser.ourpartnerdesc')} </h2></Col>
                         </Row>
 
                         <Row>

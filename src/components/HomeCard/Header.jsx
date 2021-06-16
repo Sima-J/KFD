@@ -5,10 +5,12 @@ import {
     Container,
     Image 
         } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import './Header.scss'
 import home from '../../assets/Home.png'
 
 export default function Header() {
+    const { t } = useTranslation()
     return (
             <div className ="background">
                 <Container >

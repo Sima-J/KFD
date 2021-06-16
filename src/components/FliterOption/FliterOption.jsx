@@ -3,12 +3,13 @@ import './FilterOptions.scss'
 import {
     Container,
     Row,
-    // Col,
     Button,
     Form, 
   } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 
 export default function FliterOption() {
+    const { t } = useTranslation()
     return (
         <div className = "margin">
             <Container >

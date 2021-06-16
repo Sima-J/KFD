@@ -4,11 +4,12 @@ import  {
     Col
         } 
   from 'react-bootstrap'
-
+import { useTranslation } from 'react-i18next'
 import { AddButton } from '../AddDonation'
 import SearchCard from './SearchCard'
 
 export default function SearchHeader() {
+  const { t } = useTranslation()
     return (
             <div  style={{ 
                           backgroundImage: `url("https://i.pinimg.com/originals/4b/93/28/4b93286dca71bbf97bc24ab523755366.jpg")` 

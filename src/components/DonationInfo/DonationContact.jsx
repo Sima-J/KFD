@@ -1,12 +1,13 @@
 import React from 'react'
 import {Col,Image} from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import './DonationContact.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PIcon from '../../assets/ProfileIcon.png'
 
 
-export default function DonationContact() 
-{
+export default function DonationContact() {
+    const { t } = useTranslation()
     return (
         
              <Col>

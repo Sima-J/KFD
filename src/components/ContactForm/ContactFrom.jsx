@@ -7,10 +7,12 @@ import  {
     Button,
     Form, 
         } from 'react-bootstrap'
+  import { useTranslation } from 'react-i18next'
   import './ContactForm.scss'
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function ContactFrom() {
+  const { t } = useTranslation()
     return (
               <div className="mb-4 py-4">
                   <Container className="Box border rounded border-black"  >

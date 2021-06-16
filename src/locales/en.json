@@ -44,6 +44,8 @@
     "copyright":"© Copyright 2021 - KFD"
   },
   "aboutus": {
+    "abus":"About Us",
+    "weh":"We Elimate Hunger",
     "whatwedo":"What We Do",
     "ourgoal": "Our Goals",
     "ourgoaldesc":"Our main goal of the system is to act as a bridge of communication between businesses and charity  organization, and allow users to donate food and they can reach out to each other and help out the people who are in need.",
@@ -115,7 +117,7 @@
   "header":{
     "desc":"The Food Donation WebApp is an online platform that works as a bridge to connect restaurants, food-supplier companies and  Supermarkets to organization."
   },
-  "profilevard":{
+  "profilecard":{
     "desc1":"The main issues to solve are achieving food security, and hunger improving the food nutrition.",
     "bestsupermarket":"Best Super Market",
     "phone":"964 750 113 0495",
