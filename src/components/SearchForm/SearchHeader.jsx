@@ -15,7 +15,7 @@ export default function SearchHeader() {
                           ,backgroundRepeat: 'no-repeat', height:'50%', backgroundSize: 'cover' ,  backgroundPosition: 'center'
                         }}>
                         
-              <Row className="py-5 px-md-5 ">
+              <Row className="py-5 px-md-5 " style = {{margin: "auto"}}>
                 <Col   className="  mb-5 mx-5 ">
                   <SearchCard/>
                 </Col>

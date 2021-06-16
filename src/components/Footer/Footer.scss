@@ -9,65 +9,16 @@
   position: relative;
   width: auto;
 }
-.draw-line1:after 
-{
-  content: "";
-  display: block;
-  background-color: $warn;
-  height: 2px;
-  width: 45px;
-  margin-top: 5px;
-  color: $secondary !important;
-}
-
-.draw-line2:after 
-{
-  content: "";
-  display: block;
-  background-color: $warn;
-  height: 2px;
-  width: 85px;
-  margin-top: 5px;
-  color: $secondary !important;;
-}
-
-.draw-line3:after 
-{
-  content: "";
-  display: block;
-  background-color: $warn;
-  height: 2px;
-  width: 82px;
-  margin-top: 5px;
-  color: $secondary !important;
-}
-
-.draw-line4:after 
-{
-  content: "";
-  display: block;
-  background-color: $warn;
-  height: 2px;
-  width: 75px;
-  margin-top: 5px;
-  color: $secondary !important;
-}
-
 .text 
 {
   text-align: center;
   color: $secondary !important;
   margin: auto;
-  align-items: center;
 }
 .logo 
 {
   align-items: center;
   text-align: center;
-}
-.SocialProfile 
-{
-  margin-top: 30px;
 }
 .col 
 {
@@ -86,8 +37,17 @@
 {
     color: $secondary !important;
 }
-.lin 
+.lin
 {
   color: $secondary !important;
-  margin: auto;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.underline
+{
+  text-decoration: underline $warn;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  margin-bottom: 15px;
 }
