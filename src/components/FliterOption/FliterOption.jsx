@@ -3,17 +3,18 @@ import './FilterOptions.scss'
 import {
     Container,
     Row,
-    // Col,
     Button,
     Form, 
   } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 
 export default function FliterOption() {
+    const { t } = useTranslation()
     return (
         <div className = "margin">
             <Container >
             <Row >
-            <h3 className = "header">Fltered by:</h3>
+            <h3 className = "header"> {t('filteroption.filteredby')} Fltered by:</h3>
             
             </Row>
             <Row className ="color"><div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div> <div>&#8212;</div></Row>

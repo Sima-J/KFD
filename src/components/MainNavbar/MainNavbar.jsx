@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next'
 import { NavLink, Redirect } from 'react-router-dom'
 import i18next from 'i18next'
 import { selectedLang } from '../../redux/actions/actions'
-import Login from '../Modals/Login'
+import Login from '../SignModule/SignModule'
 import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE, SEARCH_ROUTE } from '../../router'
 import userStatus, { setUserInfo } from '../../redux/actions/user'
 import SearchCard from "../SearchForm/SearchCard";
@@ -28,8 +28,6 @@ const userId = useSelector(state => state.user)
 /*
 const { data } = useSelector(state => state.pets)
 */
-
-
 
 export default function MainNavbar() {
 
@@ -124,31 +122,31 @@ export default function MainNavbar() {
                               fontWeight: 'bold',
                               }} exact
                               as={NavLink} to={HOME_ROUTE}>
-                       Home
+                              {t('navbar.home')}
                     </Nav.Link>
 
                     <Nav.Link className="lins" activeStyle={{
                               fontWeight: 'bold',
                               }} as={NavLink} to={CONTACT_ROUTE}>
-                      Contact
+                              {t('navbar.contact')}
                     </Nav.Link>
 
                     <Nav.Link  className="lins" activeStyle={{
                                fontWeight: 'bold',
                                }} as={NavLink} to={ABOUT_ROUTE}>
-                      About
+                               {t('navbar.about')}
                     </Nav.Link>
 
                     <Nav.Link  className="lins" activeStyle={{
                                fontWeight: 'bold',
                                }} as={NavLink} to={SEARCH_ROUTE}>
-                      Donation
+                               {t('navbar.donation')}
                     </Nav.Link>
 
                     <Nav.Link  className="lins" activeStyle={{
                                fontWeight: 'bold',
                                }}as={NavLink} to={PROFILE_ROUTE}>
-                      Profile
+                               {t('navbar.profile')}
                     </Nav.Link>
     
                     <Nav.Link as="select"

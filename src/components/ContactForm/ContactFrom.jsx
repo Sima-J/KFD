@@ -7,6 +7,7 @@ import  {
     Button,
     Form, 
         } from 'react-bootstrap'
+  import { useTranslation } from 'react-i18next'
   import './ContactForm.scss'
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import swal from 'sweetalert'
@@ -14,6 +15,7 @@ import  {
 
 
 export default function ContactFrom() {
+  const { t } = useTranslation()
   
 const [name, setName] = useState('');
 const [email, setEmail] = useState('');
@@ -42,7 +44,7 @@ const handleSubmit = (e) => {
                   <Container className="Box border rounded border-black"  >
                     <Row> 
                       <Col className="TCol">
-                        <h1 className="Title">Contact Us</h1>
+                        <h1 className="Title"> {t("contactus.title")} </h1>
                       </Col>
                     </Row>
 
@@ -52,7 +54,8 @@ const handleSubmit = (e) => {
                           <p className="h4 text-center mb-4">Please Leave Us a Message</p>
 
                           <Form.Label htmlFor="name" className="grey-text">
-                            Name
+                            {t("contactus.name")}
+                          
                           </Form.Label>
                           <Form.Control type="text" id="Name" name="name"  value={name}
                           onChange={(e)=> setName(e.target.value)} required />
@@ -66,7 +69,7 @@ const handleSubmit = (e) => {
                           <br />
 
                           <Form.Label htmlFor="subject" className="grey-text">
-                            Subject
+                            {t("contactus.subject")}
                           </Form.Label>
                           <Form.Control type="text" id="subject" name="subject"
                            value={subject}

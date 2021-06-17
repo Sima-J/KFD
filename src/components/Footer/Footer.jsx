@@ -1,5 +1,6 @@
 import React from "react";
  import { Nav, Col,Row, Image} from 'react-bootstrap'
+ import { useTranslation } from 'react-i18next'
  import {NavLink} from 'react-router-dom'
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
  import logo from '../../assets/logo.svg'
@@ -9,11 +10,12 @@ import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE,SEARCH_ROUTE} fro
 import "./Footer.scss";
   
 const Footer = () => {
+  const { t } = useTranslation()
   return (
             <footer className = "cont">
               <Row>
                 <Col className = "col" >
-                  <h5 className="underline"> Menu</h5>
+                  <h5 className="underline"> {t('footer.menu')} Menu</h5>
 
                     <h6 className="list-unstyled">
                       <li>
