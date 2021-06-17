@@ -1,9 +1,11 @@
 import React from 'react'
 import { Col, Image } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import Donation from '../../assets/donation.png'
 import './DonationSection.scss'
 
 export default function DonationSection() {
+    const { t } = useTranslation()
     return (
         
                 <Col className = "col">
@@ -12,7 +14,7 @@ export default function DonationSection() {
                         fluid />
                     <br/>
 
-                    <text className = "Pname">Milk</text>
+                    <text className = "Pname"> {t('donationsection.milk')}Milk</text>
                     <br/>
 
                     <text className = "stakeholder">Supermarket  </text>

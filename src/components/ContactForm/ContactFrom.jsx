@@ -1,5 +1,5 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react'
+/* eslint-disable no-console */
+import React, { useState} from 'react'
 import  {
     Container,
     Row,
@@ -7,54 +7,90 @@ import  {
     Button,
     Form, 
         } from 'react-bootstrap'
+  import { useTranslation } from 'react-i18next'
   import './ContactForm.scss'
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import swal from 'sweetalert'
+  import {db}  from '../../Firebase'
+
 
 export default function ContactFrom() {
+  const { t } = useTranslation()
+  
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [subject, setSubject] = useState('');
+const [message, setMessage] = useState('');
+
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  db.collection('contacts').doc(`${name}, ${Date()}`).set({
+    Name: name,
+    email,
+    subject,
+    message,
+
+  });
+
+  setName('');
+  setEmail('');
+  setSubject('');
+  setMessage('');
+  swal('', 'success', 'success');
+};
     return (
               <div className="mb-4 py-4">
                   <Container className="Box border rounded border-black"  >
                     <Row> 
                       <Col className="TCol">
-                        <h1 className="Title">Contact Us</h1>
+                        <h1 className="Title"> {t("contactus.title")} </h1>
                       </Col>
                     </Row>
 
                     <Row>
                       <Col md="6">
-                        <Form className="BoxForm ">
+                        <Form className="BoxForm " onSubmit={handleSubmit}>
                           <p className="h4 text-center mb-4">Please Leave Us a Message</p>
 
                           <Form.Label htmlFor="name" className="grey-text">
-                            Name
+                            {t("contactus.name")}
+                          
                           </Form.Label>
-                          <Form.Control type="text" id="Name"  />
+                          <Form.Control type="text" id="Name" name="name"  value={name}
+                          onChange={(e)=> setName(e.target.value)} required />
 
                           <br />
 
-                          <Form.Label htmlFor="Email" className="grey-text"/>
-                          <Form.Control  type="email" id="email" placeholder="Email Address"  />
+                          <Form.Label htmlFor="email" className="grey-text"/>
+                          <Form.Control  type="email" id="email"   name="email" placeholder="Email Address"   value={email}
+                           onChange={(e)=> setEmail(e.target.value)} required/>
 
                           <br />
 
                           <Form.Label htmlFor="subject" className="grey-text">
-                            Subject
+                            {t("contactus.subject")}
                           </Form.Label>
-                          <Form.Control type="text" id="subject"  />
+                          <Form.Control type="text" id="subject" name="subject"
+                           value={subject}
+                          onChange={(e)=> setSubject(e.target.value)} required />
 
                           <br />
 
                           <Form.Label htmlFor="message" className="grey-text">
                             Your Messabe
                           </Form.Label>
-                          <Form.Control as="textarea" row="3"  type="text" id="message"   />
+                          <Form.Control as="textarea" row="3"  type="text" id="message" name="message"
+                          value={message}
+                          onChange={(e)=> setMessage(e.target.value)}
+                           required />
 
                           <div className="text-center my-4 ">
-                            <Button className="Btn" outline type="submit">
+                            <Button type="submit" className="Btn"  >
                               Send
                             </Button>
                           </div>
-
+{console.log(name)}
                         </Form>
 
                       </Col>

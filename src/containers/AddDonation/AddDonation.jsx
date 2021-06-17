@@ -9,9 +9,11 @@ import {
     Form, 
     
   } from 'react-bootstrap'
+// import { useTranslation } from 'react-i18next'
 import './AddDonation.scss'
 
 export default function AddDonation() {
+   /* const { t } = useTranslation() */ 
     return (
 
         <div>

@@ -5,6 +5,7 @@ import  {
     Col,
     Image 
         } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import sima from '../../assets/sima.png'
@@ -14,6 +15,7 @@ import sana from '../../assets/sana.png'
 import './Team.scss'
 
 export default function TeamMembers() {
+  const { t } = useTranslation()
     return (
             <div className = "TeamSection ">
 
@@ -22,7 +24,7 @@ export default function TeamMembers() {
                 <Card.Body>
 
                   <h2 className="h1-responsive font-weight-bold my-5">
-                    Meet The Team
+                    {t('teammembers.meettheteam')}
                   </h2>
             
                   <Row>
@@ -31,8 +33,8 @@ export default function TeamMembers() {
                       src={sima}
                       fluid  
                       />
-                      <h5 className="font-weight-bold mt-4 mb-3">Sima Jazaa</h5>
-                      <p className="text-uppercase blue-text">Software Engineer</p>
+                      <h5 className="font-weight-bold mt-4 mb-3"> {t('teammembers.sima')} </h5>
+                      <p className="text-uppercase blue-text"> {t('teammembers.softwareeng')} </p>
                   
                       <ul className="list-unstyled mb-0">
                     
@@ -54,8 +56,8 @@ export default function TeamMembers() {
                           src={sana}
                           fluid  
                           />
-                      <h5 className="font-weight-bold mt-4 mb-3">Sana Jazaa</h5>
-                      <p className="text-uppercase blue-text">Software Engineer</p>
+                      <h5 className="font-weight-bold mt-4 mb-3"> {t('teammembers.sana')} </h5>
+                      <p className="text-uppercase blue-text"> {t('teammembers.softwareeng')} </p>
                       
                       <ul className="list-unstyled mb-0">
 
@@ -76,8 +78,8 @@ export default function TeamMembers() {
                           src={n}
                           fluid  
                                       />
-                      <h5 className="font-weight-bold mt-4 mb-3">Mudhafar Dler</h5>
-                      <p className="text-uppercase blue-text">Software Engineer</p>
+                      <h5 className="font-weight-bold mt-4 mb-3">{t('teammembers.mudhafar')}</h5>
+                      <p className="text-uppercase blue-text">{t('teammembers.softwareeng')}</p>
                       
                       <ul className="list-unstyled mb-0">
 
@@ -98,8 +100,8 @@ export default function TeamMembers() {
                           src={rebaz}
                           fluid  
                                       />
-                      <h5 className="font-weight-bold mt-4 mb-3">Rebaz Farid</h5>
-                      <p className="text-uppercase blue-text">Network and Security</p>
+                      <h5 className="font-weight-bold mt-4 mb-3">{t('teammembers.rebaz')}</h5>
+                      <p className="text-uppercase blue-text">{t('teammembers.network')}</p>
                       
                       <ul className="list-unstyled mb-0">
 
