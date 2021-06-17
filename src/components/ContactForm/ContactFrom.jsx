@@ -18,17 +18,19 @@ export default function ContactFrom() {
                   <Container className="Box border rounded border-black"  >
                     <Row> 
                       <Col className="TCol">
-                        <h1 className="Title">Contact Us</h1>
+                        <h1 className="Title"> {t("contactus.title")} </h1>
                       </Col>
                     </Row>
 
                     <Row>
                       <Col md="6">
                         <Form className="BoxForm ">
-                          <p className="h4 text-center mb-4">Please Leave Us a Message</p>
+                          <p className="h4 text-center mb-4">
+                            {t("contactus.leaveusamessage")} </p>
 
                           <Form.Label htmlFor="name" className="grey-text">
-                            Name
+                            {t("contactus.name")}
+                          
                           </Form.Label>
                           <Form.Control type="text" id="Name"  />
 
@@ -40,7 +42,7 @@ export default function ContactFrom() {
                           <br />
 
                           <Form.Label htmlFor="subject" className="grey-text">
-                            Subject
+                            {t("contactus.subject")}
                           </Form.Label>
                           <Form.Control type="text" id="subject"  />
 

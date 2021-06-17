@@ -5,6 +5,7 @@ export default function DonationCard() {
     const { t } = useTranslation()
     return (
             <div>
+                {t('doncard.DC')}
                 Donation Card
             </div>
             )}

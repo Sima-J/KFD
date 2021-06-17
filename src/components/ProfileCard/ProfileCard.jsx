@@ -31,7 +31,7 @@ export default function ProfileCard() {
 
                         <text className= "name" >   
                             <h1 className = "align2"> 
-                                Best Super Market 
+                                {t("donationsection.supermarket")}
                             </h1> 
                         </text>   
 

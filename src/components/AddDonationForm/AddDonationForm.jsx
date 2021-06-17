@@ -5,6 +5,6 @@ export default function AddDonationForm() {
     const { t } = useTranslation()
     return (
                 <div>
-                    Add Donation
+                {t("adddonation.addnewdon")}
                 </div>
             )}
