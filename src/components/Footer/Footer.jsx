@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from 'react-redux'
  import { Nav, Col,Row, Image} from 'react-bootstrap'
  import { useTranslation } from 'react-i18next'
  import {NavLink} from 'react-router-dom'
@@ -10,12 +11,13 @@ import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE,SEARCH_ROUTE} fro
 import "./Footer.scss";
   
 const Footer = () => {
+  const userState = useSelector(state => state.user.isLoggedIn)
   const { t } = useTranslation()
   return (
             <footer className = "cont">
               <Row>
                 <Col className = "col" >
-                  <h5 className="underline"> {t('footer.menu')} Menu</h5>
+                  <h5 className="underline"> {t('footer.menu')}</h5>
 
                     <h6 className="list-unstyled">
                       <li>
@@ -23,12 +25,16 @@ const Footer = () => {
                                     exact as={NavLink} to={HOME_ROUTE}>Home
                           </Nav.Link>
                       </li>
-                    
-                      <li>
-                        <Nav.Link  className="lin"
-                                   as={NavLink} to={PROFILE_ROUTE}>Profile
-                        </Nav.Link>
-                      </li>
+
+                      {userState ? 
+                        (
+                          <li>
+                            <Nav.Link  className="lin"
+                                      as={NavLink} to={PROFILE_ROUTE}>Profile
+                            </Nav.Link>
+                          </li>
+                        ) : ('')
+                    }
                     
                       <li>
                         <Nav.Link className="lin"  
@@ -46,20 +52,25 @@ const Footer = () => {
 
                   </Col>
 
-                  <Col>
-                    <h5 className="underline"> Main Types</h5>
-                    <h6 className="list-unstyled">
-                        
-                        <Nav.Link  className="lin " 
-                                   as={NavLink} to={SEARCH_ROUTE}>Donation
-                        </Nav.Link>
+                  {userState ? 
+                    (
 
-                        <Nav.Link  className="lin " 
-                                   >Requested Donations
-                        </Nav.Link>
+                      <Col>
+                        <h5 className="underline"> Main Types</h5>
+                        <h6 className="list-unstyled">
+                            
+                            <Nav.Link  className="lin " 
+                                      as={NavLink} to={SEARCH_ROUTE}>Donation
+                            </Nav.Link>
 
-                    </h6>
-                  </Col>
+                            <Nav.Link  className="lin " 
+                                      >Requested Donations
+                            </Nav.Link>
+
+                        </h6>
+                      </Col>
+                    ) : ('')
+                  }
                                 
                   <Col>
                     <h5 className="underline">Contact Us </h5>
@@ -89,18 +100,18 @@ const Footer = () => {
                   <Col>
                     <h4 className="underline" > Follow Us </h4>
                         <div className = "SocialProfile">
+
+                            <FontAwesomeIcon  icon={['fab', 'instagram']} 
+                                              className="iconf hover:text-darkgray fa-2x mx-2"
+                                              onClick={()=> window.open("https://www.instagram.com/", "_blank")} />
                         
-                          <a href="https://www.instagram.com/">
-                            <FontAwesomeIcon icon={['fab', 'instagram']} className="iconf hover:text-darkgray fa-2x mx-2"/>
-                          </a>
-
-                          <a href="https://www.facebook.com/">
-                            <FontAwesomeIcon icon={['fab', 'facebook-square']} className="iconf hover:text-darkgray fa-2x mx-2"/>
-                          </a>
-
-                          <a href="https://www.twitter.com/">
-                            <FontAwesomeIcon icon={['fab', 'twitter']} className="iconf hover:text-darkgray fa-2x mx-2"/>
-                          </a>
+                            <FontAwesomeIcon  icon={['fab', 'facebook-square']} 
+                                              className="iconf hover:text-darkgray fa-2x mx-2"
+                                              onClick={()=> window.open("https://www.facebook.com/", "_blank")}/>
+                          
+                            <FontAwesomeIcon  icon={['fab', 'twitter']} 
+                                              className="iconf hover:text-darkgray fa-2x mx-2"
+                                              onClick={()=> window.open("https://www.twitter.com/", "_blank")}/>
                     
                         </div>
                   </Col>
