@@ -34,19 +34,19 @@ function App() {
         <Route path={CONTACT_ROUTE} component={Contact} />
         <Route path={ABOUT_ROUTE} component={About} />
 
-        <PrivateRoute path={PROFILE_ROUTE} component={Profile}>
+        <PrivateRoute path={PROFILE_ROUTE}>
           <Profile />
         </PrivateRoute>
 
-        <PrivateRoute path={ADD_DONATION_ROUTE} component={AddDonation}>
+        <PrivateRoute path={ADD_DONATION_ROUTE}>
           <AddDonation />
         </PrivateRoute>
 
-        <PrivateRoute path={DONATION_DETAILS_ROUTE} component={DonationDetails}>
+        <PrivateRoute path={DONATION_DETAILS_ROUTE}>
           <DonationDetails />
         </PrivateRoute>
 
-        <PrivateRoute path={SEARCH_ROUTE} component={Search}>
+        <PrivateRoute path={SEARCH_ROUTE}>
           <Search />
         </PrivateRoute>
 
