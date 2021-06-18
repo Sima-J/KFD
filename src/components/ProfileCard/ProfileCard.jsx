@@ -12,6 +12,7 @@ import './ProfileCard.scss'
 export default function ProfileCard() {
     const { t } = useTranslation()
     return (
+
             <div className = "fontcolor"  >
                 <div>
                     <box className= "box">

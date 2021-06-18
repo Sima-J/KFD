@@ -20,14 +20,6 @@ import './MainNavbar.scss'
 import firebase from '../../Firebase'
 
 require('firebase/auth')
-/*
-import { faBars, faBell } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-const userId = useSelector(state => state.user)
-*/
-/*
-const { data } = useSelector(state => state.pets)
-*/
 
 export default function MainNavbar() {
 
@@ -137,17 +129,28 @@ export default function MainNavbar() {
                                {t('navbar.about')}
                     </Nav.Link>
 
-                    <Nav.Link  className="lins" activeStyle={{
-                               fontWeight: 'bold',
-                               }} as={NavLink} to={SEARCH_ROUTE}>
-                               {t('navbar.donation')}
-                    </Nav.Link>
+                    {userState ? 
+                      
+                      (
+                        <Nav.Link  className="lins" activeStyle={{
+                          fontWeight: 'bold',
+                          }} as={NavLink} to={SEARCH_ROUTE}>
+                          {t('navbar.donation')}
+                        </Nav.Link>
+                      ) : ('')
+                    }
 
-                    <Nav.Link  className="lins" activeStyle={{
-                               fontWeight: 'bold',
-                               }}as={NavLink} to={PROFILE_ROUTE}>
-                               {t('navbar.profile')}
-                    </Nav.Link>
+                    {userState ? 
+                      
+                      (
+                        <Nav.Link  className="lins" activeStyle={{
+                                  fontWeight: 'bold',
+                                  }}as={NavLink} to={PROFILE_ROUTE}>
+                                  
+                                  {t('navbar.profile')}
+                        </Nav.Link>
+                      ) : ('')
+                    }
     
                     <Nav.Link as="select"
                               className="select-language  mr-4  shadow-none bg-light  border-1 " 
@@ -169,7 +172,12 @@ export default function MainNavbar() {
 
                     </Nav.Link>
 
-                    <SearchCard />
+                    {userState ? 
+                      
+                      (
+                        <SearchCard />
+                      ) : ('')
+                    }
 
                   </Nav>
    
