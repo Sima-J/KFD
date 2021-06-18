@@ -35,7 +35,10 @@ function App() {
         <Route path={CONTACT_ROUTE} component={Contact} />
         <Route path={ABOUT_ROUTE} component={About} />
 
-        {userState ? <Route path={PROFILE_ROUTE} component={Profile} /> : ''}
+        {userState ? ( <Route path={PROFILE_ROUTE} component={Profile} />
+          ) : (
+            ''
+          )}
 
         {userState ? (
           <Route path={ADD_DONATION_ROUTE} component={AddDonation} />
@@ -49,7 +52,10 @@ function App() {
           ''
         )}
 
-        {userState ? <Route path={SEARCH_ROUTE} component={Search} /> : ''}
+        {userState ? ( <Route path={SEARCH_ROUTE} component={Search} />
+          ) : (
+            ''
+          )}
 
         <Route component={NotFound} />
       </Switch>
