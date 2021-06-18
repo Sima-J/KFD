@@ -23,11 +23,7 @@ export default function Header() {
 
                         <Col className ="text">
                             <h4>
-                                {t('header.desc')}
-                                The Food Donation WebApp is an online platform 
-                                that works as a bridge to connect restaurants, 
-                                food-supplier companies and  Supermarkets to 
-                                organization. 
+                                {t('header.desc')} 
                             </h4>
                         </Col>
                     </Row>
