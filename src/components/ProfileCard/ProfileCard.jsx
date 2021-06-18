@@ -1,8 +1,12 @@
-import React from 'react'
-import {Image, Card, Col, Row} from 'react-bootstrap'
+import React, { useEffect, useState } from 'react'
+import {Image, Card, Col, Row, Nav} from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
+import { NavLink } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
 import { faClock, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {ADD_DONATION_ROUTE} from '../../router'
+import { fetchMyPets } from '../../redux/actions/actions'
 import { AddButton } from '../AddDonation'
 import Cover from '../../assets/Pcover.png'
 import Prof from '../../assets/Profile.png'
@@ -10,15 +14,34 @@ import './ProfileCard.scss'
 
 
 export default function ProfileCard() {
+    const userInfo = useSelector(state => state.user)
+    const currentUser = useSelector(state => state.user.isLoggedIn)
+
+    const dispatch = useDispatch()
+    
     const { t } = useTranslation()
+
+    const [uid, setuid] = useState('')
+
+    const checkUid = () => {
+        if (currentUser) {
+          setuid(userInfo.user.uid)
+        }
+      }
+
+      useEffect(() => {
+        checkUid()
+      }, [currentUser])
+    
+      useEffect(() => {
+        dispatch(fetchMyPets( uid))
+      }, [ uid])
     return (
 
             <div className = "fontcolor"  >
                 <div>
                     <box className= "box">
                         {t('profilecard.desc1')}
-                        The main issues to solve are achieving food security,
-                        end hunger improving the food nutrition.
                     </box>
                     <Image className = "cover" src={Cover} fluid/>
                 </div>
@@ -32,7 +55,7 @@ export default function ProfileCard() {
 
                         <text className= "name" >   
                             <h1 className = "align2"> 
-                                {t("donationsection.supermarket")}
+                                {userInfo.user.name}
                             </h1> 
                         </text>   
 
@@ -53,7 +76,11 @@ export default function ProfileCard() {
                     <Row style = {{margin: "auto"}}> 
                         <Col> <h1 className = "fontcolor"> My Donations </h1> </Col>
 
-                        <Col ><AddButton/></Col>
+                        <Col >
+                            <Nav.Link as={NavLink}  to={ADD_DONATION_ROUTE}>
+                                <AddButton/>
+                            </Nav.Link>
+                        </Col>
                         <br/>
                     </Row>
                     
@@ -67,11 +94,14 @@ export default function ProfileCard() {
                             <FontAwesomeIcon icon = {faClock} className = "blue"/> &nbsp;
                             --Weeks-Days-Hours-Min       
                             &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                                
+
+                            
                                 <button className = "Delete" type="button">
-                                &nbsp; <FontAwesomeIcon icon={faTrash} /> &nbsp; 
+                                    &nbsp; <FontAwesomeIcon icon={faTrash} /> &nbsp; 
                                     Delete &nbsp;
                                 </button>
+                                
+                            
                         </div>  
                     </div>
 
