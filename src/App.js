@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-fragments */
 import React, { Fragment } from 'react'
 import { Switch, Route } from 'react-router'
+import { useSelector } from 'react-redux'
 import MainNavbar from './components/MainNavbar'
 import Footer from './components/Footer'
 import Home from './containers/Home'
@@ -19,13 +20,13 @@ import {
   DONATION_DETAILS_ROUTE,
   SEARCH_ROUTE,
 } from './router'
-import PrivateRoute from './privateroutes'
 import NotFound from './containers/NotFound'
 
 import './App.scss'
 import './fontawsome'
 
 function App() {
+  const userState = useSelector(state => state.user.isLoggedIn)
   return (
     <Fragment>
       <MainNavbar />
@@ -34,21 +35,21 @@ function App() {
         <Route path={CONTACT_ROUTE} component={Contact} />
         <Route path={ABOUT_ROUTE} component={About} />
 
-        <PrivateRoute path={PROFILE_ROUTE}>
-          <Profile />
-        </PrivateRoute>
+        {userState ? <Route path={PROFILE_ROUTE} component={Profile} /> : ''}
 
-        <PrivateRoute path={ADD_DONATION_ROUTE}>
-          <AddDonation />
-        </PrivateRoute>
+        {userState ? (
+          <Route path={ADD_DONATION_ROUTE} component={AddDonation} />
+        ) : (
+          ''
+        )}
 
-        <PrivateRoute path={DONATION_DETAILS_ROUTE}>
-          <DonationDetails />
-        </PrivateRoute>
+        {userState ? (
+          <Route path={DONATION_DETAILS_ROUTE} component={DonationDetails} />
+        ) : (
+          ''
+        )}
 
-        <PrivateRoute path={SEARCH_ROUTE}>
-          <Search />
-        </PrivateRoute>
+        {userState ? <Route path={SEARCH_ROUTE} component={Search} /> : ''}
 
         <Route component={NotFound} />
       </Switch>
