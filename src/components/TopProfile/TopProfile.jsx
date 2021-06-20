@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { useTranslation } from 'react-i18next'
 import kolara from '../../assets/kolara.png'
-import dilmun from '../../assets/dilmun.png'
 
 import { OpenSettingModal } from '../../redux'
 
@@ -33,7 +32,7 @@ export default function TopProfile() {
 
         <div className="flex justify-center h-32 mt-2">
           <img
-            src={dilmun}
+            
             alt=""
             className="h-32  p-2 mt-2 shadow rounded-xl"
           />
