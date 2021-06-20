@@ -12,10 +12,10 @@ export default function DonationDetail({ title, price, description }) {
         <text  className = "Pname">{title}</text>
         <br/>
       <text className = "stakeholder">
-        {t('proudctDetail.price')}: $ {price}
+      {t('Donations.quantity')}  {price}
       </text>
       <br/>
-      <text  lassName = "description"> {t('proudctDetail.description')}</text>
+      <text  lassName = "description"> {t("Donations.desc")}</text>
       <br/>
       <h1 className = "desc">
         {description}

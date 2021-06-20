@@ -15,6 +15,7 @@ import {
 } from 'react-bootstrap'
 import { db, storageRef } from '../../Firebase'
 import { FetchProducts } from '../../redux'
+import './AddDonation.scss'
 
 export default function AddItemForm() {
   const history = useHistory()
@@ -139,7 +140,7 @@ export default function AddItemForm() {
   }
 
   return (
-    <div className=" bg-pureWhite p-8">
+    <div className="  p-8">
       <SweetAlert
         title=''
         show={loading}
@@ -148,46 +149,42 @@ export default function AddItemForm() {
         onCancel={() => setloading(false)}
         style={{ backgroundColor: 'transparent' }}
       >
-        <div className="bg-blue bg-opacity-70 rounded-3xl px-32 py-10 shadow-md ">
+        <div className="bg-blue  rounded-3xl px-32 py-10 shadow-md ">
           <FontAwesomeIcon
             icon="spinner"
             className="text-white mb-5"
             pulse
             size="7x"
           />
-          <h1 className="text-white m-3 mt-4 text-3xl">{t('loading')}</h1>
+          <h1 className="text-white m-3 mt-4 text-3xl">{t('Donations.loading')}</h1>
         </div>
       </SweetAlert>
-
-      <Container className="Box border rounded border-black " >
-                <Row>
-                    <Col className="tcol">
-                    <h1 className="title">Add New Donation</h1>
-                    </Col>
-                </Row>
-                <Row>
-                <Col md='6'>
-        <Form onSubmit={handleSubmit}>
-          <Form.Label htmlfor="Title" className="messages">
-          Title
-      </Form.Label>
-      <Form.Control
                   
                  
+      <Container className=" border rounded border-black my-4 text-center " >
+               
+              
+                <Row className="BDS">
+                <Col xs={12}>
+                <h1 className="newd">{t("Donations.addnew")}</h1>
+
+                      <Form onSubmit={handleSubmit}>
+                        <Form.Label htmlfor="Title" className="messages">
+                        {t("Donations.title")}
+                    </Form.Label>
+                    <Form.Control
                 
                   type="text"
                   name="title"
                   required
                   value={productData.title}
                   onChange={handleChnage}
-                  className="border-b-2 border-blue  p-3  md:text-xl w-full focus:border-darkBlue focus:outline-none"
                 />
                 <br />
                                 <Form.Label
                   htmlFor="price"
-                  className="md:text-xl text-blue font-semibold"
-                >
-                  Quantity
+                  >
+                  {t("Donations.quantity")}
                 </Form.Label>
                 <Form.Control
                   required
@@ -195,61 +192,45 @@ export default function AddItemForm() {
                   name="price"
                   value={productData.price}
                   onChange={handleChnage}
-                  className="border-b-2 border-blue  p-3  md:text-xl w-full focus:border-darkBlue focus:outline-none"
                 />
                 <br/>          
                 <Form.Label
                   htmlFor="type"
-                  className="md:text-xl text-blue font-semibold "
                 >
-                 Type
+                 {t("Donations.type")}
                 </Form.Label>
                 <br />
-                <div className="inline-flex mt-2 text-center ">
-                  <Form.Label htmlFor="Crafted">
+                
+                  <Form.Label htmlFor="Requested"  className="mr-3 mb-3"
+                  >
                     <Form.Control
                       type="radio"
                       required
                       name="itemType"
-                      id="Crafted"
-                      className="hidden"
-                      onChange={handleChnage}
+                      id="Requested"
+                      className="mr-3"  onChange={handleChnage}
                     />
-                      {t('footer.crafted')}
-                  </Form.Label>
-                  <Form.Label htmlFor="Used">
-                    <Form.Control
-                      type="radio"
-                      required
-                      name="itemType"
-                      id="Used"
-                      className="hidden"
-                      onChange={handleChnage}
-                    />
-                    Used
+                    {t("Donations.requdon")}
                                       </Form.Label>
-                  <Form.Label htmlFor="Donated">
+                  <Form.Label htmlFor="Donations" className="mb-3">
                     <Form.Control
                       type="radio"
                       required
                       name="itemType"
-                      id="Donated"
-                      className="hidden"
+                      id="Donations"
+                      className=""
                       onChange={handleChnage}
                     />
-                      {t('footer.donated')}
-                  </Form.Label>
-                </div>
+                    {t('Donations.donated')}          </Form.Label>
               <br/>
                 <Form.Label
                   htmlFor="categories"
-                  className="md:text-xl text-blue font-semibold"
-                >
+                  >
                   {t('additem.itemcate')}
                 </Form.Label>
                 <br />
 
-                <div className="grid grid-cols-2 gap-4 text-center lg:grid-cols-3 xl:grid-cols-4">
+                <div >
                   {result.map(cate => (
                     <Form.Label
                       htmlFor={
@@ -284,12 +265,12 @@ export default function AddItemForm() {
                 </div>
                 <br/>
 
-            <div className="grid gap-10 md:col-span-5">
-              <div className=" p-12 item-center border-2 border-blue border-dashed rounded-3xl text-center">
+            <Col >
+              <div className=" py-12 BDS  item-center border-2 border border-dashed rounded-3xl text-center">
                 <div className="grid  pb-4 p-1   ">
                   <FontAwesomeIcon
                     icon="images"
-                    className="fa-3x my-3 text-blue justify-self-center"
+                    className="fa-3x my-3  BDS  justify-self-center"
                   />
                   {Images[0] ? (
                     Images.map((img, index) => {
@@ -313,14 +294,14 @@ export default function AddItemForm() {
                       )
                     })
                   ) : (
-                    <p>{t('additem.noImg')}</p>
+                    <p>{t('Donations.noImg')}</p>
                   )}
                 </div>
                 <Form.Label
                   htmlFor="file-upload"
                   className="relative cursor-pointer  rounded-md font-medium hover:shadow-none shadow-lg transition duration-300 ease-in-out hover:bg-darkBlue text-white bg-blue py-2 px-2"
                 >
-                  <span>{t('additem.upload')}</span>
+                  <span>{t('Donations.upload')}</span>
                   <Form.Control
                     id="file-upload"
                     name="imageForm.Control"
@@ -331,30 +312,28 @@ export default function AddItemForm() {
                     onChange={handleChnage}
                   />
                 </Form.Label>
-              </div>
+                </div>
+              </Col>
 <br/>
                 <Form.Label
                   htmlFor="tel"
-                  className="md:text-xl text-blue font-semibold"
-                >
+                  >
                   {' '}
-                  {t('additem.phone')}
+                  {t('Donations.phone')}
                 </Form.Label>
                 <Form.Control
                   type="tel"
                   name="tel"
                   required
                   value={productData.tel}
-                  className="border-b-2 border-blue  p-3   md:text-xl w-full focus:border-darkBlue focus:outline-none"
                   onChange={handleChnage}
                 />
                 <br/>
 
                 <Form.Label
                   htmlFor="city"
-                  className="md:text-xl text-blue font-semibold"
-                >
-                  {t('additem.city')}
+                  >
+                  {t('Donations.city')}
                 </Form.Label>
                 <Form.Control
                   type="text"
@@ -362,44 +341,42 @@ export default function AddItemForm() {
                   required
                   value={productData.city}
                   onChange={handleChnage}
-                  className="border-b-2 border-blue  p-3   md:text-xl w-full focus:border-darkBlue focus:outline-none"
                 />
-              </div>
               <br/>
             <div className="md:col-span-11">
               <Form.Label
                 htmlFor="Description"
-                className="md:text-xl text-blue font-semibold"
               >
-              description              </Form.Label>
+              {t("Donations.desc")}              </Form.Label>
 
               <Form.Control
               as="textarea" row="3"  type="text" 
                 name="description"
                 required
                 value={productData.description}
-                className="border-b-2 border-blue  py-3   md:text-xl w-full h-24  focus:border-darkBlue focus:outline-none"
                 onChange={handleChnage}
               />
             </div>
 
-            <div className="md:col-span-5  text-center">
-              <Button
+            <Row >
+            <Col >
+                          <Button
                 type="submit"
                 onClick={() => setloading(true)}
                 className="py-2 px-4  m-1"
               >
-                Submit
+                {t("Donations.submit")}
               </Button>
-            </div>
-            <div className="md:col-span-5  text-center">
+              </Col>
+              <Col>
               <Button
-                value={t('additem.cancel')}
+                value={t('Donations.cancel')}
                 type="button"
                 onClick={() => history.goBack()}
                 className="py-2 px-4 m-1 "
-              >Cancel</Button>
-            </div>
+              >{t("Donations.cancel")}</Button>
+              </Col>
+              </Row>
             </Form>
 
             </Col>

@@ -1,64 +1,7 @@
 {
   "language": "ar",
   "langText": "arabic",
-
-
-  "navbar": 
-  {
-    "home": "Home",
-    "contact": "Contact Us",
-    "about": "About",
-    "logIn": "Log In",
-    "signUp": "Sign Up",
-    "logOut": "Logout",
-    "donation": "Donation",
-    "profile": "Profile",
-    "search":"Search"
-  },
-
-  "contactus": 
-  {
-    "title": "Contact Us",
-    "leaveusamessage":"Please Leave Us a Message",
-    "name": "Name",
-    "email": "contact@KFD.com",
-    "phone": "+234081-1236-4568",
-    "subject": "Subject",
-    "send": "Send",
-    "emailad":"Email Address",
-    "required": "This field required",
-    "message": "Your Message"
-  },
-
-  "login": 
-  {
-    "log-in": " Log in",
-    "google": "Sign in"
-  },
-
-  "footer": 
-  {
-    "menu":"Menu",
-    "home":"Home",
-    
-    "contact":"Contact",
-    "about":"About",
-    "main_types":"Main Types",
-    "donation":"Donation",
-    "requesteddonations":"Requested Donations",
-    "contactus":"Contact Us",
-    "followus":"Follow Us",
-    "phonenumber": "+234081-1236-4568",
-    "email": "Contact@KFD.com",
-    "copyright":"© Copyright 2021 - KFD",
-      "profile": "Profile",
-      "type": "Main Types",
-      "crafted": "Crafted",
-      "used": "Used",
-      "donated": "Donated",
-      "follow": "Follow Us"
-  },
-
+  "NoData": "No Data",
   "aboutus": 
   {
     "abus":"About Us",
@@ -89,14 +32,47 @@
     "network":"Network and Security"
   },
 
-  "addbutton":
+  "Donations":
   {
-    "adddonation":"Add Your Donation",
-    "search":"Search"
+    "addd": "Add Donation",
+    "loading": "Uploading",
+    "addnew":"Add New Donation",
+    "title":"Title",
+    "quantity":"Qunatity",
+    "type":"What is the food type?",
+    "crafted": "Crafted",
+    "used": "Used",
+    "donation": "Donation",
+    "itemcate": "Select the categories this item belong to below",
+    "phone": "Phone Number",
+    "noImg": "No Image is selected",  
+    "upload": "Add Image +",
+    "new": "Add New Item",
+    "how": "How long  the item will be available?",
+    "country": "Country",
+    "city": "City",
+    "add": "Add",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "itemtype": "Select the Item Type",
+    "aform": "You have successfully filled the form",
+    "desc": "Description",
+    "price": "Price",
+    "callTheOwner": "Call The Owner",
+    "requdon":"Requested Donations"
   },
 
-  "donationcontact":
+  "contactus": 
   {
+    "title": "Contact Us",
+    "leavemessage":"Please Leave Us a Message",
+    "name": "Name",
+    "email": "contact@KFD.com",
+    "subject": "Subject",
+    "send": "Send",
+    "emailad":"Email Address",
+    "required": "This field required",
+    "message": "Your Message",
     "callowner":"Call the Owner",
     "phone":"+964 750 113 0495",
     "location":"Iraq, Sulaymaniyah, Zerin",
@@ -105,16 +81,9 @@
     "expire":"Supply Expires in 20 Days"
   },
 
-  "donationsection":
+  "filter":
   {
-    "milk":"Milk",
-    "supermarket":"Supermarket",
-    "description":"Description",
-    "descmilk":"This is where we put the description of the donation products that are available to be donated or are requested to be given, this gives a breif idea as to what is the product and what is used for its benifits or the manfacturing company"
-  },
-
-  "filteroption":
-  {
+    "category": "Category",
     "filteredby":"Filtered by:",
     "status":"Status",
     "reqdon":"Requested Donations",
@@ -123,33 +92,61 @@
     "apply":"Apply",
     "min":"Min",
     "max":"Max",
-    "under 25":"",
-    "25-50":"",
-    "50-100":"",
-    "100-200":"",
-    "200-400":"",
-    "over 400":"",
+    "under":"Under 25",
+    "one":"25-50",
+    "two":"50-100",
+    "three":"100-200",
+    "four":"200-400",
+    "over":"Over 400",
     "location":"Location",
     "erbil":"Erbil",
     "zakho":"Zakho",
-    "silmemani":"Silemani",
+    "silemani":"Silemani",
     "shaqlawa":"Shaqlawa",
     "duhok":"Duhok",
     "halbja":"Halabja",
     "kalar":"Kalar",
-    "darbandinkhan":"Darbandikhan",
+    "darband":"Darbandikhan",
     "ranya":"Ranya",
-    "said sadiq":"Said Sadiq",
+    "said":"Said Sadiq",
     "sharazwr":"Sharazwr",
-    "chamchamal":"Chamchamal"
+    "cham":"Chamchamal"
   },
 
-  "header":
+  "footer": 
   {
-    "desc":"The Food Donation WebApp is an online platform that works as a bridge to connect restaurants, food-supplier companies and  Supermarkets to organization."
+    "menu":"Menu",
+    "home":"Home",
+    "contact":"Contact Us",
+    "about":"About",
+    "main_types":"Main Types",
+    "donation":"Donation",
+    "requdon":"Requested Donations",
+    "contactus":"Contact Us",
+    "follow":"Follow Us",
+    "phone": "+234081-1236-4568",
+    "email": "Contact@KFD.com",
+    "copy":"© Copyright 2021 - KFD",
+    "profile": "Profile",
+    "type": "Main Types",
+    "crafted": "Crafted"
   },
 
-  "profilecard":
+  "navbar": 
+  {
+    "home": "Home",
+    "contact": "Contact Us",
+    "about": "About",
+    "logIn": "Log In",
+    "signUp": "Sign Up",
+    "logOut": "Logout",
+    "donation": "Donation",
+    "profile": "Profile",
+    "search":"Search",
+    "settings": "Settings"
+  },
+
+  "profile":
   {
     "desc1":"The main issues to solve are achieving food security, and hunger improving the food nutrition.",
     "bestsupermarket":"Best Super Market",
@@ -159,19 +156,94 @@
     "suplname":"Supply Name",
     "quntity":"Quantity",
     "time":"--Weeks-Days-Hours-Min",
-    "delete":"Delete"
+    "delete":"Delete",
+    "slogan": "Together Making The Wolrd A Better Place For Everyone",
+    "myItems": "My Items",
+    "oops": " OOPS! You have not put anything to Donate!",
+    "explain": "Add your item now and start Giving!",
+
+    "deleting": "Are you sure?",
+    "deletingNote": "Once deleted, you will not be able to recover this item!",
+    "deleted": " file has been deleted!",
+    "notDeleted": " File not deleted"
   },
+
+  "addbutton":
+  {
+    "adddonation":"Add Your Donation",
+    "search":"Search"
+  },
+
+  "login": 
+  {
+    "log-in": " Log in",
+    "google": "Sign in",
+    "KFD":"KFD Application"
+  },
+
+  "notFound": {
+    "oops": " OOPS! Page Not Found...",
+    "explain": "The Page You are Looking For does not Exist, It might have been Moved or deleted."
+  },
+
+  "setting": {
+    "setting": "Settings",
+    "name": "Name",
+    "photo": "Photo",
+    "phone": "Phone Number",
+    "city": "City",
+    "save": "Save",
+    "close": "Close"
+  },
+
+  "addbutton":
+  {
+    "adddonation":"Add Your Donation",
+    "search":"Search"
+  },
+
+  "login": 
+  {
+    "log-in": " Log in",
+    "google": "Sign in"
+  },
+
 
   "adddonation":
   {
-    "addnewdon":"Add New Donation",
-    "title":"Title",
-    "type":"What is food type?",
-    "quantity":"Qunatity",
     "avalible":"How many days the food will be available?",
     "desc":"Description",
     "add":"Add",
     "cancel":"Cancel"
+  },
+
+  
+
+
+ 
+
+  
+
+
+
+  
+
+
+
+
+ 
+
+  "donationsection":
+  {
+    "milk":"Milk",
+    "supermarket":"Supermarket",
+    "description":"Description",
+    "descmilk":"This is where we put the description of the donation products that are available to be donated or are requested to be given, this gives a breif idea as to what is the product and what is used for its benifits or the manfacturing company"
+  },
+
+  "header":
+  {
+    "desc":"The Food Donation WebApp is an online platform that works as a bridge to connect restaurants, food-supplier companies and  Supermarkets to organization."
   },
 
   "heading": 
@@ -183,23 +255,18 @@
   {
       "DC" : "Donation Card"
   },
-  
-    
     "loginSlogan": " Log in to start donating and / or sell what you don’t need",
     "loginAddItem": " You are not Authorized! Please, Log in. ",
-    "loading": "Uploading",
+    
     "back": "Go Back",
-    "toast": {
+    "toast": 
+    {
       "successAdd": " is successfully added",
       "warningDelete": " Deleted"
     },
   
-    "proudctDetail": {
-      "price": "Price",
-      "description": "Description",
-      "callTheOwner": "Call The Owner"
-    },
     "cform": {
+
       "cont": "Contact Us",
       "name": "Name",
       "email": "Email Address",
@@ -210,30 +277,24 @@
       "desc": "We do not make any warranties about the authenticity or quality of products in this website. Any transaction you take upon the products on this website is strictly at your own risks, and we will not be liable for any loss and damages in connection with the use of our website.",
       "mesg": "Your Message has been send"
     },
-    "additem": {
+    "additem": 
+    {
       "noImg": "No Image is selected",
       "new": "Add New Item",
       "upload": "Add Image +",
       "title": "Title",
       "phone": "Phone Number",
-      "how": "How long  the item will be available?",
+      "how": "How long  the Food will be available?",
       "country": "Country",
       "city": "City",
       "add": "Add",
       "cancel": "Cancel",
-      "itemtype": "Select the Item Type",
-      "itemcate": "Select the categories this item belong to below",
+      "itemtype": "Choose one of option Below",
+      "itemcate": "Select the type of Food this Donation belong to below",
       "aform": "You have successfully filled the form",
       "cat": [
-        { "url": "Men", "value": "Men" },
-        { "url": "Women", "value": "Women" },
-        { "url": "Kids", "value": "Kids" },
-        { "url": "Toys", "value": "Toys" },
-        { "url": "Electronics", "value": "Electronics" },
-        { "url": "Home", "value": "Home" },
-        { "url": "Sports", "value": "Sports" },
-        { "url": "Homemade", "value": "Homemade" },
-        { "url": "Furniture", "value": "Furniture" },
+        { "url": "Fresh Food", "value": "Fresh Food" },
+        { "url": "Packaged Food", "value": "Packaged Food" },
         { "url": "Other", "value": "Other" }
       ]
     },
@@ -244,27 +305,7 @@
       "usedItems": "Used Items",
       "craftedItems": "Crafted Items"
     },
-    "setting": {
-      "setting": "Settings",
-      "name": "Name",
-      "photo": "Photo",
-      "phone": "Phone Number",
-      "city": "City",
-      "save": "Save",
-      "close": "Close"
-    },
-    "profile": {
-      "slogan": "Dilmun Should be your first choice to buy or sell anything!",
-      "myItems": "My Items",
-      "delete": "Delete ",
-      "oops": " OOPS! You have not put anything for sell!",
-      "explain": "Add your item now and start selling!",
-      "deleting": "Are you sure?",
-      "deletingNote": "Once deleted, you will not be able to recover this item!",
-      "deleted": " file has been deleted!",
-      "notDeleted": " File not deleted"
-    },
-  
+
     "addItem": "Add Item",
   
     "about": {
@@ -283,11 +324,6 @@
       "about": "About Us"
     },
   
-    "notFound": {
-      "oops": " OOPS! Page Not Found...",
-      "explain": "The Page You are Looking For does not Exist, It might have been Moved or deleted."
-    },
-  
     "searchform": {
       "all": "All",
       "free": "Free",
@@ -304,5 +340,4 @@
       "max": "Max",
       "min": "Min"
     }
-  
 }

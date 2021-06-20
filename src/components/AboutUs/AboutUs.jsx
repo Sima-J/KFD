@@ -10,27 +10,18 @@ import { useTranslation } from 'react-i18next'
 
 
 import './AboutUs.scss'
-import picc from '../../assets/aboutus.png' 
+import picc from '../../assets/purplepic.png' 
         
 export default function AboutUs() {
     const { t } = useTranslation()
-
-/*
-    , { useEffect }
-    import { useTranslation } from 'react-i18next'
-    import Aos from 'aos'
-    const { t } = useTranslation()
-    useEffect(() => {
-    Aos.init({ duration: 2000 })
-    }, [])
-
-*/
 
     return (
                 <div >
                     <Image  
                         src={picc}
                         fluid />
+                        <h1 className="h1"> {t("aboutus.abus")} </h1>
+                        <h3 className="h2"> {t("aboutus.weh")} </h3>
                 
                     <Container >
                     

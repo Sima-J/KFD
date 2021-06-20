@@ -54,7 +54,7 @@ export default function ProfileContentCard({
   }
 
   const handleClick = () => {
-    history.push(`/productdetails/${id}`)
+    history.push(`/donationdetails/${id}`)
   }
 
   return (

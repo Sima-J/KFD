@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-// import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
 import FilterOptions from '../../components/FliterOption'
 import SearchForm from '../../components/SearchForm'
@@ -12,7 +12,7 @@ import  SearchHeader  from '../../components/SearchForm/SearchHeader'
 
 export default function SearchResult() {
   const location = useLocation()
-  // const { t } = useTranslation()
+  const { t } = useTranslation()
   const products = useSelector(state => state.products)
   const [Word, setWord] = useState('')
   const [Select, setSelect] = useState('')
@@ -192,7 +192,7 @@ export default function SearchResult() {
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 p-3">
         <div className="col-span-1">
-          <h3 className="text-2xl font-bold py-1">Filter by</h3>{' '}
+          <h3 className="text-2xl font-bold py-1"> {t("filter.filteredby")} </h3>{' '}
           <h1 className="text-blue ">{filterProducts().length} Results</h1>
           <hr className="my-2" />
           <CheckboxFilter Checkbox={Checkbox} ChangeCheckbox={ChangeCheckbox} />
