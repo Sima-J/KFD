@@ -41,7 +41,7 @@
     "type":"What is food type?",
     "crafted": "Crafted",
     "used": "Used",
-    "donated": "Donated",
+    "donation": "Donation",
     "itemcate": "Select the categories this item belong to below",
     "phone": "Phone Number",
     "noImg": "No Image is selected",  
@@ -57,7 +57,8 @@
     "aform": "You have successfully filled the form",
     "desc": "Description",
     "price": "Price",
-    "callTheOwner": "Call The Owner"
+    "callTheOwner": "Call The Owner",
+    "requdon":"Requested Donations"
   },
 
   "contactus": 
@@ -241,18 +242,22 @@
       "mesg": "Your Message has been send"
     },
     "additem": {
-      
-      
+      "noImg": "No Image is selected",
+      "new": "Add New Item",
+      "upload": "Add Image +",
+      "title": "Title",
+      "phone": "Phone Number",
+      "how": "How long  the Food will be available?",
+      "country": "Country",
+      "city": "City",
+      "add": "Add",
+      "cancel": "Cancel",
+      "itemtype": "Choose one of option Below",
+      "itemcate": "Select the type of Food this Donation belong to below",
+      "aform": "You have successfully filled the form",
       "cat": [
-        { "url": "Men", "value": "Men" },
-        { "url": "Women", "value": "Women" },
-        { "url": "Kids", "value": "Kids" },
-        { "url": "Toys", "value": "Toys" },
-        { "url": "Electronics", "value": "Electronics" },
-        { "url": "Home", "value": "Home" },
-        { "url": "Sports", "value": "Sports" },
-        { "url": "Homemade", "value": "Homemade" },
-        { "url": "Furniture", "value": "Furniture" },
+        { "url": "Fresh Food", "value": "Fresh Food" },
+        { "url": "Packaged Food", "value": "Packaged Food" },
         { "url": "Other", "value": "Other" }
       ]
     },
