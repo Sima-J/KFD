@@ -31,7 +31,7 @@
     "rebaz":"Rebaz Farid",
     "network":"Network and Security"
   },
-  
+
   "Donations":
   {
     "addd": "Add Donation",
@@ -39,7 +39,7 @@
     "addnew":"Add New Donation",
     "title":"Title",
     "quantity":"Qunatity",
-    "type":"What is food type?",
+    "type":"What is the food type?",
     "crafted": "Crafted",
     "used": "Used",
     "donation": "Donation",
@@ -64,21 +64,7 @@
 
   "contactus": 
   {
-    "title": "Contact Us",
-    "leavemessage":"Please Leave Us a Message",
-    "name": "Name",
-    "email": "contact@KFD.com",
-    "subject": "Subject",
-    "send": "Send",
-    "emailad":"Email Address",
-    "required": "This field required",
-    "message": "Your Message",
-    "callowner":"Call the Owner",
-    "phone":"+964 750 113 0495",
-    "location":"Iraq, Sulaymaniyah, Zerin",
-    "quality":"Quantity: 36",
-    "date":"20/02/2021",
-    "expire":"Supply Expires in 20 Days"
+
   },
 
   "filter":

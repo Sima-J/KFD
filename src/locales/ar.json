@@ -1,61 +1,11 @@
 {
   "language": "en",
   "langText": "english",
-
-  "navbar": 
-  {
-    "home": "بيت",
-    "contact": "اتصل بنا",
-    "about": "حول",
-    "logIn": "تسجيل الدخول",
-    "signUp": "اشتراك",
-    "logOut": "تسجيل خروج",
-    "donation": "هبة",
-    "profile": "الملف الشخصي",
-    "search":"يبحث"
-  },
-
-  "contactus": 
-  {
-    "title": "اتصل بنا",
-    "leaveusamessage":"رجاء أترك لنا رسالة",
-    "name": "اسم",
-    "email": "contact@KFD.com",
-    "phone": "+234081-1236-4568",
-    "subject": "موضوع",
-    "send": "إرسال",
-    "emailad":"عنوان البريد الإلكتروني",
-    "required": "هذا الحقل مطلوب",
-    "message": "رسالتك"
-  },
-
-  "login": 
-  {
-    "log-in": "تسجيل الدخول",
-    "google": "تسجيل الدخول"
-  },
-
-  "footer": 
-  {
-    "menu":"قائمة",
-    "home":"بيت",
-    "profile":"الملف الشخصي",
-    "contact":"اتصال",
-    "about":"حول",
-    "main_types":"أنواع رئيسية",
-    "donation":"هبة",
-    "requesteddonations":"التبرعات المطلوبة",
-    "contactus":"اتصل بنا",
-    "followus":"تابعنا",
-    "phonenumber": "+234081-1236-4568",
-    "email": "Contact@KFD.com",
-    "copyright":"© Copyright 2021 - KFD"
-  },
-
+  "NoData": "لايوجد بيانات",
   "aboutus": 
   {
-    "abus":"About Us",
-    "weh":"We Elimate Hunger",
+    "abus":"معلومات عنا",
+    "weh":"نقضي على الجوع",
     "whatwedo":"الذي نفعله",
     "ourgoal": "أهدافنا",
     "ourgoaldesc":"هدفنا الرئيسي من النظام هو العمل كجسر للتواصل بين الشركات والمؤسسات الخيرية ، والسماح للمستخدمين بالتبرع بالطعام ويمكنهم التواصل مع بعضهم البعض ومساعدة الأشخاص المحتاجين.",
@@ -63,12 +13,6 @@
     "ourmissiondesc":"مهمتنا هي مساعدة المحتاجين ، نحاول خدمة المحتاجين بالإمدادات الغذائية الضرورية ، من خلال المنظمات الخيرية.",
     "ourvalue":"قيمتنا",
     "ourvaluedesc":"أعظم فائدة للتبرع هي مساعدة المحتاجين حولها. في الوقت الحاضر ، هناك الكثير من الأشخاص الذين يحتاجون إلى المساعدة في الحياة في جميع الجوانب وخاصة الأشياء الأساسية المختلفة ، من خلال مساعدتهم على العيش بطريقة فريدة من نوعها والتي تعني توفير أهم شيء لهم وهو الطعام."
-  },
-
-  "sponser":
-  {
-    "ourpartner":"شركاؤنا",
-    "ourpartnerdesc":"العمل مع شريكنا. شبكة قوية. لقد شكلنا تحالفات"
   },
 
   "teammembers":
@@ -82,11 +26,290 @@
     "network":"الشبكة والأمن"
   },
 
+  "sponser":
+  {
+    "ourpartner":"شركاؤنا",
+    "ourpartnerdesc":"العمل مع شريكنا. شبكة قوية. لقد شكلنا تحالفات"
+  },
+  
+  "Donations":
+  {
+    "addd": "أضف التبرع",
+    "loading": "تحميل",
+    "addnew":"إضافة تبرع جديد",
+    "title":"لقب",
+    "quantity":"كمية",
+    "type":"ما هو نوع الطعام؟",
+    "crafted": "مصنوع",
+    "used": "مستعمل",
+    "donation": "هبة",
+    "itemcate": "حدد الفئات التي ينتمي إليها هذا العنصر أدناه",
+    "phone": "رقم الهاتف",
+    "noImg": "لم يتم تحديد أي صورة",  
+    "upload": "إضافة صورة +",
+    "new": "أضف أداة جديدة",
+    "how": "كم من الوقت سيكون العنصر متاحًا؟",
+    "country": "دولة",
+    "city": "مدينة",
+    "add": "يضيف",
+    "cancel": "إلغاء",
+    "submit": "إرسال",
+    "itemtype": "حدد نوع العنصر",
+    "aform": "لقد ملأت النموذج بنجاح",
+    "desc": "وصف",
+    "price": "سعر",
+    "callTheOwner": "اتصل بالمالك",
+    "requdon":"التبرعات المطلوبة"
+  },
+
+  "contactus": 
+  {
+    "leavemessage":"رجاء أترك لنا رسالة",
+    "callowner":"اتصل بالمالك",
+    "location":"العراق، السليمانية، زيرين",
+    "quality":"كمية: 36",
+    "date":"20/02/2021",
+    "expire":"ينتهي التوريد في 20 يومًا",
+    "title": "اتصل بنا",
+    "name": "اسم",
+    "email": "contact@KFD.com",
+    "phone": "+234081-1236-4568",
+    "subject": "موضوع",
+    "send": "إرسال",
+    "emailad":"عنوان البريد الإلكتروني",
+    "required": "هذا الحقل مطلوب",
+    "message": "رسالتك"
+  },
+
+  "filter":
+  {
+    "category": "فئة",
+    "filteredby":"تمت التصفية حسب:",
+    "status":"حالة",
+    "reqdon":"التبرعات المطلوبة",
+    "donation":"تبرعات",
+    "quantity":"كمية",
+    "apply":"تطبيق",
+    "min":"Min",
+    "max":"Max",
+    "under":"Under 25",
+    "one":"25-50",
+    "two":"50-100",
+    "three":"100-200",
+    "four":"200-400",
+    "over":"Over 400",
+    "location":"موقع",
+    "erbil":"Erbil",
+    "zakho":"Zakho",
+    "silemani":"Silemani",
+    "shaqlawa":"Shaqlawa",
+    "duhok":"Duhok",
+    "halbja":"Halabja",
+    "kalar":"Kalar",
+    "darband":"Darbandikhan",
+    "ranya":"Ranya",
+    "said":"Said Sadiq",
+    "sharazwr":"Sharazwr",
+    "cham":"Chamchamal"
+  },
+
+  "footer": 
+  {    
+    "requdon":"التبرعات المطلوبة",
+    "follow":"تابعنا",
+    "phone": "+234081-1236-4568",
+    "email": "Contact@KFD.com",
+    "copy":"© Copyright 2021 - KFD",
+    "type": "أنواع رئيسية",
+    "crafted": "مصنوع",
+    "menu":"قائمة",
+    "home":"بيت",
+    "profile":"الملف الشخصي",
+    "contact":"اتصال",
+    "about":"حول",
+    "main_types":"أنواع رئيسية",
+    "donation":"هبة",
+    "contactus":"اتصل بنا"
+  },
+
+  "navbar": 
+  {
+    "settings": "إعدادات",
+    "home": "بيت",
+    "contact": "اتصل بنا",
+    "about": "حول",
+    "logIn": "تسجيل الدخول",
+    "signUp": "اشتراك",
+    "logOut": "تسجيل خروج",
+    "donation": "هبة",
+    "profile": "الملف الشخصي",
+    "search":"يبحث"
+  },
+
+  "profile":
+  {
+    "desc1":"القضايا الرئيسية التي يجب حلها هي تحقيق الأمن الغذائي ، والجوع تحسين التغذية الغذائية.",
+    "bestsupermarket":"أفضل سوبر ماركت",
+    "phone":"964 750 113 0495",
+    "location":"العراق، السليمانية",
+    "mydonations":"تبرعاتي",
+    "suplname":"اسم العرض",
+    "quntity":"كمية",
+    "time":"- أسابيع - أيام - ساعات - دقيقة",
+    "delete":"حذف",
+    "slogan": "معًا لنجعل العالم مكانًا أفضل للجميع",
+    "myItems": "أشيائي",
+    "oops": " وجه الفتاة! لم تتبرع بأي شيء!",
+    "explain": "أضف العنصر الخاص بك الآن وابدأ العطاء!",
+    "deleting": "هل أنت واثق؟",
+    "deletingNote": "بمجرد الحذف ، لن تتمكن من استعادة هذا العنصر!",
+    "deleted": "تم حذف الملف!",
+    "notDeleted": "تم حذف الملف!"
+  },
+
   "addbutton":
   {
     "adddonation":"أضف تبرعك",
     "search":"يبحث"
   },
+
+  "login": 
+  {
+    "KFD":"KFD تطبيق",
+    "log-in": "تسجيل الدخول",
+    "google": "تسجيل الدخول"
+  },
+
+  "notFound": {
+    "oops": " الصفحة غير موجودة...",
+    "explain": "الصفحة التي تبحث عنها غير موجودة ، ربما تم نقلها أو حذفها."
+  },
+
+  "setting": {
+    "setting": "إعدادات",
+    "name": "اسم",
+    "photo": "صورة",
+    "phone": "رقم الهاتف",
+    "city": "مدينة",
+    "save": "يحفظ",
+    "close": "يغلق"
+  },
+
+  "adddonation":
+  {
+    "addnewdon":"إضافة تبرع جديد",
+    "title":"لقب",
+    "type":"ما هو نوع الطعام؟",
+    "quantity":"كمية",
+    "avalible":"كم يوما سيكون الطعام متاحا؟",
+    "desc":"وصف",
+    "add":"يضيف",
+    "cancel":"يلغي"
+  },
+
+
+ 
+
+  
+
+
+
+  
+
+
+
+
+
+
+    "loginSlogan": " Log in to start donating and / or sell what you don’t need",
+    "loginAddItem": " You are not Authorized! Please, Log in. ",
+    
+    "back": "Go Back",
+    "toast": 
+    {
+      "successAdd": " is successfully added",
+      "warningDelete": " Deleted"
+    },
+  
+    "cform": 
+    {
+      "cont": "Contact Us",
+      "name": "Name",
+      "email": "Email Address",
+      "message": "Your Message",
+      "leve": "Leave us a message",
+      "send": "Send",
+      "disc": "Disclaimer",
+      "desc": "We do not make any warranties about the authenticity or quality of products in this website. Any transaction you take upon the products on this website is strictly at your own risks, and we will not be liable for any loss and damages in connection with the use of our website.",
+      "mesg": "Your Message has been send"
+    },
+    "additem": 
+    {
+      "noImg": "No Image is selected",
+      "new": "Add New Item",
+      "upload": "Add Image +",
+      "title": "Title",
+      "phone": "Phone Number",
+      "how": "How long  the Food will be available?",
+      "country": "Country",
+      "city": "City",
+      "add": "Add",
+      "cancel": "Cancel",
+      "itemtype": "Choose one of option Below",
+      "itemcate": "Select the type of Food this Donation belong to below",
+      "aform": "You have successfully filled the form",
+      "cat": [
+        { "url": "Fresh Food", "value": "Fresh Food" },
+        { "url": "Packaged Food", "value": "Packaged Food" },
+        { "url": "Other", "value": "Other" }
+      ]
+    },
+    "home": {
+      "slogan": "Find or Sell whatever you want and wherever you are!",
+      "addItem": "Add Item",
+      "donatedItems": "Donated Items",
+      "usedItems": "Used Items",
+      "craftedItems": "Crafted Items"
+    },
+   
+    "addItem": "Add Item",
+  
+    "about": {
+      "start": "We strive to provide a place to our users where they can buy and sell their used items, crafted or donated items.",
+      "miss": "Our Mission",
+      "mission": "Dilmun mission is to connect people in need with place to sell their items and build bridges of trust between them.",
+      "go": "Our Goals",
+      "goals": "we make sure our users find what they are looking for and as easy as possible, instead of searching for items on social media, here you can easily find what are you looking for with one search.",
+      "val": "Our Values",
+      "values": "We believe that everyone deserves to live in a clean environment. We encourage donation, developing a recycling community and supporting local business through providing a platform to sell their items.",
+      "haval": "Haval Rezan Majnun",
+      "ismail": "Ismail Khalil",
+      "sima": "Sima Jazaa Mohammed",
+      "kodo": "Kodo Yousif",
+      "meet": "Meet Team",
+      "about": "About Us"
+    },
+  
+    "searchform": {
+      "all": "All",
+      "free": "Free",
+      "paid": "Paid"
+    },
+    "fliter": {
+      "one": "Under 25$",
+      "two": "25$ - 50$",
+      "three": "50$ - 100$",
+      "four": "100$ - 200$",
+      "five": "200$ - 400$",
+      "six": "Over 400$",
+      "apply": "Apply",
+      "max": "Max",
+      "min": "Min"
+    },
+
+
+
+  
 
   "donationcontact":
   {
@@ -155,17 +378,7 @@
     "delete":"حذف"
   },
 
-  "adddonation":
-  {
-    "addnewdon":"إضافة تبرع جديد",
-    "title":"لقب",
-    "type":"ما هو نوع الطعام؟",
-    "quantity":"كمية",
-    "avalible":"كم يوما سيكون الطعام متاحا؟",
-    "desc":"وصف",
-    "add":"يضيف",
-    "cancel":"يلغي"
-  },
+  
 
   "heading": 
   {
