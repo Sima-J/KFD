@@ -155,21 +155,21 @@ export default function AddItemForm() {
             pulse
             size="7x"
           />
-          <h1 className="text-white m-3 mt-4 text-3xl">{t('loading')}</h1>
+          <h1 className="text-white m-3 mt-4 text-3xl">{t('Donations.loading')}</h1>
         </div>
       </SweetAlert>
 
       <Container className="Box border rounded border-black " >
                 <Row>
                     <Col className="tcol">
-                    <h1 className="title">Add New Donation</h1>
+                    <h1 className="title"> {t("Donations.addnew")} </h1>
                     </Col>
                 </Row>
                 <Row>
                 <Col md='6'>
         <Form onSubmit={handleSubmit}>
           <Form.Label htmlfor="Title" className="messages">
-          Title
+          {t("Donations.title")}
       </Form.Label>
       <Form.Control
                   
@@ -187,7 +187,7 @@ export default function AddItemForm() {
                   htmlFor="price"
                   className="md:text-xl text-blue font-semibold"
                 >
-                  Quantity
+                  {t("Donations.quantity")}
                 </Form.Label>
                 <Form.Control
                   required
@@ -202,7 +202,7 @@ export default function AddItemForm() {
                   htmlFor="type"
                   className="md:text-xl text-blue font-semibold "
                 >
-                 Type
+                 {t("Donations.type")}
                 </Form.Label>
                 <br />
                 <div className="inline-flex mt-2 text-center ">
@@ -215,7 +215,7 @@ export default function AddItemForm() {
                       className="hidden"
                       onChange={handleChnage}
                     />
-                      {t('footer.crafted')}
+                      {t('Donations.crafted')}
                   </Form.Label>
                   <Form.Label htmlFor="Used">
                     <Form.Control
@@ -226,7 +226,7 @@ export default function AddItemForm() {
                       className="hidden"
                       onChange={handleChnage}
                     />
-                    Used
+                    {t("Donations.used")}
                                       </Form.Label>
                   <Form.Label htmlFor="Donated">
                     <Form.Control
@@ -237,7 +237,7 @@ export default function AddItemForm() {
                       className="hidden"
                       onChange={handleChnage}
                     />
-                      {t('footer.donated')}
+                      {t('Donations.donated')}
                   </Form.Label>
                 </div>
               <br/>
@@ -245,7 +245,7 @@ export default function AddItemForm() {
                   htmlFor="categories"
                   className="md:text-xl text-blue font-semibold"
                 >
-                  {t('additem.itemcate')}
+                  {t('Donations.itemcate')}
                 </Form.Label>
                 <br />
 
@@ -313,14 +313,14 @@ export default function AddItemForm() {
                       )
                     })
                   ) : (
-                    <p>{t('additem.noImg')}</p>
+                    <p>{t('Donations.noImg')}</p>
                   )}
                 </div>
                 <Form.Label
                   htmlFor="file-upload"
                   className="relative cursor-pointer  rounded-md font-medium hover:shadow-none shadow-lg transition duration-300 ease-in-out hover:bg-darkBlue text-white bg-blue py-2 px-2"
                 >
-                  <span>{t('additem.upload')}</span>
+                  <span>{t('Donations.upload')}</span>
                   <Form.Control
                     id="file-upload"
                     name="imageForm.Control"
@@ -338,7 +338,7 @@ export default function AddItemForm() {
                   className="md:text-xl text-blue font-semibold"
                 >
                   {' '}
-                  {t('additem.phone')}
+                  {t('Donations.phone')}
                 </Form.Label>
                 <Form.Control
                   type="tel"
@@ -354,7 +354,7 @@ export default function AddItemForm() {
                   htmlFor="city"
                   className="md:text-xl text-blue font-semibold"
                 >
-                  {t('additem.city')}
+                  {t('Donations.city')}
                 </Form.Label>
                 <Form.Control
                   type="text"
@@ -371,7 +371,7 @@ export default function AddItemForm() {
                 htmlFor="Description"
                 className="md:text-xl text-blue font-semibold"
               >
-              description              </Form.Label>
+              {t("Donations.desc")}              </Form.Label>
 
               <Form.Control
               as="textarea" row="3"  type="text" 
@@ -389,16 +389,16 @@ export default function AddItemForm() {
                 onClick={() => setloading(true)}
                 className="py-2 px-4  m-1"
               >
-                Submit
+                {t("Donations.submit")}
               </Button>
             </div>
             <div className="md:col-span-5  text-center">
               <Button
-                value={t('additem.cancel')}
+                value={t('Donations.cancel')}
                 type="button"
                 onClick={() => history.goBack()}
                 className="py-2 px-4 m-1 "
-              >Cancel</Button>
+              > {t("Donations.cancel")} </Button>
             </div>
             </Form>
 

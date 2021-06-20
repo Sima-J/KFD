@@ -1,64 +1,7 @@
 {
   "language": "ar",
   "langText": "arabic",
-
-
-  "navbar": 
-  {
-    "home": "Home",
-    "contact": "Contact Us",
-    "about": "About",
-    "logIn": "Log In",
-    "signUp": "Sign Up",
-    "logOut": "Logout",
-    "donation": "Donation",
-    "profile": "Profile",
-    "search":"Search"
-  },
-
-  "contactus": 
-  {
-    "title": "Contact Us",
-    "leaveusamessage":"Please Leave Us a Message",
-    "name": "Name",
-    "email": "contact@KFD.com",
-    "phone": "+234081-1236-4568",
-    "subject": "Subject",
-    "send": "Send",
-    "emailad":"Email Address",
-    "required": "This field required",
-    "message": "Your Message"
-  },
-
-  "login": 
-  {
-    "log-in": " Log in",
-    "google": "Sign in"
-  },
-
-  "footer": 
-  {
-    "menu":"Menu",
-    "home":"Home",
-    
-    "contact":"Contact",
-    "about":"About",
-    "main_types":"Main Types",
-    "donation":"Donation",
-    "requesteddonations":"Requested Donations",
-    "contactus":"Contact Us",
-    "followus":"Follow Us",
-    "phonenumber": "+234081-1236-4568",
-    "email": "Contact@KFD.com",
-    "copyright":"© Copyright 2021 - KFD",
-      "profile": "Profile",
-      "type": "Main Types",
-      "crafted": "Crafted",
-      "used": "Used",
-      "donated": "Donated",
-      "follow": "Follow Us"
-  },
-
+  "NoData": "No Data",
   "aboutus": 
   {
     "abus":"About Us",
@@ -88,15 +31,46 @@
     "rebaz":"Rebaz Farid",
     "network":"Network and Security"
   },
-
-  "addbutton":
+  "Donations":
   {
-    "adddonation":"Add Your Donation",
-    "search":"Search"
+    "addd": "Add Donation",
+    "loading": "Uploading",
+    "addnew":"Add New Donation",
+    "title":"Title",
+    "quantity":"Qunatity",
+    "type":"What is food type?",
+    "crafted": "Crafted",
+    "used": "Used",
+    "donated": "Donated",
+    "itemcate": "Select the categories this item belong to below",
+    "phone": "Phone Number",
+    "noImg": "No Image is selected",  
+    "upload": "Add Image +",
+    "new": "Add New Item",
+    "how": "How long  the item will be available?",
+    "country": "Country",
+    "city": "City",
+    "add": "Add",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "itemtype": "Select the Item Type",
+    "aform": "You have successfully filled the form",
+    "desc": "Description",
+    "price": "Price",
+    "callTheOwner": "Call The Owner"
   },
 
-  "donationcontact":
+  "contactus": 
   {
+    "title": "Contact Us",
+    "leavemessage":"Please Leave Us a Message",
+    "name": "Name",
+    "email": "contact@KFD.com",
+    "subject": "Subject",
+    "send": "Send",
+    "emailad":"Email Address",
+    "required": "This field required",
+    "message": "Your Message",
     "callowner":"Call the Owner",
     "phone":"+964 750 113 0495",
     "location":"Iraq, Sulaymaniyah, Zerin",
@@ -104,6 +78,106 @@
     "date":"20/02/2021",
     "expire":"Supply Expires in 20 Days"
   },
+
+  "filter":
+  {
+    "category": "Category",
+    "filteredby":"Filtered by:",
+    "status":"Status",
+    "reqdon":"Requested Donations",
+    "donation":"Donations",
+    "quantity":"Quantity",
+    "apply":"Apply",
+    "min":"Min",
+    "max":"Max",
+    "under":"Under 25",
+    "one":"25-50",
+    "two":"50-100",
+    "three":"100-200",
+    "four":"200-400",
+    "over":"Over 400",
+    "location":"Location",
+    "erbil":"Erbil",
+    "zakho":"Zakho",
+    "silemani":"Silemani",
+    "shaqlawa":"Shaqlawa",
+    "duhok":"Duhok",
+    "halbja":"Halabja",
+    "kalar":"Kalar",
+    "darband":"Darbandikhan",
+    "ranya":"Ranya",
+    "said":"Said Sadiq",
+    "sharazwr":"Sharazwr",
+    "cham":"Chamchamal"
+  },
+
+  "footer": 
+  {
+    "menu":"Menu",
+    "home":"Home",
+    "contact":"Contact Us",
+    "about":"About",
+    "main_types":"Main Types",
+    "donation":"Donation",
+    "requdon":"Requested Donations",
+    "contactus":"Contact Us",
+    "follow":"Follow Us",
+    "phone": "+234081-1236-4568",
+    "email": "Contact@KFD.com",
+    "copy":"© Copyright 2021 - KFD",
+    "profile": "Profile",
+    "type": "Main Types",
+    "crafted": "Crafted"
+  },
+
+
+
+  "adddonation":
+  {
+    
+    
+    
+    
+    "avalible":"How many days the food will be available?",
+    "desc":"Description",
+    "add":"Add",
+    "cancel":"Cancel"
+  },
+
+  
+
+
+  "navbar": 
+  {
+    "home": "Home",
+    "contact": "Contact Us",
+    "about": "About",
+    "logIn": "Log In",
+    "signUp": "Sign Up",
+    "logOut": "Logout",
+    "donation": "Donation",
+    "profile": "Profile",
+    "search":"Search"
+  },
+
+  
+
+  "login": 
+  {
+    "log-in": " Log in",
+    "google": "Sign in"
+  },
+
+  
+
+
+  "addbutton":
+  {
+    "adddonation":"Add Your Donation",
+    "search":"Search"
+  },
+
+ 
 
   "donationsection":
   {
@@ -113,37 +187,7 @@
     "descmilk":"This is where we put the description of the donation products that are available to be donated or are requested to be given, this gives a breif idea as to what is the product and what is used for its benifits or the manfacturing company"
   },
 
-  "filteroption":
-  {
-    "filteredby":"Filtered by:",
-    "status":"Status",
-    "reqdon":"Requested Donations",
-    "donation":"Donations",
-    "quantity":"Quantity",
-    "apply":"Apply",
-    "min":"Min",
-    "max":"Max",
-    "under 25":"",
-    "25-50":"",
-    "50-100":"",
-    "100-200":"",
-    "200-400":"",
-    "over 400":"",
-    "location":"Location",
-    "erbil":"Erbil",
-    "zakho":"Zakho",
-    "silmemani":"Silemani",
-    "shaqlawa":"Shaqlawa",
-    "duhok":"Duhok",
-    "halbja":"Halabja",
-    "kalar":"Kalar",
-    "darbandinkhan":"Darbandikhan",
-    "ranya":"Ranya",
-    "said sadiq":"Said Sadiq",
-    "sharazwr":"Sharazwr",
-    "chamchamal":"Chamchamal"
-  },
-
+  
   "header":
   {
     "desc":"The Food Donation WebApp is an online platform that works as a bridge to connect restaurants, food-supplier companies and  Supermarkets to organization."
@@ -162,17 +206,7 @@
     "delete":"Delete"
   },
 
-  "adddonation":
-  {
-    "addnewdon":"Add New Donation",
-    "title":"Title",
-    "type":"What is food type?",
-    "quantity":"Qunatity",
-    "avalible":"How many days the food will be available?",
-    "desc":"Description",
-    "add":"Add",
-    "cancel":"Cancel"
-  },
+ 
 
   "heading": 
     {
@@ -187,18 +221,14 @@
     
     "loginSlogan": " Log in to start donating and / or sell what you don’t need",
     "loginAddItem": " You are not Authorized! Please, Log in. ",
-    "loading": "Uploading",
+    
     "back": "Go Back",
     "toast": {
       "successAdd": " is successfully added",
       "warningDelete": " Deleted"
     },
   
-    "proudctDetail": {
-      "price": "Price",
-      "description": "Description",
-      "callTheOwner": "Call The Owner"
-    },
+   
     "cform": {
       "cont": "Contact Us",
       "name": "Name",
@@ -211,19 +241,8 @@
       "mesg": "Your Message has been send"
     },
     "additem": {
-      "noImg": "No Image is selected",
-      "new": "Add New Item",
-      "upload": "Add Image +",
-      "title": "Title",
-      "phone": "Phone Number",
-      "how": "How long  the item will be available?",
-      "country": "Country",
-      "city": "City",
-      "add": "Add",
-      "cancel": "Cancel",
-      "itemtype": "Select the Item Type",
-      "itemcate": "Select the categories this item belong to below",
-      "aform": "You have successfully filled the form",
+      
+      
       "cat": [
         { "url": "Men", "value": "Men" },
         { "url": "Women", "value": "Women" },

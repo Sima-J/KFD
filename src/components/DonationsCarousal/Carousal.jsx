@@ -4,6 +4,7 @@ import Carousel from 'react-multi-carousel'
 import { useSelector } from 'react-redux'
 import uuid from 'react-uuid'
 import PropTypes from 'prop-types'
+import { useTranslation } from 'react-i18next'
 import LandingPageCard from '../LandingPageCard'
 import 'react-multi-carousel/lib/styles.css'
 import '../../App.scss'
@@ -28,6 +29,7 @@ const responsive = {
 }
 
 export default function Carousal({ condition }) {
+  const { t } = useTranslation()
   const products = useSelector(state => state.products)
 
   return (
@@ -61,7 +63,7 @@ export default function Carousal({ condition }) {
             )
           })
       ) : (
-        <div>No data...</div>
+        <div> {t("NoData")} </div>
       )}
     </Carousel>
     </Container>
