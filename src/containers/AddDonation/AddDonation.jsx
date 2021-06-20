@@ -1,16 +1,10 @@
-import React from "react";
-
-
-import AddDonationForm from "../../components/AddDonationForm/AddDonationForm";
-// import { useTranslation } from 'react-i18next'
-import './AddDonation.scss'
+import React from 'react'
+import AddDonationForm from '../../components/AddDonationForm'
 
 export default function AddDonation() {
-   /* const { t } = useTranslation() */ 
-    return (
-
-        <div>
-            <AddDonationForm/>
-        </div>
-    )
+  return (
+    <div className="lg:px-20 ">
+      <AddDonationForm />
+    </div>
+  )
 }

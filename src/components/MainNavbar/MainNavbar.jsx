@@ -1,104 +1,53 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import  {
     Navbar,
-    Nav,
-    Button    
+    Nav,Image, Button,Collapse,        DropdownButton,      Dropdown,       NavItem
+
+        
         } 
     from 'react-bootstrap'
+    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { useSelector, useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import { NavLink, Redirect } from 'react-router-dom'
-import i18next from 'i18next'
-import { selectedLang } from '../../redux/actions/actions'
-import Login from '../SignModule/SignModule'
+import i18n from 'i18next'
+    import userIcon from '../../assets/ProfileIcon.png'
 import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE, SEARCH_ROUTE } from '../../router'
-import userStatus, { setUserInfo } from '../../redux/actions/user'
 import SearchCard from "../SearchForm/SearchCard";
 import logo from '../../assets/logo.svg'
 import './MainNavbar.scss'
 import firebase from '../../Firebase'
+import { LogOut } from '../../redux/Authentication/AuthenticationActions'
+import {
+  OpenModal,
+  OpenSettingModal,
+  CloseModal,
+  CloseSettingModal,
+} from '../../redux'
 
 require('firebase/auth')
 
 export default function MainNavbar() {
 
-  const globaleLang = useSelector(state => state.langReducer)
-  const [NavLanguage, setNavLanguage] = useState(globaleLang)
-  const userState = useSelector(state => state.user.isLoggedIn)
   const dispatch = useDispatch()
+
   const { t } = useTranslation()
+  const user = useSelector(state => state.authentication)
+  const [profileDropDown, setprofileDropDown] = useState(false)
 
-  const [dirProperties, setDir] = useState({
-        dir: 'ltr',
-        className: 'ml-auto',
-        textDir: 'text-left',
-        })
-
-  const [showLoginModal, setShowLoginModal] = useState(false)
-
-   // check the user if loggedin or not
-   useEffect(() => {
-    firebase.auth().onAuthStateChanged(user => {
-      if (user) {
-        dispatch(userStatus(true))
-        dispatch(setUserInfo({ name: user.displayName, uid: user.uid }))
-      } else {
-        dispatch(userStatus(false))
-      }
-    })
-  }, [])
-
-  const handelLogout = () => {
-    firebase
-      .auth()
-      .signOut()
-      .then(() => {
-        dispatch(userStatus(false))
-        Redirect('/')
-      })
-      .catch(() => {})
-      }
-
-  const selectedLanguage = lang => {
-    i18next.changeLanguage(lang)
+  const handleLanguageChange = lang => {
+    i18n.changeLanguage(lang)
   }
-
-  const handelOption = e => {
-    localStorage.setItem('lang', e.target.value)
-    dispatch(selectedLang(e.target.value))
-    selectedLanguage(e.target.value)
-    setNavLanguage(e.target.value)
-    } 
-  
-  const handelDir = () => {
-    if (
-      localStorage.getItem('lang') !== 'en' &&
-      localStorage.getItem('lang') !== null
-    ) {
-      const newDir = 'rtl'
-      const newClassName = 'mr-auto'
-      const newtextDir = 'text-right'
-      const newdirProperties = { ...dirProperties }
-      newdirProperties.dir = newDir
-      newdirProperties.className = newClassName
-      newdirProperties.textDir = newtextDir
-      setDir(newdirProperties)
-    } else {
-      const newDir = 'ltr'
-      const newClassName = 'ml-auto'
-      const newtextDir = 'text-left'
-      const newdirProperties = { ...dirProperties }
-      newdirProperties.dir = newDir
-      newdirProperties.className = newClassName
-      newdirProperties.textDir = newtextDir
-      setDir(newdirProperties)
-    }
+  const signOut = () => {
+    dispatch(LogOut())
+    firebase.auth().signOut()
+    setprofileDropDown(false)
+    dispatch(CloseModal())
+    dispatch(CloseSettingModal())
+    localStorage.removeItem('loggedInUser')
+    return <Redirect to="/" />
   }
-
-  useEffect(() => {
-    handelDir()
-  }, [globaleLang])
 
     return (
             <Navbar  expand="md" className="shadow-sm">
@@ -129,7 +78,7 @@ export default function MainNavbar() {
                                {t('navbar.about')}
                     </Nav.Link>
 
-                    {userState ? 
+                    {user.isLoggedIn ?
                       
                       (
                         <Nav.Link  className="lins" activeStyle={{
@@ -140,7 +89,7 @@ export default function MainNavbar() {
                       ) : ('')
                     }
 
-                    {userState ? 
+                    {user.isLoggedIn ?
                       
                       (
                         <Nav.Link  className="lins" activeStyle={{
@@ -152,27 +101,19 @@ export default function MainNavbar() {
                       ) : ('')
                     }
     
-                    <Nav.Link as="select"
-                              className="select-language  mr-4  shadow-none bg-light  border-1 " 
-                              onChange={handelOption}
-                              value={NavLanguage}
-                              style={{ outline: 'none' }}>
-                              
-                      <option className="text-danger fas " value="en">
-                        English
-                      </option>
-
-                      <option value="kr">
-                        كوردى
-                      </option> 
-
-                      <option value="ar">
-                        عربي
-                      </option>
+                    <Nav.Link>
+                    <button
+                    onClick={() => handleLanguageChange(t('language'))}
+                    type="button"
+                    className=" hover:bg-darkBlue hover:text-white items-center px-3  space-x-2  text-blue  rounded inline-flex focus:outline-none items-center border border-solid border-blue justify-center"
+                  >
+                    <FontAwesomeIcon icon="globe" className="" />
+                    <div className="text-center ">{t('langText')}</div>
+                  </button>
 
                     </Nav.Link>
 
-                    {userState ? 
+                    {user.isLoggedIn ?
                       
                       (
                         <SearchCard />
@@ -181,35 +122,67 @@ export default function MainNavbar() {
 
                   </Nav>
    
-                  {userState ? (
-                    <Button className='SBTN'
-                      Style={{
-                              fontWeight: 'bold',
-                              borderBottom: '2px solid white',
-                            }}
-                      onClick={handelLogout}>{' '}
-                      {t('navbar.logOut')}
+                <NavItem>
+                <Dropdown>
 
+                  {user.isLoggedIn ? (
+                    <Button
+                      onClick={() => setprofileDropDown(!profileDropDown)}
+                      type="button"
+                      aria-controls="example-collapse-text"
+        aria-expanded={profileDropDown}
+                    >
+                      <Image
+                        className="h-6 w-6 mx-auto  roundedCircle"
+                        src={user ? user.user.photo : userIcon}
+                        alt=""
+                      />
                     </Button>
-
-                    ) : (
-
-                    <Button className='SBTN'
-                      Style={{
-                              fontWeight: 'bold',
-                              borderBottom: '2px solid white',
-                            }}
-                      onClick={() => {setShowLoginModal(!showLoginModal)}}>
-                      {t('navbar.logIn')}
-
+                  ) : (
+                    <Button
+                      type="button"
+                      onClick={() => dispatch(OpenModal())}
+                    >
+                      Log In
                     </Button>
                   )}
 
+                <Collapse in={profileDropDown} >
+                <DropdownButton id="dropdown-basic-button" className="px-4 mt-1 " title="Account">
+
+                  <NavLink
+                    to={PROFILE_ROUTE}
+                    className="block mx-4 my-1 px-4 py-2 text-sm  hover:bg-darkBlue hover:text-white"
+                    role="menuitem"
+                  >
+                    {user.isLoggedIn ? user.user.name : ''}
+                  </NavLink>
+
+                  <Button
+                    type="button"
+                    className="mx-4 my-1 text-left block focus:outline-none px-4 py-2 text-sm  hover:bg-darkBlue hover:text-white w-full"
+                    onClick={() => dispatch(OpenSettingModal())}
+                  >
+                    Settings
+                  </Button>
+
+                  <Button
+                    type="button"
+                    onClick={signOut}
+                    className="mx-4 my-1 text-left block focus:outline-none px-4 py-2 text-sm  hover:bg-darkBlue hover:text-white w-full"
+                    role="menuitem"
+                  >
+                    Sign out
+                  </Button>
+                  </DropdownButton>
+
+                </Collapse>
+
+                </Dropdown>
+
+                </NavItem>
+
                 </Navbar.Collapse>
-                  {/* </Router> */}
-                  {showLoginModal ? 
-                    (
-                        <Login onHide={() => {setShowLoginModal(!showLoginModal)}}/>
-                    ) : null}
+                  
 						  </Navbar>
           )}

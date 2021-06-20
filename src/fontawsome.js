@@ -1,14 +1,48 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import  {
-  faUserCircle,
-  faSearch,
-  faGlobe,
+
+import {
+  faCheckSquare,
+  faCoffee,
   faPhone,
+  faEdit,
+  faUserCircle,
+  faMapMarkerAlt,
+  faEye,
   faEnvelope,
+  faClock,
+  faSearchPlus,
+  faImages,
   faPlus,
-        } from '@fortawesome/free-solid-svg-icons'
+  faGlobe,
+  faSpinner,
+  faUser,
+  faBinoculars,
+  faTrashAlt,
+  faChevronLeft,
+  faSearch,
 
-import {} from '@fortawesome/free-regular-svg-icons'
+} from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faPhone, faEnvelope, faUserCircle, faSearch, faGlobe, faPlus)
+library.add(
+  fab,
+  faSearch,
+  faChevronLeft,
+  faTrashAlt,
+  faBinoculars,
+  faSpinner,
+  faGlobe,
+  faEnvelope,
+  faCheckSquare,
+  faEdit,
+  faCoffee,
+  faUserCircle,
+  faPhone,
+  faMapMarkerAlt,
+  faEye,
+  faClock,
+  faSearchPlus,
+  faImages,
+  faPlus,
+  faUser
+)
