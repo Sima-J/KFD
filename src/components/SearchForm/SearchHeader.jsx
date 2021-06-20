@@ -5,8 +5,9 @@ import  {
         } 
   from 'react-bootstrap'
 // import { useTranslation } from 'react-i18next'
-import { AddButton } from '../AddDonation'
-import SearchCard from './SearchCard'
+import AddDonationBtn from '../AddDonationBtn/AddDonationBtn'
+
+import SearchForm from './SearchForm'
 
 export default function SearchHeader() {
   /* const { t } = useTranslation() */
@@ -18,11 +19,11 @@ export default function SearchHeader() {
                         
               <Row className="py-5 px-md-5 " style = {{margin: "auto"}}>
                 <Col   className="  mb-5 mx-5 ">
-                  <SearchCard/>
+                 <SearchForm/> 
                 </Col>
 
                 <Col className="mb-5 mx-2">
-                  <AddButton/>
+                  <AddDonationBtn/>
                 </Col>
               </Row> 
             </div>
