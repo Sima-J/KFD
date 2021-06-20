@@ -158,8 +158,8 @@
     "delete":"Delete",
     "slogan": "Together Making The Wolrd A Better Place For Everyone",
     "myItems": "My Items",
-    "oops": " OOPS! You have not put anything for sell!",
-    "explain": "Add your item now and start selling!",
+    "oops": " OOPS! You have not put anything to Donate!",
+    "explain": "Add your item now and start Giving!",
     "deleting": "Are you sure?",
     "deletingNote": "Once deleted, you will not be able to recover this item!",
     "deleted": " file has been deleted!",
@@ -175,16 +175,27 @@
   "login": 
   {
     "log-in": " Log in",
-    "google": "Sign in"
+    "google": "Sign in",
+    "KFD":"KFD Application"
   },
 
+  "notFound": {
+    "oops": " OOPS! Page Not Found...",
+    "explain": "The Page You are Looking For does not Exist, It might have been Moved or deleted."
+  },
+
+  "setting": {
+    "setting": "Settings",
+    "name": "Name",
+    "photo": "Photo",
+    "phone": "Phone Number",
+    "city": "City",
+    "save": "Save",
+    "close": "Close"
+  },
 
   "adddonation":
   {
-    
-    
-    
-    
     "avalible":"How many days the food will be available?",
     "desc":"Description",
     "add":"Add",
@@ -215,15 +226,10 @@
     "descmilk":"This is where we put the description of the donation products that are available to be donated or are requested to be given, this gives a breif idea as to what is the product and what is used for its benifits or the manfacturing company"
   },
 
-  
   "header":
   {
     "desc":"The Food Donation WebApp is an online platform that works as a bridge to connect restaurants, food-supplier companies and  Supermarkets to organization."
   },
-
-
-
- 
 
   "heading": 
     {
@@ -234,19 +240,18 @@
   {
       "DC" : "Donation Card"
   },
-  
-    
     "loginSlogan": " Log in to start donating and / or sell what you don’t need",
     "loginAddItem": " You are not Authorized! Please, Log in. ",
     
     "back": "Go Back",
-    "toast": {
+    "toast": 
+    {
       "successAdd": " is successfully added",
       "warningDelete": " Deleted"
     },
   
-   
-    "cform": {
+    "cform": 
+    {
       "cont": "Contact Us",
       "name": "Name",
       "email": "Email Address",
@@ -257,7 +262,8 @@
       "desc": "We do not make any warranties about the authenticity or quality of products in this website. Any transaction you take upon the products on this website is strictly at your own risks, and we will not be liable for any loss and damages in connection with the use of our website.",
       "mesg": "Your Message has been send"
     },
-    "additem": {
+    "additem": 
+    {
       "noImg": "No Image is selected",
       "new": "Add New Item",
       "upload": "Add Image +",
@@ -284,17 +290,7 @@
       "usedItems": "Used Items",
       "craftedItems": "Crafted Items"
     },
-    "setting": {
-      "setting": "Settings",
-      "name": "Name",
-      "photo": "Photo",
-      "phone": "Phone Number",
-      "city": "City",
-      "save": "Save",
-      "close": "Close"
-    },
-    
-  
+   
     "addItem": "Add Item",
   
     "about": {
@@ -313,11 +309,6 @@
       "about": "About Us"
     },
   
-    "notFound": {
-      "oops": " OOPS! Page Not Found...",
-      "explain": "The Page You are Looking For does not Exist, It might have been Moved or deleted."
-    },
-  
     "searchform": {
       "all": "All",
       "free": "Free",
@@ -334,5 +325,4 @@
       "max": "Max",
       "min": "Min"
     }
-  
 }
