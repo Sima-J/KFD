@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Modal, ModalTransition } from 'react-simple-hook-modal'
 
-import { useTranslation } from 'react-i18next'
 import { useDispatch, useSelector } from 'react-redux'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
 import firebase, { db } from '../../Firebase'
@@ -11,7 +10,6 @@ import { CloseModal, OpenModal, OpenSettingModal } from '../../redux'
 import 'react-simple-hook-modal/dist/styles.css'
 
 export default function Login() {
-  const { t } = useTranslation()
   const dispatch = useDispatch()
   const location = useLocation()
   const LoginModal = useSelector(state => state.LogInModal)
@@ -83,7 +81,7 @@ export default function Login() {
       >
         <div className="grid grid-cols-1  grid-rows-3">
           <div className="grid grid-flow-col items-center  border-b border-grey pb-2 mb-3 ">
-            <h1 className="font-black text-xl">{t('login')}</h1>
+            <h1 className="font-black text-xl">KFD Application</h1>
             <button
               type="button"
               className="border border-grey shadow-md hover:shadow-inner focus:outline-none  transition duration-700 ease-in-out text-grey font-semibold hover:text-red py-2 px-4 rounded justify-self-end"
@@ -95,9 +93,9 @@ export default function Login() {
           <div className="row-span-2 m-auto   ">
             <h1 className="font-medium text-center text-lg font-black">
               {LoginModal.isAddItem === false ? (
-                t('loginSlogan')
+                "Sign Up"
               ) : (
-                <div className="text-red"> {t('loginAddItem')}</div>
+                <div className="text-red"> Login</div>
               )}
             </h1>
             <StyledFirebaseAuth
