@@ -143,7 +143,7 @@ export default function MainNavbar() {
                       type="button"
                       onClick={() => dispatch(OpenModal())}
                     >
-                      Log In
+                    {t("navbar.logIn")}
                     </Button>
                   )}
 
@@ -163,7 +163,7 @@ export default function MainNavbar() {
                     className="mx-4 my-1 text-left block focus:outline-none px-4 py-2 text-sm  hover:bg-darkBlue hover:text-white w-full"
                     onClick={() => dispatch(OpenSettingModal())}
                   >
-                    Settings
+                  {t("navbar.settings")}
                   </Button>
 
                   <Button
@@ -172,7 +172,7 @@ export default function MainNavbar() {
                     className="mx-4 my-1 text-left block focus:outline-none px-4 py-2 text-sm  hover:bg-darkBlue hover:text-white w-full"
                     role="menuitem"
                   >
-                    Sign out
+                  {t("navbar.signUp")}
                   </Button>
                   </DropdownButton>
 

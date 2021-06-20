@@ -131,6 +131,52 @@
     "crafted": "Crafted"
   },
 
+  "navbar": 
+  {
+    "home": "Home",
+    "contact": "Contact Us",
+    "about": "About",
+    "logIn": "Log In",
+    "signUp": "Sign Up",
+    "logOut": "Logout",
+    "donation": "Donation",
+    "profile": "Profile",
+    "search":"Search",
+    "settings": "Settings"
+  },
+
+  "profile":
+  {
+    "desc1":"The main issues to solve are achieving food security, and hunger improving the food nutrition.",
+    "bestsupermarket":"Best Super Market",
+    "phone":"964 750 113 0495",
+    "location":"Iraq, Sulaymaniyah",
+    "mydonations":"My Donations",
+    "suplname":"Supply Name",
+    "quntity":"Quantity",
+    "time":"--Weeks-Days-Hours-Min",
+    "delete":"Delete",
+    "slogan": "Together Making The Wolrd A Better Place For Everyone",
+    "myItems": "My Items",
+    "oops": " OOPS! You have not put anything for sell!",
+    "explain": "Add your item now and start selling!",
+    "deleting": "Are you sure?",
+    "deletingNote": "Once deleted, you will not be able to recover this item!",
+    "deleted": " file has been deleted!",
+    "notDeleted": " File not deleted"
+  },
+
+  "addbutton":
+  {
+    "adddonation":"Add Your Donation",
+    "search":"Search"
+  },
+
+  "login": 
+  {
+    "log-in": " Log in",
+    "google": "Sign in"
+  },
 
 
   "adddonation":
@@ -148,35 +194,16 @@
   
 
 
-  "navbar": 
-  {
-    "home": "Home",
-    "contact": "Contact Us",
-    "about": "About",
-    "logIn": "Log In",
-    "signUp": "Sign Up",
-    "logOut": "Logout",
-    "donation": "Donation",
-    "profile": "Profile",
-    "search":"Search"
-  },
-
-  
-
-  "login": 
-  {
-    "log-in": " Log in",
-    "google": "Sign in"
-  },
+ 
 
   
 
 
-  "addbutton":
-  {
-    "adddonation":"Add Your Donation",
-    "search":"Search"
-  },
+
+  
+
+
+
 
  
 
@@ -194,18 +221,7 @@
     "desc":"The Food Donation WebApp is an online platform that works as a bridge to connect restaurants, food-supplier companies and  Supermarkets to organization."
   },
 
-  "profilecard":
-  {
-    "desc1":"The main issues to solve are achieving food security, and hunger improving the food nutrition.",
-    "bestsupermarket":"Best Super Market",
-    "phone":"964 750 113 0495",
-    "location":"Iraq, Sulaymaniyah",
-    "mydonations":"My Donations",
-    "suplname":"Supply Name",
-    "quntity":"Quantity",
-    "time":"--Weeks-Days-Hours-Min",
-    "delete":"Delete"
-  },
+
 
  
 
@@ -277,17 +293,7 @@
       "save": "Save",
       "close": "Close"
     },
-    "profile": {
-      "slogan": "Dilmun Should be your first choice to buy or sell anything!",
-      "myItems": "My Items",
-      "delete": "Delete ",
-      "oops": " OOPS! You have not put anything for sell!",
-      "explain": "Add your item now and start selling!",
-      "deleting": "Are you sure?",
-      "deletingNote": "Once deleted, you will not be able to recover this item!",
-      "deleted": " file has been deleted!",
-      "notDeleted": " File not deleted"
-    },
+    
   
     "addItem": "Add Item",
   
