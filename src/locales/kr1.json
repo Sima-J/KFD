@@ -1,0 +1,270 @@
+{
+  "language": "en",
+  "langText": "english",
+  "NoData": "No Data",
+  "aboutus": 
+  {
+    "abus":"About Us",
+    "weh":"We Elimate Hunger",
+    "whatwedo":"چی دەکەین",
+    "ourgoal": "ئامانجەکانمان",
+    "ourgoaldesc":"ئامانجی سەرەکی ئێمە لە سیستمەکە ئەوەیە کە وەک پردێکی پەیوەندی نێوان بازرگانی و ڕێکخراوی خێرخوازی کار بکەین و ڕێگە بە بەکارهێنەران بدەن خۆراک ببەخشن و دەتوانن دەست بۆ یەکتر درێژ بکەن و یارمەتی ئەو کەسانە بدەن کە پێویستیانە .",
+    "ourmission":"ئەرکەکەمان",
+    "ourmissiondesc":"ئەرکی ئێمە ئەوەیە کە یارمەتی کەسانی پێویست بدەن، هەوڵ دەدەین لە ڕێگەی ڕێکخراوە خێرخوازییەکان خزمەتی ئەو کەسانە بکەین کە پێویستیان بە پێداویستی ی خۆراکی یە",
+    "ourvalue":"بەهاکەمان",
+    "ourvaluedesc":"گەورەترین سوود بەخشینە بە هاوکاری کردنی خەڵکی بێنەوا لە دەوروبەر لە ئێستادا زۆر کەس هەن کە پێویستیان بە یارمەتی هەیە لە هەموو بوارەکاندا بە تایبەتی شتە گرنگ و جۆراوجۆرەکان بە یارمەتیدان بۆ ژیان بە جۆرێکی ناوازە واتە بە دابین کردنی گرنگترین شت کە خواردنە بۆیان"
+  },
+
+  "sponser":
+  {
+    "ourpartner":"هاوبەشەکانمان",
+    "ourpartnerdesc":"کار لەگەڵ هاوکارەکانمان دەکەین و تۆڕێکی بەهێز هاوپەیمانیمان پێکهێناوە"
+  },
+
+  "teammembers":
+  {
+    "meettheteam":"تیمەکەمان بناسە",
+    "sima":"سیما جەزا",
+    "softwareeng":"ئەندازیاری بەرنامەسازی",
+    "sana":"سەنا جەزا",
+    "mudhafar":"مزەفەر دلێر",
+    "rebaz":"ڕێباز فەرید",
+    "network":"تۆڕ و ئاسایش"
+  },
+
+  "Donations":
+  {
+    "addd": "بەخشینەکەت زیاد بکە",
+    "loading": "Uploading",
+    "addnew":"Add New Donation",
+    "title":"Title",
+    "quantity":"Qunatity",
+    "type":"What is food type?",
+    "crafted": "Crafted",
+    "used": "Used",
+    "donation": "Donation",
+    "itemcate": "Select the categories this item belong to below",
+    "phone": "Phone Number",
+    "noImg": "No Image is selected",  
+    "upload": "Add Image +",
+    "new": "Add New Item",
+    "how": "How long  the item will be available?",
+    "country": "Country",
+    "city": "City",
+    "add": "Add",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "itemtype": "Select the Item Type",
+    "aform": "You have successfully filled the form",
+    "desc": "Description",
+    "price": "Price",
+    "callTheOwner": "Call The Owner",
+    "requdon":"Requested Donations"
+  },
+
+  "contactus": 
+  {
+    "title": "پەیوەندیمان پێوە بکە",
+    "leavemessage":"Please Leave Us a Message",
+    "name": "ناو",
+    "email": "contact@KFD.com",
+    "subject": "بابەت",
+    "send": "ناردن",
+    "emailad":"ناونیشانی ئیمەیڵ",
+    "required": "ئەم خانەیە پێویستە",
+    "message": "نامەکەت",
+    "callowner":"Call the Owner",
+    "phone":"+964 750 113 0495",
+    "location":"عێراق، سلێمانی، زێرین",
+    "quality":"چەندێتی:",
+    "date":"20/02/2021",
+    "expire":"کالا لە 20 ڕۆژدا بەسەر دەچێت"
+  },
+
+  "filter":
+  {
+    "category": "Category",
+    "filteredby":"پاڵێوکراوە لەلایەن:",
+    "status":"دۆخ",
+    "reqdon":"بەخشینە داواکراوەکان",
+    "donation":"بەخشینەکان",
+    "quantity":"چەندێتی",
+    "apply":"جێبەجێ کردن",
+    "min":"کەمترین",
+    "max":"زۆرترین",
+    "under 25":"کەمتر لە ٢٥",
+    "one":"25-50",
+    "two":"50-100",
+    "three":"100-200",
+    "four":"200-400",
+    "over 400":"زیاتر لە ٤٠٠",
+    "location":"شوێن",
+    "erbil":"هەولێر",
+    "zakho":"زاخۆ",
+    "silemani":"سلێمانی",
+    "shaqlawa":"شەقڵاوە",
+    "duhok":"دهۆک",
+    "halbja":"هەڵەبجە",
+    "kalar":"کەلار",
+    "darband":"دەربەندیخان",
+    "ranya":"ڕانیە",
+    "said sadiq":"سەیدسادق",
+    "sharazwr":"شارەزوور",
+    "cham":"چەمچەماڵ"
+  },
+
+  "footer": 
+  {
+    "menu":"مێنیو",
+    "home":"سەرەتا",
+    "profile":"پرۆفایل",
+    "contact":"پەیوەندی",
+    "about":"سەبارەت",
+    "main_types":"جۆری سەرەکی",
+    "donation":"بەخشین",
+    "requdon":"بەخشینە داواکراوەکان",
+    "contactus":"پەیوەندیمان پێوە بکە",
+    "follow":"فۆلۆمان بکەن",
+    "phone": "+234081-1236-4568",
+    "email": "Contact@KFD.com",
+    "copy":"© Copyright 2021 - KFD",
+    "type": "Main Types",
+    "crafted": "Crafted"
+  },
+
+  "navbar": 
+  {
+    "home": "سەرەتا",
+    "contact": "پەیوەندیمان پێوە بکە",
+    "about": "سەبارەت",
+    "logIn": "چوونەژوورەوە",
+    "signUp": "خۆ تۆمارکردن",
+    "logOut": "دەرچوون",
+    "donation": "بەخشین",
+    "profile": "پرۆفایل",
+    "search":"گەڕان",
+    "settings": "Settings"
+  },
+
+  "profile":
+  {
+    "desc1":"سەرەکیترین کێشەکان بۆ چارەسەرکردنیان و بەدەستهێنانی ئاسایشی خۆراکو برسێتی یە بۆ باشترکردنی خۆراکی خواردن",
+    "bestsupermarket":"باشترین سوپەر مارکێت",
+    "phone":"964 750 113 0495",
+    "location":"عێراق، سلێمانی",
+    "mydonations":"بەخشینەکانم",
+    "suplname":"ناوی کالا",
+    "quntity":"چەندێتی",
+    "time":"--هەفتە-ڕۆژ-کاتژمێر-خولەک",
+    "delete":"سڕینەوە",
+    "slogan": "Together Making The Wolrd A Better Place For Everyone",
+    "myItems": "My Items",
+    "oops": " OOPS! You have not put anything to Donate!",
+    "explain": "Add your item now and start Giving!",
+    "deleting": "Are you sure?",
+    "deletingNote": "Once deleted, you will not be able to recover this item!",
+    "deleted": " file has been deleted!",
+    "notDeleted": " File not deleted"
+  },
+
+  "addbutton":
+  {
+    "adddonation":"بەخشینەکەت زیاد بکە",
+    "search":"گەڕان"
+  },
+
+  "login": 
+  {
+    "log-in": " چوونەژوورەوە",
+    "google": "چوونەژوورەوە"
+  },
+
+  "notFound": 
+  {
+    "oops": " OOPS! Page Not Found...",
+    "explain": "The Page You are Looking For does not Exist, It might have been Moved or deleted."
+  },
+
+  "setting": {
+    "setting": "Settings",
+    "name": "Name",
+    "photo": "Photo",
+    "phone": "Phone Number",
+    "city": "City",
+    "save": "Save",
+    "close": "Close"
+  },
+
+  "adddonation":
+  {
+    "addnewdon":"زیادکردنی بەخشینێکی نوێ",
+    "title":"سەردێڕ",
+    "type":"جۆری خۆراک چییە؟",
+    "quantity":"چەندێتی",
+    "avalible":"خواردنەکە چەند ڕۆژ بەردەست دەبێت؟",
+    "desc":"باسکردن",
+    "add":"زیادکردن",
+    "cancel":"هەڵوەشاندنەوه"
+  },
+
+
+
+  
+ 
+  "contactform": {
+    "title": "پەیوەندیمان پێوە بکە",
+    "leaveusamessage":"Please Leave Us a Message",
+    "name": "ناو",
+    "email": "contact@KFD.com",
+    "phone": "+234081-1236-4568",
+    "subject": "بابەت",
+    "send": "ناردن",
+    "emailad":"ناونیشانی ئیمەیڵ",
+    "required": "ئەم خانەیە پێویستە",
+    "message": "نامەکەت"
+  },
+  "donationcard":{
+
+  },
+  "donationcontact":{
+    "callowner":"پەیوەندی بکە بە خاوەنەکە",
+    "phone":"+964 750 113 0495",
+    "location":"عێراق، سلێمانی، زێرین",
+    "quality":"چەندێتی: 36",
+    "date":"20/02/2021",
+    "expire":"کالا لە 20 ڕۆژدا بەسەر دەچێت"
+  },
+  "donationsection":{
+    "milk":"شیر",
+    "supermarket":"سوپەرمارکێت",
+    "description":"باسکردن",
+    "descmilk":"ئەمە ئەو شوێنەیە کە باسی ئەم بەرهەمانەی کە بەردەستن بۆ بەخشینییان دایبنێین یان داوای بەخشینیان لێبکرێت ، ئەمەش بیرۆکەیەکی کورت دەداتێ کە بەرهەمەکەی چییە و چی بۆ سوودی خۆی بەکاردێت یان کۆمپانیای پیشەسازی"
+  },
+  
+
+  "header":{
+    "desc":"پلاتفۆرمێکی سەرهێڵییە کە وەک پردێک کار دەکات بۆ بەستنەوەی چێشتخانە و کۆمپانیاکانی دابینکەری خۆراک و سوپەرمارکێتەکان بۆ ڕێکخراو ."
+  },
+  "homecard":{
+
+  },
+
+
+
+  "searchcard":{
+
+  },
+  "searchform":{
+
+  },
+  "searchheader":{
+
+  },
+  "signinmodule":{
+
+  },
+  "notfound":{
+
+  }
+  
+}
