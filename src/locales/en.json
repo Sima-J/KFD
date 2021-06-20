@@ -2,6 +2,7 @@
   "language": "ar",
   "langText": "arabic",
 
+
   "navbar": 
   {
     "home": "Home",
@@ -39,7 +40,7 @@
   {
     "menu":"Menu",
     "home":"Home",
-    "profile":"Profile",
+    
     "contact":"Contact",
     "about":"About",
     "main_types":"Main Types",
@@ -49,7 +50,13 @@
     "followus":"Follow Us",
     "phonenumber": "+234081-1236-4568",
     "email": "Contact@KFD.com",
-    "copyright":"© Copyright 2021 - KFD"
+    "copyright":"© Copyright 2021 - KFD",
+      "profile": "Profile",
+      "type": "Main Types",
+      "crafted": "Crafted",
+      "used": "Used",
+      "donated": "Donated",
+      "follow": "Follow Us"
   },
 
   "aboutus": 
@@ -175,5 +182,127 @@
   "doncard" : 
   {
       "DC" : "Donation Card"
+  },
+  
+    
+    "loginSlogan": " Log in to start donating and / or sell what you don’t need",
+    "loginAddItem": " You are not Authorized! Please, Log in. ",
+    "loading": "Uploading",
+    "back": "Go Back",
+    "toast": {
+      "successAdd": " is successfully added",
+      "warningDelete": " Deleted"
+    },
+  
+    "proudctDetail": {
+      "price": "Price",
+      "description": "Description",
+      "callTheOwner": "Call The Owner"
+    },
+    "cform": {
+      "cont": "Contact Us",
+      "name": "Name",
+      "email": "Email Address",
+      "message": "Your Message",
+      "leve": "Leave us a message",
+      "send": "Send",
+      "disc": "Disclaimer",
+      "desc": "We do not make any warranties about the authenticity or quality of products in this website. Any transaction you take upon the products on this website is strictly at your own risks, and we will not be liable for any loss and damages in connection with the use of our website.",
+      "mesg": "Your Message has been send"
+    },
+    "additem": {
+      "noImg": "No Image is selected",
+      "new": "Add New Item",
+      "upload": "Add Image +",
+      "title": "Title",
+      "phone": "Phone Number",
+      "how": "How long  the item will be available?",
+      "country": "Country",
+      "city": "City",
+      "add": "Add",
+      "cancel": "Cancel",
+      "itemtype": "Select the Item Type",
+      "itemcate": "Select the categories this item belong to below",
+      "aform": "You have successfully filled the form",
+      "cat": [
+        { "url": "Men", "value": "Men" },
+        { "url": "Women", "value": "Women" },
+        { "url": "Kids", "value": "Kids" },
+        { "url": "Toys", "value": "Toys" },
+        { "url": "Electronics", "value": "Electronics" },
+        { "url": "Home", "value": "Home" },
+        { "url": "Sports", "value": "Sports" },
+        { "url": "Homemade", "value": "Homemade" },
+        { "url": "Furniture", "value": "Furniture" },
+        { "url": "Other", "value": "Other" }
+      ]
+    },
+    "home": {
+      "slogan": "Find or Sell whatever you want and wherever you are!",
+      "addItem": "Add Item",
+      "donatedItems": "Donated Items",
+      "usedItems": "Used Items",
+      "craftedItems": "Crafted Items"
+    },
+    "setting": {
+      "setting": "Settings",
+      "name": "Name",
+      "photo": "Photo",
+      "phone": "Phone Number",
+      "city": "City",
+      "save": "Save",
+      "close": "Close"
+    },
+    "profile": {
+      "slogan": "Dilmun Should be your first choice to buy or sell anything!",
+      "myItems": "My Items",
+      "delete": "Delete ",
+      "oops": " OOPS! You have not put anything for sell!",
+      "explain": "Add your item now and start selling!",
+      "deleting": "Are you sure?",
+      "deletingNote": "Once deleted, you will not be able to recover this item!",
+      "deleted": " file has been deleted!",
+      "notDeleted": " File not deleted"
+    },
+  
+    "addItem": "Add Item",
+  
+    "about": {
+      "start": "We strive to provide a place to our users where they can buy and sell their used items, crafted or donated items.",
+      "miss": "Our Mission",
+      "mission": "Dilmun mission is to connect people in need with place to sell their items and build bridges of trust between them.",
+      "go": "Our Goals",
+      "goals": "we make sure our users find what they are looking for and as easy as possible, instead of searching for items on social media, here you can easily find what are you looking for with one search.",
+      "val": "Our Values",
+      "values": "We believe that everyone deserves to live in a clean environment. We encourage donation, developing a recycling community and supporting local business through providing a platform to sell their items.",
+      "haval": "Haval Rezan Majnun",
+      "ismail": "Ismail Khalil",
+      "sima": "Sima Jazaa Mohammed",
+      "kodo": "Kodo Yousif",
+      "meet": "Meet Team",
+      "about": "About Us"
+    },
+  
+    "notFound": {
+      "oops": " OOPS! Page Not Found...",
+      "explain": "The Page You are Looking For does not Exist, It might have been Moved or deleted."
+    },
+  
+    "searchform": {
+      "all": "All",
+      "free": "Free",
+      "paid": "Paid"
+    },
+    "fliter": {
+      "one": "Under 25$",
+      "two": "25$ - 50$",
+      "three": "50$ - 100$",
+      "four": "100$ - 200$",
+      "five": "200$ - 400$",
+      "six": "Over 400$",
+      "apply": "Apply",
+      "max": "Max",
+      "min": "Min"
     }
+  
 }
