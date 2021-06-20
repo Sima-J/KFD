@@ -37,8 +37,7 @@ export default function ContactInfo({
         <tbody>
 
             <td className = "td">
-                {t('donationcontact.callowner')}
-                Call the Donors
+                {t('contactus.callowner')}
                 <br/>
                 <FontAwesomeIcon className="icon" icon="phone"/>{'  '}
                 {phone}

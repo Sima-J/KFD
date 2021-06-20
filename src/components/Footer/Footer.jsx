@@ -17,12 +17,12 @@ const Footer = () => {
             <footer className = "cont">
               <Row>
                 <Col className = "col" >
-                  <h5 className="underline"> {t('footer.menu')}</h5>
+                  <h5 className="underline"> {t("footer.menu")}</h5>
 
                     <h6 className="list-unstyled">
                       <li>
                           <Nav.Link className="lin" 
-                                    exact as={NavLink} to={HOME_ROUTE}>Home
+                                    exact as={NavLink} to={HOME_ROUTE}> {t("footer.home")}
                           </Nav.Link>
                       </li>
 
@@ -30,7 +30,7 @@ const Footer = () => {
                         (
                           <li>
                             <Nav.Link  className="lin"
-                                      as={NavLink} to={PROFILE_ROUTE}>Profile
+                                      as={NavLink} to={PROFILE_ROUTE}>{t("footer.profile")}
                             </Nav.Link>
                           </li>
                         ) : ('')
@@ -38,13 +38,13 @@ const Footer = () => {
                     
                       <li>
                         <Nav.Link className="lin"  
-                                  as={NavLink} to={CONTACT_ROUTE}>Contact
+                                  as={NavLink} to={CONTACT_ROUTE}>{t("footer.contact")}
                         </Nav.Link>
                       </li>
 
                       <li>
                         <Nav.Link  className="lin"  
-                                   as={NavLink} to={ABOUT_ROUTE}>About
+                                   as={NavLink} to={ABOUT_ROUTE}>{t("footer.about")}
                         </Nav.Link>
                       </li>
                     
@@ -56,15 +56,15 @@ const Footer = () => {
                     (
 
                       <Col>
-                        <h5 className="underline"> Main Types</h5>
+                        <h5 className="underline"> {t("footer.main_types")}</h5>
                         <h6 className="list-unstyled">
                             
                             <Nav.Link  className="lin " 
-                                      as={NavLink} to={SEARCH_ROUTE}>Donation
+                                      as={NavLink} to={SEARCH_ROUTE}>{t("footer.donation")}
                             </Nav.Link>
 
                             <Nav.Link  className="lin " 
-                                      >Requested Donations
+                                      >{t("footer.requdon")}
                             </Nav.Link>
 
                         </h6>
@@ -73,14 +73,14 @@ const Footer = () => {
                   }
                                 
                   <Col>
-                    <h5 className="underline">Contact Us </h5>
+                    <h5 className="underline">{t("footer.contact")} </h5>
                     <h6 className="list-unstyled">
                       <li>
 
                         <span > 
                           <a className = 'text' href={`tel:${"+234081-1236-4568"}`}>
                             <FontAwesomeIcon className="icon" icon="phone"/>
-                            &nbsp; +234081-1236-4568 
+                            &nbsp; {t("footer.phone")}
                           </a> 
                         </span>
 
@@ -89,7 +89,7 @@ const Footer = () => {
                         <span>
                           <a className = 'text' href={`mailto:${"contact@KFD.com"}`}>
                             <FontAwesomeIcon className="icon" icon="envelope"/>
-                            &nbsp;  Contact@KFD.com
+                            &nbsp;  {t("footer.email")}
                           </a> 
                         </span>
 
@@ -98,7 +98,7 @@ const Footer = () => {
                   </Col>
 
                   <Col>
-                    <h4 className="underline" > Follow Us </h4>
+                    <h4 className="underline" > {t("footer.follow")} </h4>
                         <div className = "SocialProfile">
 
                             <FontAwesomeIcon  icon={['fab', 'instagram']} 
@@ -122,7 +122,7 @@ const Footer = () => {
 
                     <p className="text-center"> 
                       <Image src={logo} alt="logo"/> 
-                        © Copyright 2021 - KFD 
+                      {t("footer.copy")}
                     </p>
                     
                   </Col>

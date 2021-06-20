@@ -51,7 +51,7 @@ const handleSubmit = (e) => {
                     <Row>
                       <Col md="6">
                         <Form className="BoxForm " onSubmit={handleSubmit}>
-                          <p className="h4 text-center mb-4">Please Leave Us a Message</p>
+                          <p className="h4 text-center mb-4"> {t("contactus.leavemessage")} </p>
 
                           <Form.Label htmlFor="name" className="grey-text">
                             {t("contactus.name")}
@@ -78,7 +78,7 @@ const handleSubmit = (e) => {
                           <br />
 
                           <Form.Label htmlFor="message" className="grey-text">
-                            Your Messabe
+                            {t("contactus.message")}
                           </Form.Label>
                           <Form.Control as="textarea" row="3"  type="text" id="message" name="message"
                           value={message}
@@ -87,7 +87,7 @@ const handleSubmit = (e) => {
 
                           <div className="text-center my-4 ">
                             <Button type="submit" className="Btn"  >
-                              Send
+                              {t("contactus.send")}
                             </Button>
                           </div>
 {console.log(name)}
@@ -104,7 +104,7 @@ const handleSubmit = (e) => {
                               size="2x"
                               />
 
-                              <span style={{ color: 'black' }}>+234081-1236-4568</span>
+                              <span style={{ color: 'black' }}> {t("contactus.phone")} </span>
                             </a>
                           </div>
 
@@ -114,7 +114,7 @@ const handleSubmit = (e) => {
                                   icon="envelope"
                                   size="2x"
                               />{' '}
-                              <span  style={{ color: 'black' }}>contact@KFD.com</span>
+                              <span  style={{ color: 'black' }}> {t("contactus.email")} </span>
                             </a>
                           </div>
                         </Col>
