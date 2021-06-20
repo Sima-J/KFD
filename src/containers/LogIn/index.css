@@ -1,0 +1,14 @@
+.rsm-m-4 {
+  margin: 10vw;
+  margin-top: 23vh;
+  margin-bottom: 23vh;
+}
+
+.rsm-z-40 {
+  z-index: 999;
+}
+.rsm-p-8 {
+  padding: 2vw;
+
+  padding-bottom: 0;
+}

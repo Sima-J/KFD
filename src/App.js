@@ -1,16 +1,21 @@
 /* eslint-disable react/jsx-fragments */
-import React, { Fragment } from 'react'
-import { Switch, Route } from 'react-router'
-import { useSelector } from 'react-redux'
+import React, { useEffect } from 'react'
+import { Switch, Route, useLocation } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { ModalProvider } from 'react-simple-hook-modal'
 import MainNavbar from './components/MainNavbar'
 import Footer from './components/Footer'
 import Home from './containers/Home'
 import About from './containers/About'
 import Contact from './containers/Contact'
-import AddDonation from './containers/AddDonation'
 import Profile from './containers/Profile'
-import Search from './containers/Search'
-import DonationDetails from './containers/DonationDetails'
+import DonationDetails from './containers/DonationDetails/DonationDetails'
+import Search from './containers/SearchResult/SearchResult'
+import AddDonation from './containers/AddDonation/AddDonation'
+import Settings from './containers/Settings/SettingsModal'
+import PrivateRoute from './PrivateRoute'
+import NotFound from './containers/NotFound'
+import './fontawsome'
 import {
   HOME_ROUTE,
   ABOUT_ROUTE,
@@ -20,47 +25,47 @@ import {
   DONATION_DETAILS_ROUTE,
   SEARCH_ROUTE,
 } from './router'
-import NotFound from './containers/NotFound'
 
 import './App.scss'
-import './fontawsome'
+
+
+import { FetchProducts } from './redux'
+import Login from './containers/LogIn'
 
 function App() {
-  const userState = useSelector(state => state.user.isLoggedIn)
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    return null
+  }, [pathname])
+  const dispatch = useDispatch()
+
+  dispatch(FetchProducts())
+  
   return (
-    <Fragment>
-      <MainNavbar />
-      <Switch>
-        <Route exact path={HOME_ROUTE} component={Home} />
-        <Route path={CONTACT_ROUTE} component={Contact} />
-        <Route path={ABOUT_ROUTE} component={About} />
-
-        {userState ? ( <Route path={PROFILE_ROUTE} component={Profile} />
-          ) : (
-            ''
-          )}
-
-        {userState ? (
-          <Route path={ADD_DONATION_ROUTE} component={AddDonation} />
-        ) : (
-          ''
-        )}
-
-        {userState ? (
+    <>
+      <ModalProvider>
+        <Login />
+        <Settings />
+        <MainNavbar />
+        <Switch>
+          <Route exact path={HOME_ROUTE} component={Home} />
+          <PrivateRoute path={PROFILE_ROUTE}>
+            <Profile />
+          </PrivateRoute>
+          <Route path={ABOUT_ROUTE} component={About} />
+          <Route path={CONTACT_ROUTE} component={Contact} />
           <Route path={DONATION_DETAILS_ROUTE} component={DonationDetails} />
-        ) : (
-          ''
-        )}
-
-        {userState ? ( <Route path={SEARCH_ROUTE} component={Search} />
-          ) : (
-            ''
-          )}
-
-        <Route component={NotFound} />
-      </Switch>
-      <Footer />
-    </Fragment>
+          <Route path={SEARCH_ROUTE} component={Search} />
+          <PrivateRoute path={ADD_DONATION_ROUTE}>
+            <AddDonation />
+          </PrivateRoute>
+          <Route component={NotFound} />
+        </Switch>
+        <Footer />
+      </ModalProvider>
+    </>
   )
 }
 
