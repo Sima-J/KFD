@@ -12,7 +12,7 @@ export default function DonationDetail({ title, price, description }) {
         <text  className = "Pname">{title}</text>
         <br/>
       <text className = "stakeholder">
-        {t('proudctDetail.price')}: $ {price}
+        Quantity:  {price}
       </text>
       <br/>
       <text  lassName = "description"> {t('proudctDetail.description')}</text>
