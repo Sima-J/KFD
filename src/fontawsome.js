@@ -21,7 +21,9 @@ import {
   faTrashAlt,
   faChevronLeft,
   faSearch,
-
+  faHandHoldingHeart,
+  faInfoCircle,
+  faBalanceScale,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -44,5 +46,8 @@ library.add(
   faSearchPlus,
   faImages,
   faPlus,
-  faUser
+  faUser,
+  faHandHoldingHeart,
+  faInfoCircle,
+  faBalanceScale
 )
