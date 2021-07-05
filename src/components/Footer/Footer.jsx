@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import React from "react";
 import { useSelector } from 'react-redux'
  import { Nav, Col,Row, Image} from 'react-bootstrap'
@@ -7,11 +8,11 @@ import { useSelector } from 'react-redux'
  import logo from '../../assets/logo.svg'
  
 
-import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE,SEARCH_ROUTE} from '../../router'
+import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE} from '../../router'
 import "./Footer.scss";
   
 const Footer = () => {
-  const userState = useSelector(state => state.user.isLoggedIn)
+  const user = useSelector(state => state.authentication)
   const { t } = useTranslation()
   return (
             <footer className = "cont">
@@ -26,7 +27,7 @@ const Footer = () => {
                           </Nav.Link>
                       </li>
 
-                      {userState ? 
+                      {user.isLoggedIn ? 
                         (
                           <li>
                             <Nav.Link  className="lin"
@@ -52,20 +53,24 @@ const Footer = () => {
 
                   </Col>
 
-                  {userState ? 
+                  {user.isLoggedIn  ? 
                     (
 
                       <Col>
                         <h5 className="underline"> {t("footer.main_types")}</h5>
                         <h6 className="list-unstyled">
                             
-                            <Nav.Link  className="lin " 
-                                      as={NavLink} to={SEARCH_ROUTE}>{t("footer.donation")}
-                            </Nav.Link>
+                           
 
-                            <Nav.Link  className="lin " 
-                                      >{t("footer.requdon")}
+                            <Nav.Link  className="lin"  href='/searchresult?word=&select=Requested'>
+
+                                      {t("footer.requdon")}
                             </Nav.Link>
+                            <Nav.Link  className="lin"  href='/searchresult?word=&select=Donations'>
+
+                            {t("footer.donation")}
+                  </Nav.Link>
+
 
                         </h6>
                       </Col>

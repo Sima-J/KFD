@@ -39,8 +39,9 @@ export default function ContactInfo({
             <td className = "td">
                 {t('contactus.callowner')}
                 <br/>
+                <a  href={`tel:${phone}`}>
                 <FontAwesomeIcon className="icon" icon="phone"/>{'  '}
-                {phone}
+                {phone}</a>
             </td>
 
             <tr>
