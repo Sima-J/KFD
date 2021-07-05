@@ -14,12 +14,12 @@ export default function CheckboxFilter({ChangeCheckbox, Checkbox}) {
             <p className=" text-lg font-medium mb-3"> {t("filter.caregory")} </p>
             { result.map(category => {
                 return (
-                    <label htmlFor={category.value} key={uuid()} className="inline-flex items-center mt-3">
-                        <input type="checkbox" checked={Checkbox.includes(category.value)} id={category.value} className="h-5 w-5"/><span className="ml-2">{category.value}</span>
+                    <label htmlFor={category.value} key={uuid()} className="inline-flex items-center mt-3 mr-4">
+                        <input type="checkbox" checked={Checkbox.includes(category.value)} id={category.value} /><span className="ml-2">{category.value}</span>
                     </label>
                 )
             })}
-            <hr className="my-4" />
+            <hr className="my-2" />
         </div>
     )
 }

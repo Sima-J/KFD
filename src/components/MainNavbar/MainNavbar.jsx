@@ -14,7 +14,7 @@ import { NavLink, Redirect } from 'react-router-dom'
 import i18n from 'i18next'
     import userIcon from '../../assets/ProfileIcon.png'
 import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE, SEARCH_ROUTE } from '../../router'
-import SearchCard from "../SearchForm/SearchCard";
+import SearchForm from "../SearchForm/SearchForm";
 import logo from '../../assets/logo.svg'
 import './MainNavbar.scss'
 import firebase from '../../Firebase'
@@ -116,7 +116,7 @@ export default function MainNavbar() {
                     {user.isLoggedIn ?
                       
                       (
-                        <SearchCard />
+                        <SearchForm />
                       ) : ('')
                     }
 
