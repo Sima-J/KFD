@@ -4,7 +4,7 @@ import './DonationSection.scss'
 import { Col } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 
-export default function DonationDetail({ title, price, description }) {
+export default function DonationDetail({ title, price, state,category, description }) {
   const { t } = useTranslation()
   return (
     <>
@@ -13,6 +13,13 @@ export default function DonationDetail({ title, price, description }) {
         <br/>
       <text className = "stakeholder">
       {t('Donations.quantity')}  {price}
+      </text>
+      <br/>
+      <text className = "stakeholder">
+      {t('Donations.state')} : {state}
+      </text><br/>
+      <text className = "stakeholder">
+      {t('Donations.state')} : {category}
       </text>
       <br/>
       <text  lassName = "description"> {t("Donations.desc")}</text>
@@ -28,11 +35,15 @@ export default function DonationDetail({ title, price, description }) {
 DonationDetail.propTypes = {
   title: PropTypes.string,
   price: PropTypes.string,
+  state: PropTypes.string,
+  category: PropTypes.string,
   description: PropTypes.string,
 }
 
 DonationDetail.defaultProps = {
   title: '',
   price: 0,
+  state:'unknown',
+  category:'unknown',
   description: '',
 }

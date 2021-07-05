@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next'
 import { NavLink, Redirect } from 'react-router-dom'
 import i18n from 'i18next'
     import userIcon from '../../assets/ProfileIcon.png'
-import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE, SEARCH_ROUTE } from '../../router'
+import { CONTACT_ROUTE, HOME_ROUTE, ABOUT_ROUTE, PROFILE_ROUTE } from '../../router'
 import SearchForm from "../SearchForm/SearchForm";
 import logo from '../../assets/logo.svg'
 import './MainNavbar.scss'
@@ -78,17 +78,7 @@ export default function MainNavbar() {
                                {t('navbar.about')}
                     </Nav.Link>
 
-                    {user.isLoggedIn ?
-                      
-                      (
-                        <Nav.Link  className="lins" activeStyle={{
-                          fontWeight: 'bold',
-                          }} as={NavLink} to={SEARCH_ROUTE}>
-                          {t('navbar.donation')}
-                        </Nav.Link>
-                      ) : ('')
-                    }
-
+                   
                     {user.isLoggedIn ?
                       
                       (

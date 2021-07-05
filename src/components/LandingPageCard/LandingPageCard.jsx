@@ -30,8 +30,8 @@ export default function LandingPageCard({
   }
   return (
     <Card
-      className="w-72 h-96 bg-white  flex cursor-pointer rounded-3xl focus:outline-none relative shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out"
-      style={{ Width: '360px', Height: '600px' }}
+      className=" flex ease-in-out"
+      style={{ Width: '100%', Height: '100%' }}
       onClick={handleClick}
       onKeyDown={handleClick}
       role="link"
@@ -41,7 +41,7 @@ export default function LandingPageCard({
         
           src={image}
           alt="Donation card"
-          style={{ height: '10vm' }}
+          style={{  Height:"100%" }}
         />
         
       <Card.Body>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import  {
-  Col,Row
+  Col,Row,Container,Card
 
       
       } 
@@ -160,7 +160,7 @@ export default function SearchResult() {
     }
 
     return StateFilter.map(item => (
-      
+      <Card className="m-2">
       <LandingPageCard
         productName={item.productName}
         image={item.images ? item.images[0] : undefined}
@@ -171,7 +171,7 @@ export default function SearchResult() {
         description={item.description}
         location={item.location}
         id={item.id}
-      /> 
+      /> </Card>
     ))
   }
 
@@ -199,16 +199,17 @@ export default function SearchResult() {
             onSubmit={onSubmit}
             onChange={onChange}
             setMin={setMin}
+            
             setMax={setMax}
             Min={Min}
             Max={Max}
           />
         </Col>
         
-        <Col lg={4} md={6} >
-        <Row>
+        <Col  ><Container>
+        <Row lg={4} md={2} >
                   {products.loading === false ? filterProducts() : 'NoData...'
-        }</Row></Col>
+        }</Row></Container></Col>
     
         
 
