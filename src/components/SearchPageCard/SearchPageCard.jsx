@@ -23,7 +23,7 @@ export default function SearchPageCard({
   }
   const handleClick = () => {
     hanldeView()
-    history.push(`/productdetails/${id}`)
+    history.push(`/donationsdetails/${id}`)
   }
   return (
     <div

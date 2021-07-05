@@ -196,17 +196,6 @@
     "close": "Close"
   },
 
-  "addbutton":
-  {
-    "adddonation":"Add Your Donation",
-    "search":"Search"
-  },
-
-  "login": 
-  {
-    "log-in": " Log in",
-    "google": "Sign in"
-  },
 
 
   "adddonation":
@@ -216,21 +205,6 @@
     "add":"Add",
     "cancel":"Cancel"
   },
-
-  
-
-
- 
-
-  
-
-
-
-  
-
-
-
-
  
 
   "donationsection":
@@ -293,8 +267,8 @@
       "itemcate": "Select the type of Food this Donation belong to below",
       "aform": "You have successfully filled the form",
       "cat": [
-        { "url": "Fresh Food", "value": "Fresh Food" },
-        { "url": "Packaged Food", "value": "Packaged Food" },
+        { "url": "FreshFood", "value": "Fresh Food" },
+        { "url": "PackagedFood", "value": "Packaged Food" },
         { "url": "Other", "value": "Other" }
       ]
     },
