@@ -144,17 +144,6 @@ export default function SearchResult() {
       case 'Donations':
         StateFilter = PriceFilter.filter(item => item.state === 'Donations')
         break
-      case 'Free':
-        StateFilter = PriceFilter.filter(item => item.state === 'Donated')
-        break
-      case 'Paid':
-        StateFilter = PriceFilter.filter(
-          item => item.state === 'Used' || item.state === 'Crafted'
-        )
-        break
-      case 'Donated':
-        StateFilter = PriceFilter.filter(item => item.state === 'Donated')
-        break
       default:
         StateFilter = PriceFilter.filter(item => item)
     }
