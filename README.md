@@ -14,7 +14,7 @@
 
 ## Overview
 
-KFD is a platform to connect Donors to people where they can either request or donate extra food.
+KFD is a platform to connect Donors to people where they can either request donations or donate extra food.
 
 ### The challenge
 
