@@ -34,6 +34,7 @@
 
   "Donations":
   {
+    "donated": "Doanted Donations",
     "addd": "Add Donation",
     "loading": "Uploading",
     "addnew":"Add New Donation",
@@ -56,7 +57,7 @@
     "submit": "Submit",
     "itemtype": "Select the Item Type",
     "aform": "You have successfully filled the form",
-    "desc": "Description",
+    "desc": "Inculde a brief explantion and availability of the Supply",
     "price": "Price",
     "callTheOwner": "Call The Owner",
     "requdon":"Requested Donations"

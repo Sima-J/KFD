@@ -34,6 +34,7 @@
   
   "Donations":
   {
+    "donated": "تبرعات مقصودة",
     "addd": "أضف التبرع",
     "loading": "تحميل",
     "addnew":"إضافة تبرع جديد",
@@ -56,7 +57,7 @@
     "submit": "إرسال",
     "itemtype": "حدد نوع العنصر",
     "aform": "لقد ملأت النموذج بنجاح",
-    "desc": "وصف",
+    "desc": "قم بتضمين شرح موجز وتوافر التوريد",
     "price": "سعر",
     "callTheOwner": "اتصل بالمالك",
     "requdon":"التبرعات المطلوبة"
@@ -257,12 +258,12 @@
       "add": "Add",
       "cancel": "Cancel",
       "itemtype": "Choose one of option Below",
-      "itemcate": "Select the type of Food this Donation belong to below",
+      "itemcate": "حدد نوع الطعام الذي ينتمي إليه هذا التبرع أدناه",
       "aform": "You have successfully filled the form",
       "cat": [
-        { "url": "Fresh Food", "value": "Fresh Food" },
-        { "url": "Packaged Food", "value": "Packaged Food" },
-        { "url": "Other", "value": "Other" }
+        { "url": "طعام طازج", "value": "طعام طازج" },
+        { "url": "طعام معلب", "value": "طعام معلب" },
+        { "url": "آخر", "value": "آخر" }
       ]
     },
     "home": {

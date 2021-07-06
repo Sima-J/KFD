@@ -366,7 +366,6 @@ export default function AddItemForm() {
 
               >
               {t("Donations.desc")}             
-              (Inculde a brief explantion and availability of the food)
               
               </Form.Label>
 
