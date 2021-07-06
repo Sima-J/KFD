@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import  {
     Navbar,
-    Nav,Image, Button,Collapse,        DropdownButton,      Dropdown,       NavItem
+    Nav,Image, Button,Collapse,        DropdownButton,      Dropdown
 
         
         } 
@@ -77,59 +77,76 @@ export default function MainNavbar() {
                                }} as={NavLink} to={ABOUT_ROUTE}>
                                {t('navbar.about')}
                     </Nav.Link>
-
-                   
+                    {user.isLoggedIn ?
+                      
+                      (
+                    <Nav.Link  className="lins" activeStyle={{
+                                  fontWeight: 'bold',
+                                  }} href='/#/searchresult?word=&select=All'>
+                                  
+                                  {t('navbar.donation')}
+                        </Nav.Link> ) : ('')
+                      }
+                        
                     {user.isLoggedIn ?
                       
                       (
                         <Nav.Link  className="lins" activeStyle={{
                                   fontWeight: 'bold',
-                                  }}as={NavLink} to={PROFILE_ROUTE}>
+                                  }} as={NavLink} to={PROFILE_ROUTE}>
                                   
                                   {t('navbar.profile')}
                         </Nav.Link>
                       ) : ('')
                     }
+                     
+                    
+                       
+                     
     
-                    <Nav.Link>
-                    <button
-                    onClick={() => handleLanguageChange(t('language'))}
-                    type="button"
-                    className=" hover:bg-darkBlue hover:text-white items-center px-3  space-x-2  text-blue  rounded inline-flex focus:outline-none items-center border border-solid border-blue justify-center"
-                  >
-                    <FontAwesomeIcon icon="globe" className="" />
-                    <div className="text-center ">{t('langText')}</div>
-                  </button>
-
-                    </Nav.Link>
-
-                    {user.isLoggedIn ?
-                      
-                      (
-                        <SearchForm />
-                      ) : ('')
-                    }
+    
+                  
 
                   </Nav>
    
-                <NavItem>
+               
+
+                </Navbar.Collapse>
+                {user.isLoggedIn ?
+                      
+                  (
+                    <SearchForm />
+                  ) : ('')
+                }
+                    <Nav.Link>
+                    <Button
+                    onClick={() => handleLanguageChange(t('language'))}
+                    type="button"
+                    className="B16  items-center   border border-solid "
+                  >
+                    <FontAwesomeIcon icon="globe" className="" />
+                    <div className="text-center ">{t('langText')}</div>
+                  </Button>
+
+                    </Nav.Link>
+
+               
                 <Dropdown>
 
                   {user.isLoggedIn ? (
                     <Button
                       onClick={() => setprofileDropDown(!profileDropDown)}
-                      type="button"
-                      aria-controls="example-collapse-text"
-        aria-expanded={profileDropDown}
+                      type="button" 
+                      
                     >
                       <Image
-                        className="h-6 w-6 mx-auto  roundedCircle"
                         src={user ? user.user.photo : userIcon}
-                        alt=""
+                        alt="user"
                       />
                     </Button>
                   ) : (
                     <Button
+                    className="B11"
                       type="button"
                       onClick={() => dispatch(OpenModal())}
                     >
@@ -137,12 +154,16 @@ export default function MainNavbar() {
                     </Button>
                   )}
 
-                <Collapse in={profileDropDown} >
-                <DropdownButton id="dropdown-basic-button" className="px-4 mt-1 " title={t("navbar.Account")}>
+
+                <Collapse    className="B12" in={profileDropDown} >
+                <DropdownButton     
+                className="B12 mx-3 my-2   "
+                title="Account">
+
 
                   <NavLink
                     to={PROFILE_ROUTE}
-                    className="block mx-4 my-1 px-4 py-2 text-sm  hover:bg-darkBlue hover:text-white"
+                    className="lins mx-4 text-center my-1   "
                     role="menuitem"
                   >
                     {user.isLoggedIn ? user.user.name : ''}
@@ -150,7 +171,7 @@ export default function MainNavbar() {
 
                   <Button
                     type="button"
-                    className="mx-4 my-1 text-left block focus:outline-none px-4 py-2 text-sm  hover:bg-darkBlue hover:text-white w-full"
+                    className="B14 mx-4 my-1 text-center "
                     onClick={() => dispatch(OpenSettingModal())}
                   >
                   {t("navbar.settings")}
@@ -159,7 +180,7 @@ export default function MainNavbar() {
                   <Button
                     type="button"
                     onClick={signOut}
-                    className="mx-4 my-1 text-left block focus:outline-none px-4 py-2 text-sm  hover:bg-darkBlue hover:text-white w-full"
+                    className="B15 mx-4 my-1 text-center   "
                     role="menuitem"
                   >
                   {t("navbar.logOut")}
@@ -170,9 +191,5 @@ export default function MainNavbar() {
 
                 </Dropdown>
 
-                </NavItem>
-
-                </Navbar.Collapse>
-                  
 						  </Navbar>
           )}

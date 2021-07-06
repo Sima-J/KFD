@@ -1,8 +1,10 @@
 @import '../../style/styleBoo';
 
-.background
+.backgroundH
 {
     background-color:$primary;
+    border-bottom:$secondary solid 2px !important;
+  
 }
 
 .text
