@@ -9,7 +9,6 @@ import './LandingCard.scss'
 
 export default function LandingPageCard({
   productName,
-  description,
   location,
   date,
   views,
@@ -50,10 +49,7 @@ export default function LandingPageCard({
         <FontAwesomeIcon icon="hand-holding-heart" className="mr-1" />
           {state}
        </Card.Text>
-        <Card.Text>
-        <FontAwesomeIcon icon="info-circle" className="mr-1" />
-          {description}
-        </Card.Text>
+        
         <Card.Text className="text-center" >
         <FontAwesomeIcon icon="balance-scale"  className="mr-1" />
         {quantity}
@@ -75,7 +71,6 @@ LandingPageCard.propTypes = {
   image: PropTypes.string,
   id: PropTypes.string,
   productName: PropTypes.string,
-  description: PropTypes.string,
   date: PropTypes.string,
   views: PropTypes.number,
   quantity: PropTypes.number,
@@ -88,7 +83,6 @@ LandingPageCard.defaultProps = {
   image: noPhoto,
   id: 0,
   productName: '',
-  description: '',
   date: '',
   views: 0,
   quantity: 0,

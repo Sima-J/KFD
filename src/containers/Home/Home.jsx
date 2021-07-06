@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 import { Button, } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
@@ -9,11 +9,14 @@ import DonationsCarousal from '../../components/DonationsCarousal'
 export default function Home() {
   const { t } = useTranslation()
   const history = useHistory()
+  const user = useSelector(state => state.authentication)
 
   return (
     <>
       <Header />
-      <div className="   lg:mx-20  text-2xl p-5 py-14 ">
+      {user.isLoggedIn  ? 
+        (  <div className="   lg:mx-20  text-2xl p-5 py-14 ">
+     
         <Button
           className="bg-yellow focus:outline-none p-2 inline px-6 rounded-r-2xl shadow-md hover:shadow-none tansition duration-300 ease-in-out hover:cruser"
           type="button"
@@ -29,9 +32,10 @@ export default function Home() {
           onClick={() => history.push('/searchresult?word=&select=Donations')}
         >
         {t("Donations.donation")}        </Button>
-        <DonationsCarousal condition="Donations" />
+        <DonationsCarousal condition="Donations" />  
+      </div>) : ('') 
+      }
 
-      </div>
     </>
   )
 }
