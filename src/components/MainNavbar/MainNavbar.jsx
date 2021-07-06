@@ -138,7 +138,7 @@ export default function MainNavbar() {
                   )}
 
                 <Collapse in={profileDropDown} >
-                <DropdownButton id="dropdown-basic-button" className="px-4 mt-1 " title="Account">
+                <DropdownButton id="dropdown-basic-button" className="px-4 mt-1 " title={t("navbar.Account")}>
 
                   <NavLink
                     to={PROFILE_ROUTE}
@@ -162,7 +162,7 @@ export default function MainNavbar() {
                     className="mx-4 my-1 text-left block focus:outline-none px-4 py-2 text-sm  hover:bg-darkBlue hover:text-white w-full"
                     role="menuitem"
                   >
-                  {t("navbar.signUp")}
+                  {t("navbar.logOut")}
                   </Button>
                   </DropdownButton>
 
