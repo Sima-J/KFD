@@ -12,7 +12,7 @@ import home from '../../assets/Home.png'
 export default function Header() {
     const { t } = useTranslation()
     return (
-            <div className ="background">
+            <div className ="backgroundH">
                 <Container >
                     <Row >
                         <Col>
