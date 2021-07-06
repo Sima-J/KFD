@@ -62,11 +62,11 @@ const Footer = () => {
                             
                            
 
-                            <Nav.Link  className="lin"  href='/searchresult?word=&select=Requested'>
+                            <Nav.Link  className="lin"  href='/#/searchresult?word=&select=Requested'>
 
                                       {t("footer.requdon")}
                             </Nav.Link>
-                            <Nav.Link  className="lin"  href='/searchresult?word=&select=Donations'>
+                            <Nav.Link  className="lin"  href='/#/searchresult?word=&select=Donations'>
 
                             {t("footer.donation")}
                   </Nav.Link>
