@@ -7,7 +7,7 @@
   - [Built with](#built-with)
 - [Usage](#usage)
   - [development](#development)
-  - [Bug / Feature Request](#Bug / Feature Request)
+  - [Bug / Feature Request](#Bug/Feature Request)
 - [Team](#Team)
 - [Acknowledgments](#acknowledgments)
 
@@ -55,7 +55,7 @@ To fix a bug or enhance an existing module, follow these steps:
 - Push to the branch (`git push origin improve-feature`)
 - Create a Pull Request 
 
-### Bug / Feature Request
+### Bug/Feature Request
 
 If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/Sima-J/KFD/issues/new) by including your search query and the expected result.
 
