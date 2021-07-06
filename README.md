@@ -7,7 +7,7 @@
   - [Built with](#built-with)
 - [Usage](#usage)
   - [development](#development)
-  - [Bug / Feature Request](#Bug/Feature-Request)
+  - [Bug / Feature Request](#bug/feature-fequest)
 - [Team](#Team)
 - [Acknowledgments](#acknowledgments)
 
