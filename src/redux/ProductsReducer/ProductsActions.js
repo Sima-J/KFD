@@ -30,7 +30,7 @@ export const FetchProducts = () => {
     dispatch(FetchProductsRequest())
     firebase
       .firestore()
-      .collection('products')
+      .collection('donations')
       .get()
       .then(querySnapshot => {
         const data = querySnapshot.docs.map(doc => ({

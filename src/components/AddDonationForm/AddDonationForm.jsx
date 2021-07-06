@@ -95,17 +95,16 @@ export default function AddItemForm() {
       ImageRef.push(fileUrl)
     }
 
-    const userRef = db.collection('products').doc()
+    const userRef = db.collection('donations').doc()
     userRef
       .set(
         {
           productName: productData.title,
-          price: productData.price,
+          quantity: productData.quantity,
           phone: productData.tel,
           date: productData.date,
           description: productData.description,
           location: productData.city,
-
           state: productData.itemType,
           userName: user.user.name,
           category: selectedCategories,
@@ -127,9 +126,8 @@ export default function AddItemForm() {
       city: user.user.city,
       date: new Date().toString(),
       title: '',
-      price: '',
+      quantity: '',
       description: '',
-
       productImage: '',
       itemType: '',
       category: null,
@@ -140,7 +138,7 @@ export default function AddItemForm() {
   }
 
   return (
-    <div className="  p-8">
+    <div className="p-8">
       <SweetAlert
         title=''
         show={loading}
@@ -149,26 +147,31 @@ export default function AddItemForm() {
         onCancel={() => setloading(false)}
         style={{ backgroundColor: 'transparent' }}
       >
-        <div className="bg-blue  rounded-3xl px-32 py-10 shadow-md ">
+        <div className="px-32 py-10 shadow-md ">
           <FontAwesomeIcon
             icon="spinner"
-            className="text-white mb-5"
+            className=" mb-5"
             pulse
             size="7x"
           />
-          <h1 className="text-white m-3 mt-4 text-3xl">{t('Donations.loading')}</h1>
+          <h1 className=" m-3 mt-4 text-3xl">{t('Donations.loading')}</h1>
         </div>
       </SweetAlert>
-                  
-                 
-      <Container className=" border rounded border-black my-4 text-center " >
-               
-              
-                <Row className="BDS">
-                <Col xs={12}>
-                <h1 className="newd">{t("Donations.addnew")}</h1>
+                               
+      <Container className="border rounded border-black my-4 text-center " >
+      <Row>
+      <Col>
+      <h1 className="newd">{t("Donations.addnew")}</h1>
+      </Col>
+  </Row>
 
-                      <Form onSubmit={handleSubmit}>
+
+
+      <Form onSubmit={handleSubmit}>
+
+    
+      <Row>
+      <Col md='6'>
                         <Form.Label htmlfor="Title" className="messages">
                         {t("Donations.title")}
                     </Form.Label>
@@ -180,20 +183,22 @@ export default function AddItemForm() {
                   value={productData.title}
                   onChange={handleChnage}
                 />
-                <br />
+                <br/>
+
                                 <Form.Label
-                  htmlFor="price"
+                  htmlFor="quantity"
                   >
                   {t("Donations.quantity")}
                 </Form.Label>
                 <Form.Control
                   required
                   type="number"
-                  name="price"
-                  value={productData.price}
+                  name="quantity"
+                  value={productData.quantity}
                   onChange={handleChnage}
                 />
-                <br/>          
+               <br/>
+
                 <Form.Label
                   htmlFor="type"
                 >
@@ -201,7 +206,7 @@ export default function AddItemForm() {
                 </Form.Label>
                 <br />
                 
-                  <Form.Label htmlFor="Requested"  className="mr-3 mb-3"
+                  <Form.Label htmlFor="Requested"  className="mr-3 mb-3 mt-2"
                   >
                     <Form.Control
                       type="radio"
@@ -212,7 +217,7 @@ export default function AddItemForm() {
                     />
                     {t("Donations.requdon")}
                                       </Form.Label>
-                  <Form.Label htmlFor="Donations" className="mb-3">
+                  <Form.Label htmlFor="Donations" className="mb-3 mt-2">
                     <Form.Control
                       type="radio"
                       required
@@ -221,14 +226,20 @@ export default function AddItemForm() {
                       className=""
                       onChange={handleChnage}
                     />
-                    {t('Donations.donated')}          </Form.Label>
-              <br/>
+                    {t('Donations.donated')}         
+                    
+                    
+                    </Form.Label>
+                    <br/>
+                    <br/>
                 <Form.Label
                   htmlFor="categories"
+                  className="mb-3"
                   >
                   {t('additem.itemcate')}
                 </Form.Label>
                 <br />
+
 
                 <div >
                   {result.map(cate => (
@@ -255,8 +266,9 @@ export default function AddItemForm() {
                         onChange={handleChnage}
                       />
                       <div
+                      className=" mx-2"
+
                         row="1"
-                        className="Form.Label-checked:bg-blue Form.Label-checked:border-blue Form.Label-checked:shadow-none Form.Label-checked:text-white hover:bg-opacity-25  hover:bg-blue  shadow-md      border border-grey bg-opacity-25 font-bold py-2 px-3 md:px-6 rounded-xl transition duration-300 ease-in-out hover:shadow-none"
                       >
                         {cate.value}
                       </div>
@@ -264,57 +276,6 @@ export default function AddItemForm() {
                   ))}
                 </div>
                 <br/>
-
-            <Col >
-              <div className=" py-12 BDS  item-center border-2 border border-dashed rounded-3xl text-center">
-                <div className="grid  pb-4 p-1   ">
-                  <FontAwesomeIcon
-                    icon="images"
-                    className="fa-3x my-3  BDS  justify-self-center"
-                  />
-                  {Images[0] ? (
-                    Images.map((img, index) => {
-                      return (
-                        <div className="m-1 grid grid-cols-12  rounded   border px-0  ">
-                          <p className="bg-blue rounded-l inline py-1   text-white text-center col-span-1">
-                            {index + 1}
-                          </p>
-                          <p className="px-2 self-center text-left col-span-10 overflow-hidden">
-                            {img.name}
-                          </p>
-
-                          <button
-                            type="button"
-                            className="text-red border-l focus:outline-none  justify-self-end px-2 rounded-r col-span-1"
-                            onClick={() => removeImg(index)}
-                          >
-                            X
-                          </button>
-                        </div>
-                      )
-                    })
-                  ) : (
-                    <p>{t('Donations.noImg')}</p>
-                  )}
-                </div>
-                <Form.Label
-                  htmlFor="file-upload"
-                  className="relative cursor-pointer  rounded-md font-medium hover:shadow-none shadow-lg transition duration-300 ease-in-out hover:bg-darkBlue text-white bg-blue py-2 px-2"
-                >
-                  <span>{t('Donations.upload')}</span>
-                  <Form.Control
-                    id="file-upload"
-                    name="imageForm.Control"
-                    type="file"
-                    accept="image/png, image/jpeg"
-                    multiple
-                    className="sr-only"
-                    onChange={handleChnage}
-                  />
-                </Form.Label>
-                </div>
-              </Col>
-<br/>
                 <Form.Label
                   htmlFor="tel"
                   >
@@ -342,28 +303,91 @@ export default function AddItemForm() {
                   value={productData.city}
                   onChange={handleChnage}
                 />
-              <br/>
-            <div className="md:col-span-11">
+                </Col>
+               
+
+            <Col >
+              <div className=" py-12 BDS  item-center  text-center">
+                <div className="  pb-4 p-1   ">
+                  <FontAwesomeIcon
+                    icon="images"
+                    className="fa-3x my-3   justify-self-center"
+                  />
+                  {Images[0] ? (
+                    Images.map((img, index) => {
+                      return (
+                        <div className="m-1 rounded   border self-center text-left overflow-hidden   "> 
+                        <Button
+                            type="button"
+                            className="AddButFor m-1  "
+                            onClick={() => removeImg(index)}
+                          >
+                            X
+                          </Button>
+                          <p className=" ">
+                          
+                            {index + 1}.
+                         
+                            {img.name}
+                          </p>
+
+                         
+                        </div>
+                      )
+                    })
+                  ) : (
+                    <p>{t('Donations.noImg')}</p>
+                  )}
+                </div>
+                <Form.Label
+                  htmlFor="file-upload"
+                  className="AddImg py-2 px-2"
+                >
+                  <span>{t('Donations.upload')}</span>
+                  <Form.Control
+                    id="file-upload"
+                    name="imageForm.Control"
+                    type="file"
+                    accept="image/png, image/jpeg"
+                    multiple
+                    className=" sr-only"
+                    onChange={handleChnage}
+                  />
+                </Form.Label>
+                </div>
+              </Col>
+
+              </Row> 
+              <Row>
+           
               <Form.Label
                 htmlFor="Description"
+                className="mt-3 ml-3"
+
               >
-              {t("Donations.desc")}              </Form.Label>
+              {t("Donations.desc")}             
+              (Inculde a brief explantion and availability of the food)
+              
+              </Form.Label>
 
               <Form.Control
-              as="textarea" row="3"  type="text" 
+              as="textarea" row="2"  type="text" 
                 name="description"
+                className=" m-3 py-3"
+
+
                 required
                 value={productData.description}
                 onChange={handleChnage}
               />
-            </div>
-
+</Row>
             <Row >
             <Col >
-                          <Button
+                         
+            <Button 
                 type="submit"
                 onClick={() => setloading(true)}
-                className="py-2 px-4  m-1"
+                className="AddButFor py-2 px-4  m-1"
               >
                 {t("Donations.submit")}
               </Button>
@@ -373,14 +397,13 @@ export default function AddItemForm() {
                 value={t('Donations.cancel')}
                 type="button"
                 onClick={() => history.goBack()}
-                className="py-2 px-4 m-1 "
+                className="AddButFor py-2 px-4 m-1 "
               >{t("Donations.cancel")}</Button>
               </Col>
               </Row>
-            </Form>
+           
 
-            </Col>
-          </Row>
+          </Form>
       </Container>
     </div>
   )

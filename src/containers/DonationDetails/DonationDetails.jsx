@@ -63,7 +63,7 @@ export default function ProductDetails() {
               <Col >
                 <DonationDetail
                   title={data.productName}
-                  price={new Intl.NumberFormat().format(data.price)}
+                  quantity={new Intl.NumberFormat().format(data.quantity)}
                   state={data.state}
                   category={data.category}
                   description={data.description}

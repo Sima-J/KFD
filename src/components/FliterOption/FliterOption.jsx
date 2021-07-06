@@ -20,22 +20,22 @@ export default function FilterOptions({onChange, setMin, setMax, Min, Max, onSub
                 </form>
                 <div onChange={onChange} className="flex flex-col w-32">
                     <label htmlFor="lower25" className="inline-flex items-center mt-3 mr-4">
-                        <input type="radio" name='price' id="lower25"  /><span >{t('fliter.one')}</span>
+                        <input type="radio" name='quantity' id="lower25"  /><span >{t('fliter.one')}</span>
                     </label>
                     <label htmlFor="lower50" className="inline-flex items-center mt-3 mr-4">
-                        <input type="radio" name='price' id="lower50"  /><span >{t('fliter.two')}</span>
+                        <input type="radio" name='quantity' id="lower50"  /><span >{t('fliter.two')}</span>
                     </label>
                     <label htmlFor="lower100" className="inline-flex items-center mt-3 mr-4">
-                        <input type="radio" name='price' id="lower100"  /><span >{t('fliter.three')}</span>
+                        <input type="radio" name='quantity' id="lower100"  /><span >{t('fliter.three')}</span>
                     </label>
                     <label htmlFor="lower200" className="inline-flex items-center mt-3 mr-4">
-                        <input type="radio" name='price' id="lower200"  /><span >{t('fliter.four')}</span>
+                        <input type="radio" name='quantity' id="lower200"  /><span >{t('fliter.four')}</span>
                     </label>
                     <label htmlFor="lower400" className="inline-flex items-center mt-3 mr-4">
-                        <input type="radio" name='price' id="lower400"  /><span >{t('fliter.five')}</span>
+                        <input type="radio" name='quantity' id="lower400"  /><span >{t('fliter.five')}</span>
                     </label>
                     <label htmlFor="infinte" className="inline-flex items-center mt-3 mr-4">
-                        <input type="radio" name='price' id="infinte"  /><span >{t('fliter.six')}</span>
+                        <input type="radio" name='quantity' id="infinte"  /><span >{t('fliter.six')}</span>
                     </label>
                 </div>
             <hr className="my-4" />

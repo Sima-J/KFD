@@ -14,7 +14,7 @@ export default function LandingPageCard({
   date,
   views,
 
-  price,
+  quantity,
   state,
   id,
   image,
@@ -22,7 +22,7 @@ export default function LandingPageCard({
   const history = useHistory()
 
   const hanldeView = async () => {
-    const fileRef = db.collection('products').doc(id)
+    const fileRef = db.collection('donations').doc(id)
     fileRef.set({ views: views + 1 }, { merge: true })
   }
   const handleClick = () => {
@@ -56,7 +56,7 @@ export default function LandingPageCard({
         </Card.Text>
         <Card.Text className="text-center" >
         <FontAwesomeIcon icon="balance-scale"  className="mr-1" />
-        {price}
+        {quantity}
     
             <FontAwesomeIcon icon="eye"  className="ml-2 mr-1" />
             {views}
@@ -78,7 +78,7 @@ LandingPageCard.propTypes = {
   description: PropTypes.string,
   date: PropTypes.string,
   views: PropTypes.number,
-  price: PropTypes.number,
+  quantity: PropTypes.number,
   state: PropTypes.string,
 
   location: PropTypes.string,
@@ -91,7 +91,7 @@ LandingPageCard.defaultProps = {
   description: '',
   date: '',
   views: 0,
-  price: 0,
+  quantity: 0,
   state: 'unknown',
 
   location: '',

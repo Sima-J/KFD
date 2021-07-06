@@ -54,7 +54,7 @@ export default function Carousal({ condition }) {
                   description={item.description}
                   date={item.date}
                   views={item.views}
-                  price={Number(item.price)}
+                  quantity={Number(item.quantity)}
                   state={item.state}
                   location={item.location}
                   image={item.images ? item.images[0] : undefined}
