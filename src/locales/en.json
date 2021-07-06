@@ -134,6 +134,7 @@
 
   "navbar": 
   {
+    "Account":"Account",
     "home": "Home",
     "contact": "Contact Us",
     "about": "About",

@@ -63,7 +63,7 @@ const handleSubmit = (e) => {
                           <br />
 
                           <Form.Label htmlFor="email" className="grey-text"/>
-                          <Form.Control  type="email" id="email"   name="email" placeholder="Email Address"   value={email}
+                          <Form.Control  type="email" id="email"   name="email" placeholder={t("contactus.emailad")}   value={email}
                            onChange={(e)=> setEmail(e.target.value)} required/>
 
                           <br />

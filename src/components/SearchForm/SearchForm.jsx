@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from 'react-i18next'
 
 export default function SearchForm() {
   const [SearchQuery, setSearchQuery] = useState('')
@@ -11,6 +12,7 @@ export default function SearchForm() {
     history.push(`/searchresult?word=${SearchQuery}`)
     e.preventDefault()
   }
+  const { t } = useTranslation()
   
 
 
@@ -22,7 +24,7 @@ export default function SearchForm() {
         <input
           type="text"
           className="focus:outline-none pl-3 col-span-6 bg-pureWhite  text-center   text-xl "
-          placeholder="Search"
+          placeholder= {t("navbar.search")}
           name="word"
           onInput={e => setSearchQuery(e.target.value)}
         />
