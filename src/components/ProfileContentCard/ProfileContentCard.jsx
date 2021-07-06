@@ -38,7 +38,7 @@ export default function ProfileContentCard({
       dangerMode: true,
     }).then(willDelete => {
       if (willDelete) {
-        db.collection('products')
+        db.collection('donations')
           .doc(productId)
           .delete()
           .then(() => {

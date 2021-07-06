@@ -122,13 +122,13 @@ export default function SearchResult() {
       CheckboxFilterarray = ContentFilter
     }
 
-    let PriceFilter = []
+    let QuantityFilter = []
 
     if (MinRange === '' && MaxRange === '') {
-      PriceFilter = CheckboxFilterarray
+      QuantityFilter = CheckboxFilterarray
     } else {
-      PriceFilter = CheckboxFilterarray.filter(
-        item => item.price >= MinRange && item.price <= MaxRange
+      QuantityFilter = CheckboxFilterarray.filter(
+        item => item.quantity >= MinRange && item.quantity <= MaxRange
       )
     }
 
@@ -136,16 +136,16 @@ export default function SearchResult() {
 
     switch (Select) {
       case 'All':
-        StateFilter = PriceFilter
+        StateFilter = QuantityFilter
         break
       case 'Requested':
-        StateFilter = PriceFilter.filter(item => item.state === 'Requested')
+        StateFilter = QuantityFilter.filter(item => item.state === 'Requested')
         break
       case 'Donations':
-        StateFilter = PriceFilter.filter(item => item.state === 'Donations')
+        StateFilter = QuantityFilter.filter(item => item.state === 'Donations')
         break
       default:
-        StateFilter = PriceFilter.filter(item => item)
+        StateFilter = QuantityFilter.filter(item => item)
     }
 
     return StateFilter.map(item => (
@@ -153,7 +153,7 @@ export default function SearchResult() {
       <LandingPageCard
         productName={item.productName}
         image={item.images ? item.images[0] : undefined}
-        price={item.price}
+        quantity={item.quantity}
         date={item.date}
         views={item.views}
         state={item.state}

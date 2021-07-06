@@ -1,9 +1,52 @@
+@import '../../style/styleBoo';
+
 .newd{
-    color: black;
     text-align: center;
     margin-bottom: 1vw;
+    color: $primary !important;
+
 }
 .BDS {
-    color: black;
+    color: $primary !important;
+    border: 1px dashed black;
 
+}
+
+.AddDonBut{
+    background-color: $primary !important;
+    border: $primary !important;
+    
+}
+
+.AddDonBut:hover{
+    background-color: $greenColor !important;
+
+    border: $secondary !important;
+    
+}
+
+.AddImg {
+    background-color: $primary !important;
+    color: $secondary !important;
+
+}
+
+.AddButFor{
+    background-color: $primary !important;
+    border: $primary !important;
+
+
+}
+Form{
+    color: $primary !important;
+
+}
+
+
+
+.AddButFor:hover{
+    background-color: $greenColor !important;
+
+    border: $secondary !important;
+    
 }
