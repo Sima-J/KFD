@@ -111,7 +111,7 @@ export default function MainNavbar() {
    
                
 
-                </Navbar.Collapse>
+
                 {user.isLoggedIn ?
                       
                   (
@@ -131,12 +131,13 @@ export default function MainNavbar() {
                     </Nav.Link>
 
                
-                <Dropdown>
+                <Dropdown className="B12 mx-4" >
 
                   {user.isLoggedIn ? (
                     <Button
                       onClick={() => setprofileDropDown(!profileDropDown)}
                       type="button" 
+                      className="B12" 
                       
                     >
                       <Image
@@ -146,7 +147,7 @@ export default function MainNavbar() {
                     </Button>
                   ) : (
                     <Button
-                    className="B11"
+                    className="B11 mx-3"
                       type="button"
                       onClick={() => dispatch(OpenModal())}
                     >
@@ -190,6 +191,6 @@ export default function MainNavbar() {
                 </Collapse>
 
                 </Dropdown>
-
+                </Navbar.Collapse>
 						  </Navbar>
           )}
