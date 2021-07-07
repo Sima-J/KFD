@@ -2,7 +2,6 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {Image, Card, Button} from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import Cover from '../../assets/Pcover.png'
 import { OpenSettingModal } from '../../redux'
 import './TopProfile.scss'
@@ -10,13 +9,12 @@ import './TopProfile.scss'
 export default function TopProfile() {
   const dispatch = useDispatch()
   const user = useSelector(state => state.authentication)
-  const { t } = useTranslation()
   
   return (
    
     <div className = "fontcolorb"  >
         <box className= "box">
-            {t('profilecard.desc1')}
+        The KFD Web App is an online platform that allow user to donate food or request Donations.
         </box>
         <Image className = "cover" src={Cover} fluid/>
 

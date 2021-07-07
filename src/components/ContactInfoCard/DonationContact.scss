@@ -12,22 +12,26 @@ table
     -moz-border-radius:6px;
     // background-color: grey;
     font-size: 1.5vw;
+
  }
 tr
 {
   height: 2.9vw;
   border-radius: 10vw;
   -moz-border-radius:6px;
+  border: grey solid 1px;
 } 
 .td
 {
   height: 4.8vw;
-  color: white;
+  color:grey;
   background-color:$primary; 
   border-radius: 10vw;
   -moz-border-radius:6px;
   font-weight: bold;
   
+  
 }
 td:hover  {background-color: #9575CD;}
 .PIcon    {width: 12vw;}
+
