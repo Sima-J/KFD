@@ -5,6 +5,7 @@ import { Button, } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import {Header} from '../../components/HomeCard'
 import DonationsCarousal from '../../components/DonationsCarousal'
+import './Home.scss'
 
 export default function Home() {
   const { t } = useTranslation()
