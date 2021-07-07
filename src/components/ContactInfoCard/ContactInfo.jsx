@@ -19,11 +19,11 @@ export default function ContactInfo({
     
     <Col>
 
-    <table>
+    <table >
 
-        <thead>
+        <thead >
 
-            <tr>
+            <tr >
                 <Image className = "PIcon"
                 src={profileImg}
                 fluid />

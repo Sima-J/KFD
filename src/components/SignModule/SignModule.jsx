@@ -50,7 +50,7 @@ function SignModule({ onHide }) {
                   <div className="d-flex justify-content-center mt-5 mb-5">
                      <Button
                         onClick={handelLoginWithGoogle}
-                        className="bg-white text-black w-50 rounded d-flex justify-content-center align-items-center py-2 border-0">
+                        className=" text-black w-50 rounded d-flex justify-content-center align-items-center py-2 border-0">
                         
                         <img
                            src={Google}

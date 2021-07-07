@@ -85,12 +85,9 @@ const handleSubmit = (e) => {
                           onChange={(e)=> setMessage(e.target.value)}
                            required />
 
-                          <div className="text-center my-4 ">
-                            <Button type="submit" className="Btn"  >
+                            <Button type="submit" className="Btn  my-4"   >
                               {t("contactus.send")}
                             </Button>
-                          </div>
-{console.log(name)}
                         </Form>
 
                       </Col>

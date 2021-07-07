@@ -12,14 +12,14 @@ export default function DonationDetail({ title, quantity, state,category, descri
         <text  className = "Pname">{title}</text>
         <br/>
       <text className = "stakeholder">
-      {t('Donations.quantity')}  {quantity}
+     quantity {quantity}
       </text>
       <br/>
-      <text className = "stakeholder">
-      {t('Donations.state')} : {state}
+      <text className = "stakeholder1">
+      state: {state}
       </text><br/>
-      <text className = "stakeholder">
-      {t('Donations.state')} : {category}
+      <text className = "stakeholder2">
+      {t('Donations.category')} : {category}
       </text>
       <br/>
       <text  lassName = "description"> {t("Donations.desc")}</text>

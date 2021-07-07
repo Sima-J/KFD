@@ -250,7 +250,7 @@
       "leve": "Leave us a message",
       "send": "Send",
       "disc": "Disclaimer",
-      "desc": "We do not make any warranties about the authenticity or quality of products in this website. Any transaction you take upon the products on this website is strictly at your own risks, and we will not be liable for any loss and damages in connection with the use of our website.",
+      "desc": "We do not make any warranties about the authenticity or quality of donations in this website.",
       "mesg": "Your Message has been send"
     },
     "additem": 
@@ -285,25 +285,18 @@
     "addItem": "Add Item",
   
     "about": {
-      "start": "We strive to provide a place to our users where they can buy and sell their used items, crafted or donated items.",
       "miss": "Our Mission",
-      "mission": "Dilmun mission is to connect people in need with place to sell their items and build bridges of trust between them.",
       "go": "Our Goals",
-      "goals": "we make sure our users find what they are looking for and as easy as possible, instead of searching for items on social media, here you can easily find what are you looking for with one search.",
       "val": "Our Values",
-      "values": "We believe that everyone deserves to live in a clean environment. We encourage donation, developing a recycling community and supporting local business through providing a platform to sell their items.",
-      "haval": "Haval Rezan Majnun",
-      "ismail": "Ismail Khalil",
       "sima": "Sima Jazaa Mohammed",
-      "kodo": "Kodo Yousif",
       "meet": "Meet Team",
       "about": "About Us"
     },
   
     "searchform": {
       "all": "All",
-      "free": "Free",
-      "paid": "Paid"
+      "free": "RequestedDonation",
+      "paid": "Donoations"
     },
     "fliter": {
       "one": "Under 25",
