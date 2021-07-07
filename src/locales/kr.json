@@ -59,7 +59,8 @@
     "desc": "باسکردن",
     "price": "نرخ",
     "callTheOwner": "پەیوەندی بکە بە خاوەنەکە",
-    "requdon":"بەخشینە داواکراوەکان"
+    "requdon":"بەخشینە داواکراوەکان",
+    "donated": "Doanted Donations"
   },
 
   "contactus": 
@@ -110,7 +111,10 @@
     "ranya":"ڕانیە",
     "said sadiq":"سەیدسادق",
     "sharazwr":"شارەزوور",
-    "cham":"چەمچەماڵ"
+    "cham":"چەمچەماڵ",
+    "under":"Under 25",
+    "over":"Over 400",
+    "said":"Said Sadiq"
   },
 
   "footer": 
@@ -143,28 +147,8 @@
     "donation": "بەخشین",
     "profile": "پرۆفایل",
     "search":"گەڕان",
-    "settings": "ڕێکبەندەکان"
-  },
-
-  "profile":
-  {
-    "desc1":"سەرەکیترین کێشەکان بۆ چارەسەرکردنیان و بەدەستهێنانی ئاسایشی خۆراکو برسێتی یە بۆ باشترکردنی خۆراکی خواردن",
-    "bestsupermarket":"باشترین سوپەر مارکێت",
-    "phone":"964 750 113 0495",
-    "location":"عێراق، سلێمانی",
-    "mydonations":"بەخشینەکانم",
-    "suplname":"ناوی کالا",
-    "quntity":"چەندێتی",
-    "time":"--هەفتە-ڕۆژ-کاتژمێر-خولەک",
-    "delete":"سڕینەوە",
-    "slogan": "بەیەکەوە جیهان بکەن بە شوێنێکی باشتر بۆ هەمووان",
-    "myItems": "ئایتمەکانم",
-    "oops": " ئۆپس! هیچشتێکت بۆ بەخشین دانەناوە",
-    "explain": "ێایتمێک زیادبکە و دەستبکە بە بەخشین",
-    "deleting": "ئایا دڵنیایت?",
-    "deletingNote": "کاتێک سڕایەوە، ناتوانیت ئەم ئایتمە بگەڕێنیتەوە!",
-    "deleted": " فایلسسڕایەوە!",
-    "notDeleted": " فایل نەسڕاوەتەوە"
+    "settings": "ڕێکبەندەکان",
+    "Account":"Account"
   },
 
   "addbutton":
@@ -176,13 +160,15 @@
   "login": 
   {
     "log-in": " چوونەژوورەوە",
-    "google": "چوونەژوورەوە"
+    "google": "چوونەژوورەوە",
+      "KFD":"KFD Application"
   },
 
   "notFound": 
   {
     "oops": " ئۆپس! پەڕ نەدۆزرایەوە...",
     "explain": "ئەو لاپەڕەی کە بەدوایدا دەگەڕێیت بوونی نیە، لەوانەیە گواسترابێتەوە یان سڕابێتەوە."
+    
   },
 
   "setting": {
@@ -207,10 +193,6 @@
     "cancel":"هەڵوەشاندنەوه"
   },
 
-
-
-  
- 
   "contactform": {
     "title": "پەیوەندیمان پێوە بکە",
     "leaveusamessage":"Please Leave Us a Message",
@@ -223,9 +205,11 @@
     "required": "ئەم خانەیە پێویستە",
     "message": "نامەکەت"
   },
+
   "donationcard":{
 
   },
+
   "donationcontact":{
     "callowner":"پەیوەندی بکە بە خاوەنەکە",
     "phone":"+964 750 113 0495",
@@ -234,6 +218,7 @@
     "date":"20/02/2021",
     "expire":"کالا لە 20 ڕۆژدا بەسەر دەچێت"
   },
+
   "donationsection":{
     "milk":"شیر",
     "supermarket":"سوپەرمارکێت",
@@ -245,26 +230,126 @@
   "header":{
     "desc":"پلاتفۆرمێکی سەرهێڵییە کە وەک پردێک کار دەکات بۆ بەستنەوەی چێشتخانە و کۆمپانیاکانی دابینکەری خۆراک و سوپەرمارکێتەکان بۆ ڕێکخراو ."
   },
-  "homecard":{
+  
 
-  },
-
-
-
-  "searchcard":{
-
-  },
-  "searchform":{
-
-  },
-  "searchheader":{
-
-  },
-  "signinmodule":{
-
-  },
-  "notfound":{
-
-  }
+    
+    "profile":
+    {
+      "desc1":"سەرەکیترین کێشەکان بۆ چارەسەرکردنیان و بەدەستهێنانی ئاسایشی خۆراکو برسێتی یە بۆ باشترکردنی خۆراکی خواردن",
+    "bestsupermarket":"باشترین سوپەر مارکێت",
+    "phone":"964 750 113 0495",
+    "location":"عێراق، سلێمانی",
+    "mydonations":"بەخشینەکانم",
+    "suplname":"ناوی کالا",
+    "quntity":"چەندێتی",
+    "time":"--هەفتە-ڕۆژ-کاتژمێر-خولەک",
+    "delete":"سڕینەوە",
+    "slogan": "بەیەکەوە جیهان بکەن بە شوێنێکی باشتر بۆ هەمووان",
+    "myItems": "ئایتمەکانم",
+    "oops": " ئۆپس! هیچشتێکت بۆ بەخشین دانەناوە",
+    "explain": "ێایتمێک زیادبکە و دەستبکە بە بەخشین",
+    "deleting": "ئایا دڵنیایت?",
+    "deletingNote": "کاتێک سڕایەوە، ناتوانیت ئەم ئایتمە بگەڕێنیتەوە!",
+    "deleted": " فایلسسڕایەوە!",
+    "notDeleted": " فایل نەسڕاوەتەوە"
+    },
+  
+  
+    "heading": 
+      {
+        "descrption": "The Food Donation WebApp is an online platform that works as a bridge to connect restaurants, food-supplier companies and Supermarkets to organization."
+      },
+  
+    "doncard" : 
+    {
+        "DC" : "Donation Card"
+    },
+      "loginSlogan": " Log in to start donating and / or sell what you don’t need",
+      "loginAddItem": " You are not Authorized! Please, Log in. ",
+      
+      "back": "Go Back",
+      "toast": 
+      {
+        "successAdd": " is successfully added",
+        "warningDelete": " Deleted"
+      },
+    
+      "cform": {
+  
+        "cont": "Contact Us",
+        "name": "Name",
+        "email": "Email Address",
+        "message": "Your Message",
+        "leve": "Leave us a message",
+        "send": "Send",
+        "disc": "Disclaimer",
+        "desc": "We do not make any warranties about the authenticity or quality of products in this website. Any transaction you take upon the products on this website is strictly at your own risks, and we will not be liable for any loss and damages in connection with the use of our website.",
+        "mesg": "Your Message has been send"
+      },
+      "additem": 
+      {
+        "noImg": "No Image is selected",
+        "new": "Add New Item",
+        "upload": "Add Image +",
+        "title": "Title",
+        "phone": "Phone Number",
+        "how": "How long  the Food will be available?",
+        "country": "Country",
+        "city": "City",
+        "add": "Add",
+        "cancel": "Cancel",
+        "itemtype": "Choose one of option Below",
+        "itemcate": "Select the type of Food this Donation belong to below",
+        "aform": "You have successfully filled the form",
+        "cat": [
+          { "url": "FreshFood", "value": "Fresh Food" },
+          { "url": "PackagedFood", "value": "Packaged Food" },
+          { "url": "Other", "value": "Other" }
+        ]
+      },
+      "home": {
+        "slogan": "Find or Sell whatever you want and wherever you are!",
+        "addItem": "Add Item",
+        "donatedItems": "Donated Items",
+        "usedItems": "Used Items",
+        "craftedItems": "Crafted Items"
+      },
+  
+      "addItem": "Add Item",
+    
+      "about": {
+        "start": "We strive to provide a place to our users where they can buy and sell their used items, crafted or donated items.",
+        "miss": "Our Mission",
+        "mission": "Dilmun mission is to connect people in need with place to sell their items and build bridges of trust between them.",
+        "go": "Our Goals",
+        "goals": "we make sure our users find what they are looking for and as easy as possible, instead of searching for items on social media, here you can easily find what are you looking for with one search.",
+        "val": "Our Values",
+        "values": "We believe that everyone deserves to live in a clean environment. We encourage donation, developing a recycling community and supporting local business through providing a platform to sell their items.",
+        "haval": "Haval Rezan Majnun",
+        "ismail": "Ismail Khalil",
+        "sima": "Sima Jazaa Mohammed",
+        "kodo": "Kodo Yousif",
+        "meet": "Meet Team",
+        "about": "About Us"
+      },
+    
+      "searchform": {
+        "all": "All",
+        "free": "Free",
+        "paid": "Paid"
+      },
+      "fliter": {
+        "one": "Under 25$",
+        "two": "25$ - 50$",
+        "three": "50$ - 100$",
+        "four": "100$ - 200$",
+        "five": "200$ - 400$",
+        "six": "Over 400$",
+        "apply": "Apply",
+        "max": "Max",
+        "min": "Min"
+      }
+  
+  
   
 }
