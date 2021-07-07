@@ -16,10 +16,10 @@ export default function DonationDetail({ title, quantity, state,category, descri
       </text>
       <br/>
       <text className = "stakeholder1">
-      state: {state}
+      Type: {state}
       </text><br/>
       <text className = "stakeholder2">
-      {t('Donations.category')} : {category}
+      Category : {category}
       </text>
       <br/>
       <text  lassName = "description"> {t("Donations.desc")}</text>
