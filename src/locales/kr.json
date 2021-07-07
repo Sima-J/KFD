@@ -193,31 +193,6 @@
     "cancel":"هەڵوەشاندنەوه"
   },
 
-  "contactform": {
-    "title": "پەیوەندیمان پێوە بکە",
-    "leaveusamessage":"Please Leave Us a Message",
-    "name": "ناو",
-    "email": "contact@KFD.com",
-    "phone": "+234081-1236-4568",
-    "subject": "بابەت",
-    "send": "ناردن",
-    "emailad":"ناونیشانی ئیمەیڵ",
-    "required": "ئەم خانەیە پێویستە",
-    "message": "نامەکەت"
-  },
-
-  "donationcard":{
-
-  },
-
-  "donationcontact":{
-    "callowner":"پەیوەندی بکە بە خاوەنەکە",
-    "phone":"+964 750 113 0495",
-    "location":"عێراق، سلێمانی، زێرین",
-    "quality":"چەندێتی: 36",
-    "date":"20/02/2021",
-    "expire":"کالا لە 20 ڕۆژدا بەسەر دەچێت"
-  },
 
   "donationsection":{
     "milk":"شیر",
@@ -226,15 +201,11 @@
     "descmilk":"ئەمە ئەو شوێنەیە کە باسی ئەم بەرهەمانەی کە بەردەستن بۆ بەخشینییان دایبنێین یان داوای بەخشینیان لێبکرێت ، ئەمەش بیرۆکەیەکی کورت دەداتێ کە بەرهەمەکەی چییە و چی بۆ سوودی خۆی بەکاردێت یان کۆمپانیای پیشەسازی"
   },
   
-
   "header":{
     "desc":"پلاتفۆرمێکی سەرهێڵییە کە وەک پردێک کار دەکات بۆ بەستنەوەی چێشتخانە و کۆمپانیاکانی دابینکەری خۆراک و سوپەرمارکێتەکان بۆ ڕێکخراو ."
   },
   
-
-    
-    "profile":
-    {
+    "profile":{
       "desc1":"سەرەکیترین کێشەکان بۆ چارەسەرکردنیان و بەدەستهێنانی ئاسایشی خۆراکو برسێتی یە بۆ باشترکردنی خۆراکی خواردن",
     "bestsupermarket":"باشترین سوپەر مارکێت",
     "phone":"964 750 113 0495",
@@ -253,7 +224,6 @@
     "deleted": " فایلسسڕایەوە!",
     "notDeleted": " فایل نەسڕاوەتەوە"
     },
-  
   
     "heading": 
       {
@@ -275,13 +245,18 @@
       },
     
       "cform": {
-  
+        "title": "پەیوەندیمان پێوە بکە",
+    "leaveusamessage":"Please Leave Us a Message",
+    "name": "ناو",
+    "email": "contact@KFD.com",
+    "phone": "+234081-1236-4568",
+    "subject": "بابەت",
+    "send": "ناردن",
+    "emailad":"ناونیشانی ئیمەیڵ",
+    "required": "ئەم خانەیە پێویستە",
+    "message": "نامەکەت",
         "cont": "Contact Us",
-        "name": "Name",
-        "email": "Email Address",
-        "message": "Your Message",
         "leve": "Leave us a message",
-        "send": "Send",
         "disc": "Disclaimer",
         "desc": "We do not make any warranties about the authenticity or quality of products in this website. Any transaction you take upon the products on this website is strictly at your own risks, and we will not be liable for any loss and damages in connection with the use of our website.",
         "mesg": "Your Message has been send"
@@ -349,7 +324,5 @@
         "max": "Max",
         "min": "Min"
       }
-  
-  
   
 }
