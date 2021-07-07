@@ -22,7 +22,7 @@ export default function FilterOptions({onChange, setMin, setMax, Min, Max, onSub
                     <label htmlFor="lower25" className="inline-flex items-center mt-3 mr-4">
                         <input type="radio" name='quantity' id="lower25"  /><span >{t('fliter.one')}</span>
                     </label>
-                    <label htmlFor="lower50" className="inline-flex items-center mt-3 mr-4">
+                    <label htmlFor="lower50" className="inline-flex items-center mt-3 mr-5">
                         <input type="radio" name='quantity' id="lower50"  /><span >{t('fliter.two')}</span>
                     </label>
                     <label htmlFor="lower100" className="inline-flex items-center mt-3 mr-4">
