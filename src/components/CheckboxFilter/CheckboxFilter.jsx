@@ -11,11 +11,11 @@ export default function CheckboxFilter({ChangeCheckbox, Checkbox}) {
     const result = Object.keys(catagories).map(key => catagories[key])
     return (
         <div onChange={ChangeCheckbox} className="flex flex-col">
-            <p className=" text-lg font-medium mb-3"> {t("filter.caregory")} </p>
+            <p className=" text-lg font-medium mb-3"> category </p>
             { result.map(category => {
                 return (
                     <label htmlFor={category.value} key={uuid()} className="inline-flex items-center mt-3 mr-4">
-                        <input type="checkbox" checked={Checkbox.includes(category.value)} id={category.value} /><span className="ml-2">{category.value}</span>
+                        <input type="checkbox" checked={Checkbox.includes(category.url)} id={category.url} /><span className="ml-2">{category.value}</span>
                     </label>
                 )
             })}
