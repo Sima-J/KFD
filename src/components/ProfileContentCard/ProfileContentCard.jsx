@@ -4,9 +4,12 @@ import { useHistory } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
+import {Button} from 'react-bootstrap'
+
 
 import swal from 'sweetalert'
 import { db } from '../../Firebase'
+import './ProfileContent.scss'
 
 export default function ProfileContentCard({
   title,
@@ -67,31 +70,28 @@ export default function ProfileContentCard({
         </div>
 
         <div className="justify-self-start md:justify-self-center grid gap-2 text-blue mt-2 md:mt-0    ">
-          <div>
-            <FontAwesomeIcon icon="clock" className="" /> {timing(time)}
-          </div>
-          <div>
-            <FontAwesomeIcon icon="eye" className="mx-1" />
+            <FontAwesomeIcon icon="clock" className="mx-2" /> {timing(time)}
+            <FontAwesomeIcon icon="eye" className="mx-2" />
             {seen.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-          </div>
         </div>
         <div className="justify-self-end self-center ">
-          <button
+          <Button
             type="button"
-            className="bg-yellow px-4 py-1 rounded-full text-pureWhite hover:shadow-none focus:outline-none shadow-md  transition duration-300 ease-in-out "
+            className="BPCV m-1 "
+
             onClick={handleClick}
           >
             <FontAwesomeIcon icon="binoculars" />
-          </button>
-          <button
+          </Button>
+          <Button 
             type="button"
-            className="bg-red mx-2 px-4 py-1 rounded-full text-white hover:shadow-none focus:outline-none shadow-md  transition duration-300 ease-in-out "
+            className="BPCD m-1 "
             onClick={() => {
               deleteItem(title, id)
             }}
           >
             <FontAwesomeIcon icon="trash-alt" />
-          </button>
+          </Button>
         </div>
       </div>
     </div>
