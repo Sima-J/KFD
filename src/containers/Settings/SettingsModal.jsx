@@ -15,7 +15,6 @@ export default function Settings() {
   const dispatch = useDispatch()
   const user = useSelector(state => state.authentication)
   const [userData, setUserData] = useState()
-  document.title = "Settings";
 
   useEffect(() => {
     setUserData(user)
