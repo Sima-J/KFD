@@ -13,7 +13,7 @@ export default function Profile() {
   const user = useSelector(state => state.authentication)
   const products = useSelector(state => state.products)
   const dispatch = useDispatch()
-
+  document.title = "Profile";
   const [userProduct, setUserProduct] = useState()
 
   useEffect(() => {

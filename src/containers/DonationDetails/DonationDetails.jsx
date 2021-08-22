@@ -10,6 +10,7 @@ import DonationDetail, { SlideShow } from '../../components/DonationDetail'
 
 
 export default function ProductDetails() {
+  document.title = "Details";
   const { t } = useTranslation()
   const history = useHistory()
   function timing(date) {

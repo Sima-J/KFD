@@ -8,6 +8,7 @@ import DonationsCarousal from '../../components/DonationsCarousal'
 import './Home.scss'
 
 export default function Home() {
+  document.title = "Home";
   const { t } = useTranslation()
   const history = useHistory()
   const user = useSelector(state => state.authentication)

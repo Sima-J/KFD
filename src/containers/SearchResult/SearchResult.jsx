@@ -26,6 +26,7 @@ export default function SearchResult() {
   const [MinRange, setMinRange] = useState('')
   const [MaxRange, setMaxRange] = useState('')
   const [Checkbox, setCheckbox] = useState([])
+  document.title = "Search";
 
   const onSubmit = e => {
     e.preventDefault()

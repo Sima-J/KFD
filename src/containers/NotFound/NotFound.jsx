@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import logo from '../../assets/dilmun.png'
 
 export default function NotFound() {
+  document.title = "Not Found";
   const { t } = useTranslation()
   return (
     <div className=" grid p-10 font-bold bg-header h-screen justify-center items-center ">
